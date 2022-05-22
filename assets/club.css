@@ -1,3 +1,15 @@
 /* Club Backdrops CSS */
 
-h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
+h1, h2, h3, h4, h5,
+.h0, .h1, .h2, .h3, .h4, .h5,
+button,
+.button { 
+    text-transform: uppercase;
+}
+
+button,
+.button { 
+    font-family: var(--font-heading-family); 
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+}

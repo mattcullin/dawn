@@ -55,6 +55,54 @@
               </tr>
             </thead>
 
+            <script>
+              function prepareInterface() {
+                let inputs = document.querySelectorAll('input[name="updates[]"');
+                let removeLinks = document.querySelectorAll('[data-cart-remove]');
+                for (let i = 0; i < removeLinks.length; i++) {
+                  removeLinks[i].href = "javascript: void(0)";
+                  removeLinks[i].addEventListener(
+                    "click", async (e) => {
+                      e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
+                      let itemQuantity = 0;
+                      let itemKey = e.target.closest('tr').getAttribute('data-cart-item-key');
+                        try {
+                          await updateShopifyCart(e, itemKey, itemQuantity);
+                        }
+                        catch (error) {
+                          console.error(error);
+                        }
+                  });
+                }
+                
+              }
+              
+              async function updateShopifyCart(e, itemKey, itemQuantity) {
+                try {
+                  // update the cart and get updated data
+                  let updatedData = await Aurigma.CcHelper.updateCart(itemKey, itemQuantity);
+                  if (itemQuantity == 0) {
+                    e.target.closest('tr').remove();
+                    document.querySelector('[data-cart-subtotal]').innerHTML = 
+                      new Intl.NumberFormat('en', { style: 'currency', currency: Aurigma.CcHelper.cart.currency })
+                      .format((Aurigma.CcHelper.cart.items_subtotal_price / 100).toFixed(2));
+                    document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = Aurigma.CcHelper.cart.item_count;
+                  } else {
+                    //update price box and cart count box
+                    e.target.closest('tr').querySelector('.cart__final-price')
+                      .querySelector('[data-cart-item-regular-price]').innerHTML = updatedData.updatedItemPrice;
+                    document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = updatedData.cartCount;
+                    document.querySelector('[data-cart-subtotal]').innerHTML = updatedData.subtotal;
+                  }
+                }
+                catch(error) {
+                  console.error(error);
+                }
+              }
+            </script>
+
+            {% include 'cc-cart-init' %}
+
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
@@ -128,6 +176,8 @@
                                 {%- endif -%}
                               </dd>
                             </div>
+                          {%- elsif property.first == '_itemId' %}
+                            <div id="cc-product-{{item.properties['_itemId']}}-data"></div>
                           {%- endif -%}
                         {%- endfor -%}
                       </dl>

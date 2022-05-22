@@ -214,20 +214,6 @@
 </head>
 
   <body class="gradient">
-    {% comment %}CC code{% endcomment %}
-    {{ 'storefrontInit.js' | asset_url | script_tag }}
-    {{ 'storefront.js' | asset_url | script_tag }}
-    {% for item in cart.items %}
-      {% if item.properties['_itemId'] %}
-        {% assign custom_items_in_cart = true %}
-        {% break %} 
-      {% endif %}
-    {% endfor %}  
-    {% if custom_items_in_cart %}
-      {{ 'cc-helper.js' | asset_url | script_tag }}
-    {% include 'cc-mini-cart-init' %}
-    {% endif %}
-
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -283,8 +269,6 @@
   <script type="text/javascript">window.Beacon('init', '04d349b1-7595-40d8-b801-3e6073d80faa')</script>
 
   {% include 'sc-discount-app' %}
-
-  {% include 'cc-onlogin' %}
 
 </body>
 </html>

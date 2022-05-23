@@ -26,6 +26,15 @@
         "padding_bottom": 36
       }
     },
+    "165313487387bec25f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ collection.handle }}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1653135454720f3671": {
       "type": "collage",
       "blocks": {

@@ -1,4 +1,4 @@
-name: Shopify CI
+name: Shopify Lighthouse CI
 on: [push]
 jobs:
   lhci:

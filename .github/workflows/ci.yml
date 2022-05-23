@@ -1,4 +1,4 @@
-name: Shopify CI
+name: Shopify Lighthouse CI
 on: [push]
 jobs:
   lhci:
@@ -10,10 +10,7 @@ jobs:
         uses: shopify/lighthouse-ci-action@1.0
         with:
           access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
-          app_id: ${{ secrets.SHOP_APP_ID }}
-          app_password: ${{ secrets.SHOP_APP_PASSWORD }}
           store: ${{ secrets.SHOP_STORE }}
-          password: ${{ secrets.SHOP_PASSWORD }}
           lhci_github_app_token: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
   theme-check:
     name: Theme Check

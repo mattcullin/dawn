@@ -1,5 +1,6 @@
 /* Club Backdrops CSS */
 
+/* Typography */
 h1, h2, h3, h4, h5,
 .h0, .h1, .h2, .h3, .h4, .h5,
 button,
@@ -8,8 +9,31 @@ button,
 }
 
 button,
-.button { 
+.button,
+.header__inline-menu { 
     font-family: var(--font-heading-family); 
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
+    text-transform: uppercase;
 }
+
+/*
+Cart Notification 
+- hide checkout button
+*/
+.cart-notification__links form { display: none; }
+
+/* Cart
+- offers banner
+*/
+.offers-banner { border: 2px; border-style: dashed; border-color: var(--color-base-accent-2); color: var(--color-base-accent-2); text-align: center; padding: 10px; } 
+.offers-banner.with-code { border-width: 2px; border-style: dashed; border-color: var(--color-base-text); color: var(--color-base-text); }
+.offers-banner .offer-code { background: var(--gradient-base-accent-2); color: #fff; padding: 2px 4px; font-weight: 700; }
+
+/* Discount Cart App Adjustments */
+/* .scDiscount__container input#submit,
+.scDiscount__container .sc_simple-info__row strong,
+.sc_simple-info .sc_simple-info__row div strong { font-family: var(--font-heading-family); text-transform: uppercase; font-weight: var(--font-heading-weight) !important; }
+.scDiscount__container input#submit:hover { cursor: pointer; }
+.scDiscount__container .sc-tag.sc_reduced .code { display: none; }
+.scDiscount__container button { border: none; } */

@@ -1,12 +1,12 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#000000",
     "gradient_accent_1": "",
-    "colors_accent_2": "#e22120",
+    "colors_accent_2": "#cd193c",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#000000",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
@@ -98,6 +98,9 @@
     "favicon": "shopify:\/\/shop_images\/club-backdrops-favicon-black.png",
     "currency_code_enabled": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/club-backdrops-logo-black.png",
+    "checkout_accent_color": "#0077cc",
+    "checkout_button_color": "#0077cc",
+    "checkout_error_color": "#cd193c",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -163,10 +166,10 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
-          "enable_country_selector": false,
+          "enable_country_selector": true,
           "enable_language_selector": false,
           "payment_enable": true,
           "margin_top": 48,

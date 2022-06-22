@@ -133,7 +133,7 @@
 
 {% schema %}
 {
-  "name": "Shipping Banner",
+  "name": "t:sections.multicolumn.presets.name Localized",
   "class": "section",
   "tag": "section",
   "settings": [
@@ -349,6 +349,12 @@
           "label": "Add the ISO code of the country that should see this column."
         },
         {
+            "type": "text",
+            "id": "heading",
+            "default": "GB Column X",
+            "label": "Heading"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
@@ -380,7 +386,7 @@
   ],
   "presets": [
     {
-      "name": "Shipping Banner",
+      "name": "t:sections.multicolumn.presets.name Localized",
       "blocks": [
         {
           "type": "column"

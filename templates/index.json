@@ -198,7 +198,7 @@
     "165581942615517f8d": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if localization.country.iso_code == 'GB' %}\n<p>GB Free Shipping over £80 GBP<\/p>\n{% elsif localization.country.iso_code == 'US' %}\n<p>US Shipping<\/p>\n{% endif %}",
+        "custom_liquid": "{% if localization.country.iso_code == 'GB' %}\n<p>GB Free Shipping over £80 GBP<\/p>\n{% elsif localization.country.iso_code == 'US' %}\n<p>US Shipping FREE over $100 USD<\/p>\n{% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52

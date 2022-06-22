@@ -50,8 +50,8 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-            {% if section.settings.available_countries != blank %}
-                {% if localization.country.iso_code == section.settings.available_countries %}
+            {% if block.settings.available_countries != blank %}
+                {% if localization.country.iso_code == block.settings.available_countries %}
             
                         {%- assign empty_column = '' -%}
                     {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}

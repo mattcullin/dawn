@@ -65,6 +65,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column2": {
           "type": "column",
@@ -125,7 +126,7 @@
             "available_countries": "GB",
             "heading": "GB Column 1",
             "title": "🚚 Free UK Shipping 🌞",
-            "text": "<p><strong>For orders over £80<\/strong><\/p><p>Next-day order before 1PM<\/p>",
+            "text": "<p><strong>For orders over £80<\/strong><\/p><p>Order before 1PM for next-day<\/p>",
             "link_label": "Delivery",
             "link": ""
           }

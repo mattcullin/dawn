@@ -70,7 +70,7 @@
           "type": "column",
           "settings": {
             "title": "🚚 Free US Shipping 🗽",
-            "text": "<p><strong>For orders over $80<\/strong><\/p><p>2-3 working days, No fees<\/p><p><\/p>",
+            "text": "<p><strong>For orders over $80<\/strong><\/p><p>2-3 working days, No fees<\/p>",
             "link_label": "Delivery",
             "link": "#"
           }
@@ -116,6 +116,101 @@
         "padding_bottom": 36
       }
     },
+    "1655914163fbf5c6b0": {
+      "type": "club-shipping-banner",
+      "blocks": {
+        "1655914163b1f504a2-0": {
+          "type": "column",
+          "settings": {
+            "available_countries": "GB",
+            "heading": "GB Column 1",
+            "title": "🚚 Free UK Shipping 🌞",
+            "text": "<p><strong>For orders over £80<\/strong><\/p><p>Next-day order before 1PM<\/p>",
+            "link_label": "Delivery",
+            "link": ""
+          }
+        },
+        "1655914163b1f504a2-1": {
+          "type": "column",
+          "settings": {
+            "available_countries": "GB",
+            "heading": "GB Column 2",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<\/strong><\/p><p>Local UK returns address<\/p>",
+            "link_label": "Returns",
+            "link": ""
+          }
+        },
+        "1655914163b1f504a2-2": {
+          "type": "column",
+          "settings": {
+            "available_countries": "GB",
+            "heading": "GB Column 3",
+            "title": "💸 Bulk Discounts 👍",
+            "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
+            "link_label": "All Offers",
+            "link": ""
+          }
+        },
+        "db3fc46e-0082-45b3-87e4-d7d3052e0c63": {
+          "type": "column",
+          "settings": {
+            "available_countries": "US",
+            "heading": "US Column 1",
+            "title": "🚚 Free US Shipping 🗽",
+            "text": "<p><strong>For orders over $100<\/strong><\/p><p>2-3 working days, No fees<\/p>",
+            "link_label": "Delivery",
+            "link": ""
+          }
+        },
+        "fa07d18a-c62b-4f63-83f8-ad2c74c95693": {
+          "type": "column",
+          "settings": {
+            "available_countries": "US",
+            "heading": "US Column 2",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<\/strong><\/p><p>Local US returns address<\/p>",
+            "link_label": "Returns",
+            "link": ""
+          }
+        },
+        "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb": {
+          "type": "column",
+          "settings": {
+            "available_countries": "US",
+            "heading": "US Column 3",
+            "title": "💸 Bulk Discounts 👍",
+            "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
+            "link_label": "All Offers",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1655914163b1f504a2-0",
+        "1655914163b1f504a2-1",
+        "1655914163b1f504a2-2",
+        "db3fc46e-0082-45b3-87e4-d7d3052e0c63",
+        "fa07d18a-c62b-4f63-83f8-ad2c74c95693",
+        "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -146,6 +241,7 @@
     },
     "collage": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -184,6 +280,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -197,6 +294,7 @@
     },
     "165581942615517f8d": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% if localization.country.iso_code == 'GB' %}\n<p>GB Free Shipping over £80 GBP<\/p>\n{% elsif localization.country.iso_code == 'US' %}\n<p>US Shipping FREE over $100 USD<\/p>\n{% endif %}\n{% render 'club-icon-flagtest' %}",
         "color_scheme": "background-1",
@@ -206,6 +304,7 @@
     },
     "1655906394ed7af1df": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1655906394dbdbe5f5-0": {
           "type": "heading",
@@ -250,6 +349,7 @@
     },
     "16559065649d9c2274": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "16559065644f899c66-0": {
           "type": "heading",
@@ -278,6 +378,7 @@
     },
     "16559060353f94d73f": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "16559060350fd5e20f-0": {
           "type": "heading",
@@ -322,108 +423,19 @@
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
-    },
-    "1655914163fbf5c6b0": {
-      "type": "club-shipping-banner",
-      "blocks": {
-        "1655914163b1f504a2-0": {
-          "type": "column",
-          "settings": {
-            "available_countries": "GB",
-            "title": "GB Column 1",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1655914163b1f504a2-1": {
-          "type": "column",
-          "settings": {
-            "available_countries": "GB",
-            "title": "GB Column 2",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1655914163b1f504a2-2": {
-          "type": "column",
-          "settings": {
-            "available_countries": "GB",
-            "title": "GB Column 3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "db3fc46e-0082-45b3-87e4-d7d3052e0c63": {
-          "type": "column",
-          "settings": {
-            "available_countries": "US",
-            "title": "US Column 1",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "fa07d18a-c62b-4f63-83f8-ad2c74c95693": {
-          "type": "column",
-          "settings": {
-            "available_countries": "US",
-            "title": "US Column 2",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb": {
-          "type": "column",
-          "settings": {
-            "available_countries": "US",
-            "title": "US Column 3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1655914163b1f504a2-0",
-        "1655914163b1f504a2-1",
-        "1655914163b1f504a2-2",
-        "db3fc46e-0082-45b3-87e4-d7d3052e0c63",
-        "fa07d18a-c62b-4f63-83f8-ad2c74c95693",
-        "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb"
-      ],
-      "settings": {
-        "title": "Geo Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "multicolumn",
+    "1655914163fbf5c6b0",
     "rich_text",
     "collage",
     "video",
     "165581942615517f8d",
     "1655906394ed7af1df",
     "16559065649d9c2274",
-    "16559060353f94d73f",
-    "1655914163fbf5c6b0"
+    "16559060353f94d73f"
   ]
 }

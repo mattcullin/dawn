@@ -56,13 +56,15 @@
                   assign zone = 'GB'
                 when 'US'
                   assign zone = 'US'
+                when 'FR', 'DE', 'IT', 'NL', 'ES'
+                  assign zone = 'EU'
                 else
                   assign zone = 'ROW'
               endcase
             -%}
 
             {% if block.settings.available_countries != blank %}
-                {% if zone == block.settings.available_countries %}
+                {% if block.settings.available_countries == zone or block.settings.available_countries == 'ALL' %}
             
                         {%- assign empty_column = '' -%}
                     {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}

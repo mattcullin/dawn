@@ -185,6 +185,39 @@
             "link_label": "All Offers",
             "link": ""
           }
+        },
+        "0f87366d-df72-4fc1-8b28-bb30e4a3696c": {
+          "type": "column",
+          "settings": {
+            "available_countries": "ROW",
+            "heading": "GB Column ROW",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "5b6c7e77-b373-4232-9764-743f5d143a9e": {
+          "type": "column",
+          "settings": {
+            "available_countries": "ALL",
+            "heading": "GB Column ALL",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3464ce2f-1cf8-4efe-8fa0-e0eb60495b2a": {
+          "type": "column",
+          "settings": {
+            "available_countries": "",
+            "heading": "GB Column NA",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -193,7 +226,10 @@
         "1655914163b1f504a2-2",
         "db3fc46e-0082-45b3-87e4-d7d3052e0c63",
         "fa07d18a-c62b-4f63-83f8-ad2c74c95693",
-        "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb"
+        "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb",
+        "0f87366d-df72-4fc1-8b28-bb30e4a3696c",
+        "5b6c7e77-b373-4232-9764-743f5d143a9e",
+        "3464ce2f-1cf8-4efe-8fa0-e0eb60495b2a"
       ],
       "settings": {
         "title": "",
@@ -205,7 +241,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-2",
+        "color_scheme": "inverse",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,

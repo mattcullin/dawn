@@ -189,7 +189,7 @@
         "9babff8b-7b5e-47c6-b16c-710c7d7d3f35": {
           "type": "column",
           "settings": {
-            "available_countries": "",
+            "available_countries": "EU",
             "heading": "EU Column",
             "title": "EU Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",

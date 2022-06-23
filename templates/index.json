@@ -118,7 +118,7 @@
       }
     },
     "1655914163fbf5c6b0": {
-      "type": "club-shipping-banner",
+      "type": "club-multicolumn-localized",
       "blocks": {
         "1655914163b1f504a2-0": {
           "type": "column",

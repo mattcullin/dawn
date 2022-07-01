@@ -52,12 +52,16 @@
         {%- for block in section.blocks -%}
             {%- liquid 
               case localization.country.iso_code
-                when 'GB'
+                when 'GB', 'JE', 'GG', 'IM'
                   assign zone = 'GB'
+                when 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
+                  assign zone = 'EU'
                 when 'US'
                   assign zone = 'US'
-                when 'FR', 'DE', 'IT', 'NL', 'ES'
-                  assign zone = 'EU'
+                when 'AU'
+                  assign zone = 'AU'
+                when 'CA'
+                  assign zone = 'CA'
                 else
                   assign zone = 'ROW'
               endcase

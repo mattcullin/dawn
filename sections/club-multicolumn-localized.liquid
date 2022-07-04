@@ -55,8 +55,8 @@
               render 'club-zone'
             endcapture 
           -%}
-          {% if block.settings.available_countries != blank %}
-            {% if block.settings.available_countries contains zone or block.settings.available_countries == 'ALL' %}
+          {% if block.settings.available_zones != blank %}
+            {% if block.settings.available_zones contains zone or block.settings.available_zones == 'ALL' %}
 
               {%- assign empty_column = '' -%}
               {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}
@@ -348,8 +348,8 @@
       "settings": [
         {
           "type": "text",
-          "id": "available_countries",
-          "label": "Add the ISO code of the country that should see this column."
+          "id": "available_zones",
+          "label": "Add the Zone code(s) of the country(s) that should see this column (GB, US, EU, AU, CA, ROW or ALL)."
         },
         {
           "type": "text",

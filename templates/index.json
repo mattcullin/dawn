@@ -337,10 +337,65 @@
           "type": "column",
           "settings": {
             "available_zones": "GB",
-            "heading": "GB Column 1",
+            "heading": "GB Shipping",
             "title": "🚚 Free UK Shipping 🌞",
-            "text": "<p><strong>For orders over £80<br\/><\/strong>Order before 1PM for next-day<\/p>",
-            "link_label": "Delivery",
+            "text": "<p><strong>For orders over £80<br\/><\/strong>Order before 1PM for next-day*<\/p>",
+            "link_label": "UK Delivery",
+            "link": ""
+          }
+        },
+        "14fd82da-6cba-4a45-a3fd-6bf3af67c71b": {
+          "type": "column",
+          "settings": {
+            "available_zones": "US",
+            "heading": "US Shipping",
+            "title": "🚚 Free US Shipping 🗽",
+            "text": "<p><strong>For orders over $120<br\/><\/strong>2-3 working days, No fees<\/p>",
+            "link_label": "US Delivery",
+            "link": ""
+          }
+        },
+        "af9db3da-567e-4650-9daa-730dd8f3a746": {
+          "type": "column",
+          "settings": {
+            "available_zones": "EU",
+            "heading": "EU Shipping",
+            "title": "🚚 Free EU Shipping 🌞",
+            "text": "<p><strong>For orders over €120<br\/><\/strong>No hidden customs fees*<\/p>",
+            "link_label": "EU Delivery",
+            "link": ""
+          }
+        },
+        "b2b8a891-ea71-429e-b8e5-5cf3443f248f": {
+          "type": "column",
+          "settings": {
+            "available_zones": "AU",
+            "heading": "AU Shipping",
+            "title": "🚚 Free Shipping 🌞",
+            "text": "<p><strong>For orders over $160<br\/><\/strong>No hidden customs fees*<\/p>",
+            "link_label": "Australia Delivery",
+            "link": ""
+          }
+        },
+        "59a851a4-861e-4d3a-912a-bb98fdf19c6d": {
+          "type": "column",
+          "settings": {
+            "available_zones": "CA",
+            "heading": "CA Shipping",
+            "title": "🚚 Free Shipping 🌞",
+            "text": "<p><strong>For orders over $160<\/strong><\/p>",
+            "link_label": "Canada Delivery",
+            "link": ""
+          }
+        },
+        "20ae4227-507a-4d0a-8277-2d02aa64f6db": {
+          "type": "column",
+          "settings": {
+            "available_zones": "ROW",
+            "heading": "ROW Shipping",
+            "title": "🚚 Free Shipping 🌞",
+            "text": "<p><strong>For orders over £130<\/strong><\/p>",
+            "link_label": "Worldwide Delivery",
             "link": ""
           }
         },
@@ -348,10 +403,32 @@
           "type": "column",
           "settings": {
             "available_zones": "ALL",
-            "heading": "GB Column 2",
+            "heading": "GB Returns",
             "title": "✅ 30-Day Returns 😃",
-            "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>Local UK returns address<\/p>",
-            "link_label": "Returns Policy",
+            "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>UK returns address<\/p>",
+            "link_label": "Returns policy",
+            "link": ""
+          }
+        },
+        "6d0c0961-ea2e-40c6-8e32-dcf807a12606": {
+          "type": "column",
+          "settings": {
+            "available_zones": "US",
+            "heading": "US Returns",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<\/strong><br\/>US returns address<\/p>",
+            "link_label": "Returns policy",
+            "link": ""
+          }
+        },
+        "e0ab27cd-8f82-49cc-8244-29c954f3296b": {
+          "type": "column",
+          "settings": {
+            "available_zones": "EU, AU, CA, ROW",
+            "heading": "EU, AU, CA, ROW Returns",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<\/strong><\/p>",
+            "link_label": "Returns policy",
             "link": ""
           }
         },
@@ -359,7 +436,7 @@
           "type": "column",
           "settings": {
             "available_zones": "ALL",
-            "heading": "ALL Column 3",
+            "heading": "ALL Bulk Discounts",
             "title": "💸 Bulk Discounts 👍",
             "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
             "link_label": "Read more",
@@ -369,7 +446,14 @@
       },
       "block_order": [
         "1656946869696b0d4a-0",
+        "14fd82da-6cba-4a45-a3fd-6bf3af67c71b",
+        "af9db3da-567e-4650-9daa-730dd8f3a746",
+        "b2b8a891-ea71-429e-b8e5-5cf3443f248f",
+        "59a851a4-861e-4d3a-912a-bb98fdf19c6d",
+        "20ae4227-507a-4d0a-8277-2d02aa64f6db",
         "1656946869696b0d4a-1",
+        "6d0c0961-ea2e-40c6-8e32-dcf807a12606",
+        "e0ab27cd-8f82-49cc-8244-29c954f3296b",
         "1656946869696b0d4a-2"
       ],
       "settings": {

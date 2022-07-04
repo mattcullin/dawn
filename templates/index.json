@@ -123,7 +123,7 @@
         "1655914163b1f504a2-0": {
           "type": "column",
           "settings": {
-            "available_countries": "GB",
+            "available_zones": "GB",
             "heading": "GB Column 1",
             "title": "🚚 Free UK Shipping 🌞",
             "text": "<p><strong>For orders over £80<\/strong><\/p><p>Order before 1PM for next-day<\/p>",
@@ -134,7 +134,7 @@
         "1655914163b1f504a2-1": {
           "type": "column",
           "settings": {
-            "available_countries": "GB",
+            "available_zones": "GB",
             "heading": "GB Column 2",
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<\/strong><\/p><p>Local UK returns address<\/p>",
@@ -145,7 +145,7 @@
         "1655914163b1f504a2-2": {
           "type": "column",
           "settings": {
-            "available_countries": "GB",
+            "available_zones": "GB",
             "heading": "GB Column 3",
             "title": "💸 Bulk Discounts 👍",
             "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
@@ -156,7 +156,7 @@
         "db3fc46e-0082-45b3-87e4-d7d3052e0c63": {
           "type": "column",
           "settings": {
-            "available_countries": "US",
+            "available_zones": "US",
             "heading": "US Column 1",
             "title": "🚚 Free US Shipping 🗽",
             "text": "<p><strong>For orders over $100<\/strong><\/p><p>2-3 working days, No fees<\/p>",
@@ -167,7 +167,7 @@
         "fa07d18a-c62b-4f63-83f8-ad2c74c95693": {
           "type": "column",
           "settings": {
-            "available_countries": "US",
+            "available_zones": "US",
             "heading": "US Column 2",
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<\/strong><\/p><p>Local US returns address<\/p>",
@@ -178,7 +178,7 @@
         "be70ec03-7eb3-4eaa-9f05-f9cf1edfdfdb": {
           "type": "column",
           "settings": {
-            "available_countries": "US",
+            "available_zones": "US",
             "heading": "US Column 3",
             "title": "💸 Bulk Discounts 👍",
             "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
@@ -189,7 +189,7 @@
         "9babff8b-7b5e-47c6-b16c-710c7d7d3f35": {
           "type": "column",
           "settings": {
-            "available_countries": "EU, AU, CA",
+            "available_zones": "EU, AU, CA",
             "heading": "EU, AU, CA Column",
             "title": "EU, AU, CA Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -200,7 +200,7 @@
         "0f87366d-df72-4fc1-8b28-bb30e4a3696c": {
           "type": "column",
           "settings": {
-            "available_countries": "ROW",
+            "available_zones": "ROW",
             "heading": "ROW Column",
             "title": "ROW Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -211,7 +211,7 @@
         "5b6c7e77-b373-4232-9764-743f5d143a9e": {
           "type": "column",
           "settings": {
-            "available_countries": "ALL",
+            "available_zones": "ALL",
             "heading": "ALL Column",
             "title": "ALL Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -222,7 +222,7 @@
         "3464ce2f-1cf8-4efe-8fa0-e0eb60495b2a": {
           "type": "column",
           "settings": {
-            "available_countries": "",
+            "available_zones": "",
             "heading": "NA Column",
             "title": "NA Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",

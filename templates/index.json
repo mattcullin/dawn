@@ -142,7 +142,7 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 40
       }
     },
     "collage": {
@@ -330,61 +330,61 @@
         "show_text_below": false
       }
     },
-    "165694620540dd0f34": {
+    "1656946869fb9f7093": {
       "type": "club-multicolumn-localized",
       "blocks": {
-        "1656946205c63517f0-0": {
+        "1656946869696b0d4a-0": {
           "type": "column",
           "settings": {
-            "available_zones": "",
-            "heading": "GB Column X",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "available_zones": "GB",
+            "heading": "GB Column 1",
+            "title": "🚚 Free UK Shipping 🌞",
+            "text": "<p><strong>For orders over £80<br\/><\/strong>Order before 1PM for next-day<\/p>",
+            "link_label": "Delivery",
             "link": ""
           }
         },
-        "1656946205c63517f0-1": {
+        "1656946869696b0d4a-1": {
           "type": "column",
           "settings": {
-            "available_zones": "",
-            "heading": "GB Column X",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "available_zones": "ALL",
+            "heading": "GB Column 2",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>Local UK returns address<\/p>",
+            "link_label": "Returns Policy",
             "link": ""
           }
         },
-        "1656946205c63517f0-2": {
+        "1656946869696b0d4a-2": {
           "type": "column",
           "settings": {
-            "available_zones": "",
-            "heading": "GB Column X",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "available_zones": "ALL",
+            "heading": "ALL Column 3",
+            "title": "💸 Bulk Discounts 👍",
+            "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
+            "link_label": "Read more",
             "link": ""
           }
         }
       },
       "block_order": [
-        "1656946205c63517f0-0",
-        "1656946205c63517f0-1",
-        "1656946205c63517f0-2"
+        "1656946869696b0d4a-0",
+        "1656946869696b0d4a-1",
+        "1656946869696b0d4a-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -401,6 +401,6 @@
     "1655906394ed7af1df",
     "16559065649d9c2274",
     "16559060353f94d73f",
-    "165694620540dd0f34"
+    "1656946869fb9f7093"
   ]
 }

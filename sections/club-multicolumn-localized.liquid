@@ -56,7 +56,7 @@
             endcapture 
           -%}
           {% if block.settings.available_countries != blank %}
-            {% if block.settings.available_countries == zone or block.settings.available_countries == 'ALL' %}
+            {% if block.settings.available_countries contains zone or block.settings.available_countries == 'ALL' %}
 
               {%- assign empty_column = '' -%}
               {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}

@@ -1,4 +1,4 @@
-/* Club Backdrops CSS */
+/* CLUB BACKDROPS CSS */
 
 /* Typography */
 h1, h2, h3, h4, h5,
@@ -17,6 +17,8 @@ button,
     text-transform: uppercase;
 }
 
+.highlight { background: rgb(var(--color-base-accent-2)); color: #fff; padding: 2px 4px; font-weight: 700; }
+
 /*
 Cart Notification 
 - hide checkout button
@@ -26,9 +28,9 @@ Cart Notification
 /* Cart
 - offers banner
 */
-.offers-banner { border: 2px; border-style: dashed; border-color: var(--color-base-accent-2); color: var(--color-base-accent-2); text-align: center; padding: 10px; } 
-.offers-banner.with-code { border-width: 2px; border-style: dashed; border-color: var(--color-base-text); color: var(--color-base-text); }
-.offers-banner .offer-code { background: var(--gradient-base-accent-2); color: #fff; padding: 2px 4px; font-weight: 700; }
+.dashed-banner { border-width: 2px; border-style: dashed; border-color: var(--color-base-accent-1); color: var(--color-base-text); text-align: center; padding: 10px; } 
+.dashed-banner.accent-text { color: rgb(var(--color-base-accent-2)); }
+.dashed-banner.accent-border { border-color: rgb(var(--color-base-accent-2)); }
 
 /* Discount Cart App Adjustments */
 /* .scDiscount__container input#submit,

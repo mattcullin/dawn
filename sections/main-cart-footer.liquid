@@ -20,18 +20,10 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
-                <div class="offers">
-                  {% comment %}Club Backdrops - Bulk Discount Banner{% endcomment %}
-                  {%- if cart.item_count == 1 -%}
-                    <p class="offers-banner">Add <strong>1 more item</strong> to get 15% off</p>
-                  {%- elsif cart.item_count == 2 -%}
-                    <p class="offers-banner with-code">Use code <span class="offer-code">BULK15</span> for 15% off<br>Add <strong>1 more item</strong> to get 20% off</p>
-                  {%- elsif cart.item_count == 3 -%}
-                    <p class="offers-banner with-code">Use code <span class="offer-code">BULK20</span> for 20% off<br>Add <strong>1 more item</strong> to get 25% off</p>
-                  {%- elsif cart.item_count >= 4 -%}
-                    <p class="offers-banner with-code">Use code <span class="offer-code">BULK25</span> for 25% off</p>
-                  {%- endif -%}
-                </div>
+                
+                {% comment %}CLUB - Bulk Discount Banner{% endcomment %}
+                {%- render 'club-bulk-discount-banner' -%}
+
                 <div class="totals">
                   <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
                   <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>

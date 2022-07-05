@@ -6,15 +6,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Backdrops for Pros",
+            "heading": "Professional Photography Backdrops",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Hi-res replicas & colors on durable vinyl & canvas.",
-            "text_style": "body"
+            "text": "High resolution replicas & vibrant colours on durable vinyl & canvas.",
+            "text_style": "subtitle"
           }
         }
       },

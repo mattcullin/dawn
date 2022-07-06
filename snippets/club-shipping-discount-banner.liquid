@@ -1,39 +1,37 @@
-{% comment %}
+{%- comment -%}
     CLUB - Renders shipping discount banner
 
     Usage:
     {% render 'club-shipping-discount-banner' %}
-{% endcomment %}
+{%- endcomment -%}
 
-{% capture zone %}{% render 'club-zone' %}{% endcapture %}
+{%- liquid 
+    capture zone
+      render 'club-zone'
+    endcapture 
 
-{%- liquid
     case zone
       when 'GB'
-        assign free_shipping_threshold = 80
+        assign free_shipping_threshold = 8000
       when 'EU'
-        assign free_shipping_threshold = 120
+        assign free_shipping_threshold = 12000
       when 'US'
-        assign free_shipping_threshold = 120
+        assign free_shipping_threshold = 12000
       when 'AU'
-        assign free_shipping_threshold = 160
+        assign free_shipping_threshold = 16000
       when 'CA'
-        assign free_shipping_threshold = 160
-      else
-        assign free_shipping_threshold = 130
+        assign free_shipping_threshold = 16000
+      when 'ROW'
+        assign free_shipping_threshold = 13000
     endcase
+
+    assign gross_total = cart.total_price | plus: cart.total_discount
 -%}
 
 <div class="club-shipping-discount-banner">
-    <p><span class="highlight">{{ zone }}</span></p>
-    <p>{{ free_shipping_threshold }}</p>
-    {%- if cart.item_count == 1 -%}
-    <p class="dashed-banner accent-text accent-border">Add <strong>1 more item</strong> to get <span class="highlight">15% off</span></p>
-    {%- elsif cart.item_count == 2 -%}
-    <p class="dashed-banner accent-text accent-border">Add <strong>1 more item</strong> to get <span class="highlight">20% off</span></p>
-    {%- elsif cart.item_count == 3 -%}
-    <p class="dashed-banner accent-text accent-border">Add <strong>1 more item</strong> to get <span class="highlight">25% off</span></p>
-    {%- elsif cart.item_count >= 4 -%}
-    <p class="dashed-banner">You got <span class="highlight">25% off</span>!</p>
-    {%- endif -%}
+    {% if gross_total > 0 and gross_total < free_shipping_threshold %}
+        <p class="dashed-banner accent-text accent-border">🚚 Spend <strong>another {{ free_shipping_threshold | minus: gross_total | money }}</strong> to get<br><span class="highlight">FREE shipping</span></p>
+    {% elsif gross_total >= free_shipping_threshold %}
+        <p class="dashed-banner">🚛 You get <span class="highlight-alt">FREE shipping</span>!</p>
+    {% endif %}
 </div>

@@ -18,6 +18,7 @@ button,
 }
 
 .highlight { background: rgb(var(--color-base-accent-2)); color: #fff; padding: 2px 4px; font-weight: 700; }
+.highlight-alt { background: #00B140; color: #fff; padding: 2px 4px; font-weight: 700; }
 
 /*
 Cart Notification 

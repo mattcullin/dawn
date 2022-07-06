@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment -%}
     CLUB - Renders Zone based on localization country code - can be used with 'capture' liquid to assign Zone to a variable
 
     Usage:
@@ -10,7 +10,7 @@
             render 'club-zone'
         endcapture 
     -%}
-{% endcomment %}
+{%- endcomment -%}
 
 {%- liquid 
     case localization.country.iso_code

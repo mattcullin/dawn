@@ -20,9 +20,10 @@
               {% render block %}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
-                
-                {% comment %}CLUB - Bulk Discount Banner{% endcomment %}
+
+                {% comment %}CLUB - Bulk Discount + Shipping Banner{% endcomment %}
                 {%- render 'club-bulk-discount-banner' -%}
+                {%- render 'club-shipping-discount-banner' -%}
 
                 <div class="totals">
                   <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>

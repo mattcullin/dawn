@@ -5,7 +5,11 @@
     {% render 'club-zone' %}
     
     or to render to a variable:
-    {% capture zone %}{% render 'club-zone' %}{% endcapture %}    
+    {%- liquid 
+        capture zone
+            render 'club-zone'
+        endcapture 
+    -%}
 {% endcomment %}
 
 {%- liquid 

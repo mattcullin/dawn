@@ -141,28 +141,36 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "footer"
+              "menu": "quick-links"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "footer"
+              "menu": "info"
             }
           },
-          "footer-2": {
+          "2dbfd991-6c38-497c-8f6c-db596865072b": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Collections",
+              "menu": "collections"
+            }
+          },
+          "694453d8-a649-41d8-8826-50c3690f2976": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "",
+              "subtext": "<p>Club Backdrops™ is a brand of Pineapple Express Limited, Company no. SC556078. GB VAT no. 305047146.<\/p>"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "2dbfd991-6c38-497c-8f6c-db596865072b",
+          "694453d8-a649-41d8-8826-50c3690f2976"
         ],
         "settings": {
           "color_scheme": "background-1",

@@ -48,7 +48,7 @@
         "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe": {
           "type": "text",
           "settings": {
-            "text": "⚡ Printed & shipped within 2 working days",
+            "text": "⚡ Printed & shipped within 1-2 working days",
             "text_style": "uppercase"
           }
         },
@@ -81,8 +81,8 @@
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
-            "content": "",
-            "page": "about"
+            "content": "<p>Canvas backdrops are printed to order and <strong>shipped within 1-2 working days<\/strong>. <\/p><p><em>Get FREE or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Rates & delivery times →<\/a><\/p>",
+            "page": ""
           }
         },
         "collapsible-row-0": {
@@ -90,7 +90,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "",
+            "content": "<p>If for any reason you are unhappy with your backdrop, you have<strong> up to 30 days<\/strong> from delivery to return it for a refund.<\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Full return policy →<\/a><\/p>",
             "page": ""
           }
         },
@@ -100,15 +100,15 @@
             "heading": "Sizing",
             "icon": "ruler",
             "content": "",
-            "page": ""
+            "page": "sizing-canvas-backdrops"
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care Instructions",
+            "heading": "Care Tips",
             "icon": "heart",
-            "content": "",
+            "content": "<p>With proper care, our canvas backdrops can last you a long time.<\/p><p><a href=\"https:\/\/img.clubbackdrops.com\/cb-a5-canvas-insert-rgb.gif\" target=\"_blank\" title=\"https:\/\/img.clubbackdrops.com\/cb-a5-canvas-insert-rgb.gif\">Canvas backdrop care tips →<\/a><\/p>",
             "page": ""
           }
         },

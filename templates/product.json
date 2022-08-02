@@ -85,6 +85,15 @@
             "page": ""
           }
         },
+        "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Features",
+            "icon": "lightning_bolt",
+            "content": "<p><strong>Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>Original, realistic, true-scale textures.<\/strong> All found, crafted and captured by us, our 100+ megapixel artwork is never enlarged or pixelated. Suitable for close-crops (though not for macro photography). <\/p><p><strong>Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>True colour.<\/strong> Printed on X-Rite® calibrated equipment with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p><p><strong>Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tubing.<\/p>",
+            "page": ""
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -133,6 +142,7 @@
         "dd91c6ec-d938-41ac-ace6-0bc36911b074",
         "description",
         "collapsible-row-1",
+        "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3",
         "collapsible-row-0",
         "collapsible-row-2",
         "collapsible-row-3",
@@ -149,29 +159,105 @@
         "padding_bottom": 12
       }
     },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-96-eye-gd.png",
+            "title": "Realistic replicas",
+            "text": "<p>100+ megapixel professional prints of original textures<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-96-drop-gd.png",
+            "title": "Durable waterproof vinyl",
+            "text": "<p>415gsm matte media that wipes clean<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "7bad87fd-707c-4b2c-924f-6ec36c34fec9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-96-flat-gd.png",
+            "title": "Lays flat for instant use",
+            "text": "<p>Delivered crease-free, rolled & ready to shoot<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d0f5fcf0-ef72-48cb-b257-d0fc813f65f0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-96-uk-gd.png",
+            "title": "Made in the UK",
+            "text": "<p>Designed, printed & shipped all under one roof<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "7bad87fd-707c-4b2c-924f-6ec36c34fec9",
+        "d0f5fcf0-ef72-48cb-b257-d0fc813f65f0"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "About our Vinyl",
+            "heading": "Working with our vinyl",
             "heading_size": "h2"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p><strong>New to vinyl backdrops? <\/strong>Read our post on how to handle your backdrop, simple ways you can use it in a home\/studio environment and techniques for lighting your scene.<\/p>",
             "text_style": "body"
+          }
+        },
+        "55436df4-8c60-41bc-bbb7-8465df703ace": {
+          "type": "button",
+          "settings": {
+            "button_label": "Top Vinyl Tips",
+            "button_link": "shopify:\/\/blogs\/how-to\/getting-started-with-vinyl-photography-backdrops"
           }
         }
       },
       "block_order": [
         "image-with-text-0",
-        "image-with-text-1"
+        "image-with-text-1",
+        "55436df4-8c60-41bc-bbb7-8465df703ace"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/club-backdrops-repeating-black-logo-wave-substrate.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -180,49 +266,6 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -267,8 +310,8 @@
   },
   "order": [
     "main",
-    "image-with-text",
     "multicolumn",
+    "image-with-text",
     "loox-product-reviews-app-section",
     "product-recommendations"
   ]

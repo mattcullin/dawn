@@ -182,7 +182,7 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-true-colour.png",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-parquet-to-screen.png",
             "title": "Realistic replicas",
             "text": "<p>100+ megapixel professional prints of original textures<\/p>",
             "link_label": "",
@@ -192,7 +192,7 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-repeating-black-logo-wave-substrate.jpg",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-vinyl-wave.png",
             "title": "Durable waterproof vinyl",
             "text": "<p>415gsm matte media that wipes clean<\/p>",
             "link_label": "",
@@ -202,7 +202,7 @@
         "7bad87fd-707c-4b2c-924f-6ec36c34fec9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon-96-flat-gd.png",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-colour-backdrops.png",
             "title": "Lays flat for instant use",
             "text": "<p>Delivered crease-free, rolled & ready to shoot<\/p>",
             "link_label": "",
@@ -212,9 +212,9 @@
         "d0f5fcf0-ef72-48cb-b257-d0fc813f65f0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon-96-uk-gd.png",
-            "title": "Made in the UK",
-            "text": "<p>Designed, printed & shipped all under one roof<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-1650.png",
+            "title": "Made in-house",
+            "text": "<p>Designed, printed & shipped from all under one roof<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -263,7 +263,7 @@
         "55436df4-8c60-41bc-bbb7-8465df703ace": {
           "type": "button",
           "settings": {
-            "button_label": "Top Vinyl Tips",
+            "button_label": "See our top vinyl tips",
             "button_link": "shopify:\/\/blogs\/how-to\/getting-started-with-vinyl-photography-backdrops"
           }
         }
@@ -274,7 +274,7 @@
         "55436df4-8c60-41bc-bbb7-8465df703ace"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-repeating-black-logo-wave-substrate.jpg",
+        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",

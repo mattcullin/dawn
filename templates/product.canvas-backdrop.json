@@ -48,7 +48,7 @@
         "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe": {
           "type": "text",
           "settings": {
-            "text": "⚡ In-stock for instant dispatch",
+            "text": "⚡ Printed & shipped within 2 working days",
             "text_style": "uppercase"
           }
         },
@@ -155,8 +155,8 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "About our Canvas",
+            "heading_size": "h2"
           }
         },
         "image-with-text-1": {

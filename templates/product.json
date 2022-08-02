@@ -68,7 +68,7 @@
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd": {
           "type": "text",
           "settings": {
-            "text": "🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\">10p donated to Edinburgh Dog & Cat Home →<\/a>",
+            "text": "🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\" target=\"_blank\">10p donated to Edinburgh Dog & Cat Home →<\/a>",
             "text_style": "uppercase"
           }
         },
@@ -137,6 +137,7 @@
         },
         "e9f9d233-2c9f-43db-9bb9-13ecb9e0764e": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<a href=\"\/pages\/charity-edinburgh-dog-cat-home\"><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0016\/5370\/2750\/files\/club-backdrops-charity-edinburgh-dog-cat-home-badge_850x170.gif?v=3620219825969458203\" width=\"405\" height=\"81\" alt=\"We donate 10p from every backdrop sold to the Edinburgh Dog and Cat home\"><\/a>"
           }

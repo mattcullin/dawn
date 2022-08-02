@@ -76,21 +76,21 @@
           "settings": {
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping",
-            "icon": "truck",
-            "content": "<p>This vinyl backdrop is <strong>in-stock and ready to ship<\/strong>.<\/p><p><em>Get FREE or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Rates & delivery times →<\/a><\/p>",
-            "page": ""
-          }
-        },
         "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Features",
             "icon": "lightning_bolt",
             "content": "<p><strong>Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>Original, realistic, true-scale textures.<\/strong> All found, crafted and captured by us, our 100+ megapixel artwork is never enlarged or pixelated. Suitable for close-crops (though not for macro photography). <\/p><p><strong>Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>True colour.<\/strong> Printed on X-Rite® calibrated equipment with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p><p><strong>Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tubing.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p>This vinyl backdrop is <strong>in-stock and ready to ship<\/strong>.<\/p><p><em>Get FREE or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Rates & delivery times →<\/a><\/p>",
             "page": ""
           }
         },
@@ -141,8 +141,8 @@
         "buy_buttons",
         "dd91c6ec-d938-41ac-ace6-0bc36911b074",
         "description",
-        "collapsible-row-1",
         "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3",
+        "collapsible-row-1",
         "collapsible-row-0",
         "collapsible-row-2",
         "collapsible-row-3",
@@ -222,8 +222,8 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "image-with-text": {
@@ -239,7 +239,7 @@
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>New to vinyl backdrops? <\/strong>Read our post on how to handle your backdrop, simple ways you can use it in a home\/studio environment and techniques for lighting your scene.<\/p>",
+            "text": "<p><strong>New to vinyl backdrops? <\/strong>Read our post on how to best handle your backdrop, simple ways to use it in a home\/studio environment and techniques for lighting your scene.<\/p>",
             "text_style": "body"
           }
         },
@@ -259,15 +259,15 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/club-backdrops-repeating-black-logo-wave-substrate.jpg",
         "height": "small",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "loox-product-reviews-app-section": {

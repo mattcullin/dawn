@@ -137,18 +137,18 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "quick-links"
-            }
-          },
           "footer-1": {
             "type": "link_list",
             "settings": {
               "heading": "Info",
               "menu": "info"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "quick-links"
             }
           },
           "2dbfd991-6c38-497c-8f6c-db596865072b": {
@@ -167,8 +167,8 @@
           }
         },
         "block_order": [
-          "footer-0",
           "footer-1",
+          "footer-0",
           "2dbfd991-6c38-497c-8f6c-db596865072b",
           "694453d8-a649-41d8-8826-50c3690f2976"
         ],

@@ -14,8 +14,10 @@
 
 {%- liquid 
     case localization.country.iso_code
-      when 'GB', 'JE', 'GG', 'IM'
+      when 'GB', 'IM'
         assign zone = 'GB'
+      when 'JE', 'GG'
+        assign zone = 'EU3'
       when 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
         assign zone = 'EU'
       when 'US'

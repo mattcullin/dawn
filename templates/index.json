@@ -96,7 +96,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
-        "enable_quick_add": true,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -208,8 +208,8 @@
             "itemBackgroundColor": "#ffffff",
             "starsColor": "#ff8200",
             "starsBackgroundColor": "#ffffff",
-            "arrows_backgroundColor": "#FFFFFF",
-            "arrows_iconColor": "#9A9A9A",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
             "shadow": "none",
             "border_active": false,
             "border_width": 1,
@@ -231,8 +231,8 @@
         "1656946869696b0d4a-0": {
           "type": "column",
           "settings": {
-            "available_zones": "GB",
-            "heading": "GB Shipping",
+            "available_zones": "GB, EU3",
+            "heading": "GB, EU3 Shipping",
             "title": "🚚 Free UK Shipping 🌞",
             "text": "<p><strong>For orders over £80<br\/><\/strong>Order before 1PM for next-day*<\/p>",
             "link_label": "UK Delivery",
@@ -297,8 +297,8 @@
         "1656946869696b0d4a-1": {
           "type": "column",
           "settings": {
-            "available_zones": "GB",
-            "heading": "GB Returns",
+            "available_zones": "GB, EU3",
+            "heading": "GB, EU3 Returns",
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>UK returns address<\/p>",
             "link_label": "Returns policy",

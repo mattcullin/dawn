@@ -21,10 +21,6 @@
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
 
-                {% comment %}CLUB - Bulk Discount + Shipping Banner{% endcomment %}
-                {% render 'club-bulk-discount-banner' %}
-                {% render 'club-shipping-discount-banner' %}
-
                 <div class="totals">
                   <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
                   <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
@@ -45,16 +41,32 @@
                 </div>
 
                 <small class="tax-note caption-large rte">
-                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-                    {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- elsif cart.taxes_included -%}
-                    {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
-                  {%- elsif shop.shipping_policy.body != blank -%}
-                    {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
-                  {%- else -%}
-                    {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                  {% comment %}CLUB - switching default tax message code with Zone specific code
+                    {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                      {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- elsif cart.taxes_included -%}
+                      {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+                    {%- elsif shop.shipping_policy.body != blank -%}
+                      {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                    {%- else -%}
+                      {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                    {%- endif -%}
+                  {% endcomment %}
+                  {%- liquid 
+                    capture tax_message
+                      render 'club-tax-message'
+                    endcapture 
+                  -%}
+                  {%- if tax_message.size > 0 -%}
+                      {{ tax_message }}<br/>
                   {%- endif -%}
+                  Got a discount code? Add it in the next step.
                 </small>
+
+                {% comment %}CLUB - Bulk Discount + Shipping Banner{% endcomment %}
+                {% render 'club-bulk-discount-banner' %}
+                {% render 'club-shipping-discount-banner' %}
+                
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>

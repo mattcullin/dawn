@@ -18,7 +18,7 @@ button,
 }
 
 .highlight { background: rgb(var(--color-base-accent-2)); color: #fff; padding: 2px 4px; font-weight: 700; }
-.highlight-alt { background: #00B140; color: #fff; padding: 2px 4px; font-weight: 700; }
+.highlight-alt { background: rgb(var(--color-base-accent-3)); color: #fff; padding: 2px 4px; font-weight: 700; }
 
 /* Cart Notification 
 - hide checkout button */
@@ -29,6 +29,9 @@ button,
 .dashed-banner { border-width: 2px; border-style: dashed; border-color: var(--color-base-accent-1); color: var(--color-base-text); text-align: center; padding: 10px; } 
 .dashed-banner.accent-text { color: rgb(var(--color-base-accent-2)); }
 .dashed-banner.accent-border { border-color: rgb(var(--color-base-accent-2)); }
+.dashed-banner.alt-accent-text { color: rgb(var(--color-base-accent-3)); }
+.dashed-banner.alt-accent-border { border-color: rgb(var(--color-base-accent-3)); }
+.dashed-banner.multi-line { text-align: left; padding: 0 20x; }
 
 /* Discount Cart App Adjustments */
 /* .scDiscount__container input#submit,
@@ -41,9 +44,10 @@ button,
 /* Product
 - extra-note box */
 .extra-note-box { 
-    color: #000; 
-    border: 1px dashed #2561a3;
-    background: #eef7ff;
-    padding: 15px 20px 0px 20px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(var(--color-base-accent-2));
+    /*background: #eef7ff;*/
+    padding: 0 20px;
     margin: 10px 0; 
 }

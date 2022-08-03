@@ -30,9 +30,9 @@ case zone
     when 'AU'
         assign tax_message = 'Taxes included.'
     when 'CA'
-        assign tax_message = 'Import taxes not included.'
+        assign tax_message = 'Import taxes may apply.'
     else
-        assign tax_message = 'Import taxes not included.'
+        assign tax_message = 'Import taxes may apply.'
     endcase
 -%}
 {{ tax_message }}

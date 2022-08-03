@@ -48,7 +48,7 @@
         "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe": {
           "type": "text",
           "settings": {
-            "text": "⚡ In-stock & ready to ship",
+            "text": "✅ In-stock & ready to ship",
             "text_style": "uppercase"
           }
         },
@@ -65,17 +65,17 @@
             "show_dynamic_checkout": false
           }
         },
+        "4c27c248-3c0c-434a-94c2-0bad314eb6cd": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.tags contains 'Tone: Dark' %}\n<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Darker backdrops reflect more light so require <a href=\"#beacon-modal-optimal-colour\">extra skill to work with &rarr;<\/a><\/p>\n<\/div>\n{% endif %}"
+          }
+        },
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd": {
           "type": "text",
           "settings": {
             "text": "🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\" target=\"_blank\">10p donated to Edinburgh Dog & Cat Home →<\/a>",
             "text_style": "uppercase"
-          }
-        },
-        "4c27c248-3c0c-434a-94c2-0bad314eb6cd": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.tags contains 'Tone: Dark' %}\n<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Darker backdrops reflect more light so require <a href=\"#beacon-modal-optimal-colour\">extra skill to work with &rarr;<\/a><\/p>\n<\/div>\n{% endif %}"
           }
         },
         "dd91c6ec-d938-41ac-ace6-0bc36911b074": {
@@ -160,8 +160,8 @@
         "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe",
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
         "buy_buttons",
-        "09c3347b-6024-45ae-865f-3e2cc5a59ccd",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
+        "09c3347b-6024-45ae-865f-3e2cc5a59ccd",
         "dd91c6ec-d938-41ac-ace6-0bc36911b074",
         "description",
         "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3",

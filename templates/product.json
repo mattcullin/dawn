@@ -68,7 +68,7 @@
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd": {
           "type": "text",
           "settings": {
-            "text": "🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\" target=\"_blank\">10p donated to Edinburgh Dog & Cat Home →<\/a>",
+            "text": "🐶 10p donated to Edinburgh Dog & Cat Home →",
             "text_style": "uppercase"
           }
         },
@@ -182,7 +182,7 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-parquet-to-screen.png",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-parquet-to-screen-2.png",
             "title": "Realistic replicas",
             "text": "<p>100+ megapixel professional prints of original textures<\/p>",
             "link_label": "",
@@ -202,7 +202,7 @@
         "7bad87fd-707c-4b2c-924f-6ec36c34fec9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-colour-backdrops.png",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-colour-backdrops_6f49cf3a-99ac-40d3-8119-1963d09f846f.png",
             "title": "Lays flat for instant use",
             "text": "<p>Delivered crease-free, rolled & ready to shoot<\/p>",
             "link_label": "",
@@ -212,7 +212,7 @@
         "d0f5fcf0-ef72-48cb-b257-d0fc813f65f0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-1650.png",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-1650_c19e23d0-73c7-430f-af2d-ac41d9fff8cf.png",
             "title": "Made in-house",
             "text": "<p>Designed, printed & shipped from all under one roof<\/p>",
             "link_label": "",
@@ -263,7 +263,7 @@
         "55436df4-8c60-41bc-bbb7-8465df703ace": {
           "type": "button",
           "settings": {
-            "button_label": "See our top vinyl tips",
+            "button_label": "Top vinyl tips →",
             "button_link": "shopify:\/\/blogs\/how-to\/getting-started-with-vinyl-photography-backdrops"
           }
         }

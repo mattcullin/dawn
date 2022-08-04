@@ -104,7 +104,7 @@
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>This vinyl backdrop is <strong>in-stock and ready to ship<\/strong>.<\/p><p><em>Get FREE or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Rates & delivery times →<\/a><\/p>",
+            "content": "<p>This vinyl backdrop is <strong>in-stock and ready to ship<\/strong>.<\/p><p><em>Get FREE or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">Rates & delivery times →<\/a><\/p>",
             "page": ""
           }
         },
@@ -113,7 +113,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "<p>If for any reason you are unhappy with your backdrop, you have<strong> up to 30 days<\/strong> from delivery to return it for a refund.<\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Full return policy →<\/a><\/p>",
+            "content": "<p>If for any reason you are unhappy with your backdrop, you have<strong> up to 30 days<\/strong> from delivery to return it for a refund.<\/p><p><a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">Full return policy →<\/a><\/p>",
             "page": ""
           }
         },

@@ -79,18 +79,18 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "The Latest",
+        "title": "Just Arrived",
         "heading_size": "h2",
-        "description": "<p>The latest and greatest from our vinyl photography backdrop range.<\/p>",
+        "description": "<p>The latest additions to our vinyl backdrop collection.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "vinyl-backdrops",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "full_width": true,
+        "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
@@ -106,18 +106,18 @@
     "16595607590a998055": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best Sellers",
+        "title": "Top 'drops",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>The top sellers from our vinyl photography backdrop range.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "vinyl-best-sellers",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "full_width": true,
+        "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
@@ -250,6 +250,28 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "1659627804e7363432": {
+      "type": "rich-text",
+      "blocks": {
+        "1659627804f80a1f0c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Over 3,000+ 5-Star Reviews",
+            "button_link": "shopify:\/\/pages\/reviews",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1659627804f80a1f0c-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     },
     "1656946869fb9f7093": {
@@ -483,6 +505,7 @@
     "16595607590a998055",
     "16582378894a0b6caf",
     "16582341709c2541ed",
+    "1659627804e7363432",
     "1656946869fb9f7093",
     "165823455059910c2d",
     "1658238902640ef5d5",

@@ -274,7 +274,7 @@
             "title": "🚚 Free US Shipping 🗽",
             "text": "<p><strong>For orders over $120<br\/><\/strong>2-3 working days, No fees<\/p>",
             "link_label": "US Delivery",
-            "link": ""
+            "link": "#beacon-modal-delivery"
           }
         },
         "af9db3da-567e-4650-9daa-730dd8f3a746": {
@@ -285,7 +285,7 @@
             "title": "🚚 Free EU Shipping 🌞",
             "text": "<p><strong>For orders over €120<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
-            "link": ""
+            "link": "#beacon-modal-delivery"
           }
         },
         "b2b8a891-ea71-429e-b8e5-5cf3443f248f": {
@@ -296,7 +296,7 @@
             "title": "🚚 Free Shipping 🌞",
             "text": "<p><strong>For orders over $160<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "Australia Delivery",
-            "link": ""
+            "link": "#beacon-modal-delivery"
           }
         },
         "59a851a4-861e-4d3a-912a-bb98fdf19c6d": {
@@ -307,7 +307,7 @@
             "title": "🚚 Free Shipping 🌞",
             "text": "<p><strong>For orders over $160<\/strong><\/p>",
             "link_label": "Canada Delivery",
-            "link": ""
+            "link": "#beacon-modal-delivery"
           }
         },
         "20ae4227-507a-4d0a-8277-2d02aa64f6db": {
@@ -318,7 +318,7 @@
             "title": "🚚 Free Shipping 🌞",
             "text": "<p><strong>For orders over £130<\/strong><\/p>",
             "link_label": "Worldwide Delivery",
-            "link": ""
+            "link": "#beacon-modal-delivery"
           }
         },
         "1656946869696b0d4a-1": {
@@ -329,7 +329,7 @@
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>UK returns address<\/p>",
             "link_label": "Returns policy",
-            "link": ""
+            "link": "#beacon-modal-returns"
           }
         },
         "6d0c0961-ea2e-40c6-8e32-dcf807a12606": {
@@ -340,7 +340,7 @@
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<\/strong><br\/>US returns address<\/p>",
             "link_label": "Returns policy",
-            "link": ""
+            "link": "#beacon-modal-returns"
           }
         },
         "e0ab27cd-8f82-49cc-8244-29c954f3296b": {
@@ -351,7 +351,7 @@
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<\/strong><\/p>",
             "link_label": "Returns policy",
-            "link": ""
+            "link": "#beacon-modal-returns"
           }
         },
         "1656946869696b0d4a-2": {
@@ -362,7 +362,7 @@
             "title": "💸 Bulk Discounts 👍",
             "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
             "link_label": "Read more",
-            "link": ""
+            "link": "#beacon-modal-bulk"
           }
         }
       },

@@ -113,7 +113,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "<p>If for any reason you are unhappy with your backdrop, you have<strong> up to 30 days<\/strong> from delivery to return it for a refund.<\/p><p><a href=\"#beacon-modal-returns\" target=\"_blank\" title=\"#beacon-modal-returns\">Full return policy →<\/a><\/p>",
+            "content": "<p>If for any reason you are unhappy with your backdrop, you have<strong> up to 30 days<\/strong> from delivery to return it for a refund.<\/p><p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Full return policy →<\/a><\/p>",
             "page": ""
           }
         },

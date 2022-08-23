@@ -12,17 +12,17 @@
 
     case zone
       when 'GB'
-        assign free_shipping_threshold = 8000
+        assign free_shipping_threshold = 6000
       when 'EU'
-        assign free_shipping_threshold = 12000
+        assign free_shipping_threshold = 9000
       when 'US'
-        assign free_shipping_threshold = 12000
+        assign free_shipping_threshold = 9000
       when 'AU'
-        assign free_shipping_threshold = 16000
+        assign free_shipping_threshold = 12000
       when 'CA'
-        assign free_shipping_threshold = 16000
+        assign free_shipping_threshold = 12000
       when 'ROW'
-        assign free_shipping_threshold = 13000
+        assign free_shipping_threshold = 9000
     endcase
 
     assign gross_total = cart.total_price

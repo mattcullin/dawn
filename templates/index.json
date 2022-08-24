@@ -283,7 +283,7 @@
             "available_zones": "GB, EU3",
             "heading": "GB, EU3 Shipping",
             "title": "🚚 Free UK Shipping 🌞",
-            "text": "<p><strong>For orders over £80<br\/><\/strong>Order before 1PM for next-day*<\/p>",
+            "text": "<p><strong>For orders over £60<br\/><\/strong>Order before 1PM for next-day*<\/p>",
             "link_label": "UK Delivery",
             "link": "#beacon-modal-delivery"
           }
@@ -294,7 +294,7 @@
             "available_zones": "US",
             "heading": "US Shipping",
             "title": "🚚 Free US Shipping 🗽",
-            "text": "<p><strong>For orders over $120<br\/><\/strong>2-3 working days, No fees<\/p>",
+            "text": "<p><strong>For orders over $90<br\/><\/strong>2-3 working days, No fees<\/p>",
             "link_label": "US Delivery",
             "link": "#beacon-modal-delivery"
           }
@@ -305,9 +305,20 @@
             "available_zones": "EU",
             "heading": "EU Shipping",
             "title": "🚚 Free EU Shipping 🌞",
-            "text": "<p><strong>For orders over €120<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over €90<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
             "link": "#beacon-modal-delivery"
+          }
+        },
+        "b632574f-2617-4bbb-a477-35b331dbfaf4": {
+          "type": "column",
+          "settings": {
+            "available_zones": "EU2",
+            "heading": "EU2 Shipping",
+            "title": "🚚 Free EU Shipping 🌞",
+            "text": "<p><strong>For orders over €180<br\/><\/strong>No hidden customs fees*<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "b2b8a891-ea71-429e-b8e5-5cf3443f248f": {
@@ -316,7 +327,7 @@
             "available_zones": "AU",
             "heading": "AU Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over $160<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over $120<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "Australia Delivery",
             "link": "#beacon-modal-delivery"
           }
@@ -327,7 +338,7 @@
             "available_zones": "CA",
             "heading": "CA Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over $160<\/strong><\/p>",
+            "text": "<p><strong>For orders over $120<\/strong><\/p>",
             "link_label": "Canada Delivery",
             "link": "#beacon-modal-delivery"
           }
@@ -338,7 +349,7 @@
             "available_zones": "ROW",
             "heading": "ROW Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over £130<\/strong><\/p>",
+            "text": "<p><strong>For orders over £90<\/strong><\/p>",
             "link_label": "Worldwide Delivery",
             "link": "#beacon-modal-delivery"
           }
@@ -368,8 +379,8 @@
         "e0ab27cd-8f82-49cc-8244-29c954f3296b": {
           "type": "column",
           "settings": {
-            "available_zones": "EU, AU, CA, ROW",
-            "heading": "EU, AU, CA, ROW Returns",
+            "available_zones": "EU, EU2, AU, CA, ROW",
+            "heading": "EU, EU2, AU, CA, ROW Returns",
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<\/strong><\/p>",
             "link_label": "Returns policy",
@@ -382,7 +393,7 @@
             "available_zones": "ALL",
             "heading": "ALL Bulk Discounts",
             "title": "💸 Bulk Discounts 👍",
-            "text": "<p><strong>Up to 25% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
+            "text": "<p><strong>Up to 20% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
             "link_label": "Read more",
             "link": "#beacon-modal-bulk"
           }
@@ -392,6 +403,7 @@
         "1656946869696b0d4a-0",
         "14fd82da-6cba-4a45-a3fd-6bf3af67c71b",
         "af9db3da-567e-4650-9daa-730dd8f3a746",
+        "b632574f-2617-4bbb-a477-35b331dbfaf4",
         "b2b8a891-ea71-429e-b8e5-5cf3443f248f",
         "59a851a4-861e-4d3a-912a-bb98fdf19c6d",
         "20ae4227-507a-4d0a-8277-2d02aa64f6db",

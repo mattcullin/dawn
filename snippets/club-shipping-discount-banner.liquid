@@ -1,5 +1,5 @@
 {%- comment -%}
-    CLUB - Renders shipping discount banner
+    CLUB - Renders shipping discount banner - threshold is in local currency
 
     Usage:
     {% render 'club-shipping-discount-banner' %}
@@ -11,10 +11,12 @@
     endcapture 
 
     case zone
-      when 'GB'
+      when 'GB', 'EU3'
         assign free_shipping_threshold = 6000
       when 'EU'
         assign free_shipping_threshold = 9000
+      when 'EU2'
+        assign free_shipping_threshold = 18000
       when 'US'
         assign free_shipping_threshold = 9000
       when 'AU'

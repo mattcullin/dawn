@@ -1143,5 +1143,30 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": "CLUB Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Holiday mode"
+      },
+      {
+        "type": "paragraph",
+        "content": "Turn on to disable Checkout button on cart."
+      },
+      {
+        "type": "checkbox",
+        "id": "holiday_mode_enabled",
+        "label": "Enable holiday mode",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "holiday_mode_message",
+        "label": "Holiday mode message",
+        "info": "Displays under Checkout button."
+      }
+    ]
   }
 ]

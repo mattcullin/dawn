@@ -97,7 +97,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/club-backdrops-favicon-black.png",
     "currency_code_enabled": true,
-    "holiday_mode_enabled": false,
+    "holiday_mode_enabled": true,
     "holiday_mode_message": "We're closed until 1-Oct-2022.",
     "checkout_logo_image": "shopify:\/\/shop_images\/club-backdrops-logo-black.png",
     "checkout_accent_color": "#0077cc",

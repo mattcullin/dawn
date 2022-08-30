@@ -285,7 +285,7 @@
             "title": "🚚 Free UK Shipping 🌞",
             "text": "<p><strong>For orders over £60<br\/><\/strong>Order before 1PM for next-day*<\/p>",
             "link_label": "UK Delivery",
-            "link": "#modal-beacon-delivery-gb"
+            "link": "#beacon-modal-delivery-gb"
           }
         },
         "14fd82da-6cba-4a45-a3fd-6bf3af67c71b": {
@@ -296,7 +296,7 @@
             "title": "🚚 Free US Shipping 🗽",
             "text": "<p><strong>For orders over $90<br\/><\/strong>2-3 working days, No fees<\/p>",
             "link_label": "US Delivery",
-            "link": "#modal-beacon-delivery-us"
+            "link": "#beacon-modal-delivery-us"
           }
         },
         "af9db3da-567e-4650-9daa-730dd8f3a746": {
@@ -307,7 +307,7 @@
             "title": "🚚 Free EU Shipping 🌞",
             "text": "<p><strong>For orders over €90<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
-            "link": "#modal-beacon-delivery-eu"
+            "link": "#beacon-modal-delivery-eu"
           }
         },
         "b632574f-2617-4bbb-a477-35b331dbfaf4": {
@@ -318,7 +318,7 @@
             "title": "🚚 Free EU Shipping 🌞",
             "text": "<p><strong>For orders over €180<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
-            "link": "#modal-beacon-delivery-eu"
+            "link": "#beacon-modal-delivery-eu"
           }
         },
         "b2b8a891-ea71-429e-b8e5-5cf3443f248f": {
@@ -329,7 +329,7 @@
             "title": "🚚 Free Shipping 🌞",
             "text": "<p><strong>For orders over $120<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "Australia Delivery",
-            "link": "#modal-beacon-delivery-au"
+            "link": "#beacon-modal-delivery-au"
           }
         },
         "59a851a4-861e-4d3a-912a-bb98fdf19c6d": {
@@ -340,7 +340,7 @@
             "title": "🚚 Free Shipping 🌞",
             "text": "<p><strong>For orders over $120<\/strong><\/p>",
             "link_label": "Canada Delivery",
-            "link": "#modal-beacon-delivery-ca"
+            "link": "#beacon-modal-delivery-ca"
           }
         },
         "20ae4227-507a-4d0a-8277-2d02aa64f6db": {
@@ -351,7 +351,7 @@
             "title": "🚚 Free Shipping 🌞",
             "text": "<p><strong>For orders over £90<\/strong><\/p>",
             "link_label": "Worldwide Delivery",
-            "link": "#modal-beacon-delivery-row"
+            "link": "#beacon-modal-delivery-row"
           }
         },
         "1656946869696b0d4a-1": {

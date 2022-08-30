@@ -67,7 +67,6 @@
         },
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.tags contains 'Tone: Dark' %}\n<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Darker backdrops reflect more light so require <a href=\"#beacon-modal-optimal-colour\">extra skill to work with &rarr;<\/a><\/p>\n<\/div>\n{% endif %}"
           }
@@ -186,6 +185,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",

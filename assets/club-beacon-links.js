@@ -8,6 +8,30 @@ window.addEventListener('DOMContentLoaded', () => {
             "beaconArticleID": "5dd57de904286364bc91fbb5"
         },
         {
+            "hashLink": "beacon-modal-delivery-gb",
+            "beaconArticleID": "6025821fb3ebfb109b5817a9"
+        },
+        {
+            "hashLink": "beacon-modal-delivery-us",
+            "beaconArticleID": "602585ceb3ebfb109b5817cc"
+        },
+        {
+            "hashLink": "beacon-modal-delivery-eu",
+            "beaconArticleID": "6025437424d2d21e45ed56ac"
+        },
+        {
+            "hashLink": "beacon-modal-delivery-au",
+            "beaconArticleID": "602d43378502d1120e9086a7"
+        },
+        {
+            "hashLink": "beacon-modal-delivery-ca",
+            "beaconArticleID": "602d43f1661b720174a6e197"
+        },
+        {
+            "hashLink": "beacon-modal-delivery-row",
+            "beaconArticleID": "6025877d0a2dae5b58faedbf"
+        },
+        {
             "hashLink": "beacon-modal-returns",
             "beaconArticleID": "5dccfc9d2c7d3a7e9ae3ee62"
         },

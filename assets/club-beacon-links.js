@@ -46,6 +46,18 @@ window.addEventListener('DOMContentLoaded', () => {
         {
             "hashLink": "beacon-modal-bulk",
             "beaconArticleID": "620679b168cd260cc2d3a303"
+        },
+        {
+            "hashLink": "beacon-modal-colour",
+            "beaconArticleID": "609a43c539590458eb889390"
+        },
+        {
+            "hashLink": "beacon-modal-proofing-guide",
+            "beaconArticleID": "61655a4712c07c18afddc57d"
+        },
+        {
+            "hashLink": "beacon-modal-editor",
+            "beaconArticleID": "61f2b0ae2130e5169468139c"
         }
     ]
 

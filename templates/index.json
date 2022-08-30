@@ -302,8 +302,8 @@
         "af9db3da-567e-4650-9daa-730dd8f3a746": {
           "type": "column",
           "settings": {
-            "available_zones": "EU",
-            "heading": "EU Shipping",
+            "available_zones": "EU1",
+            "heading": "EU1 Shipping",
             "title": "🚚 Free EU Shipping 🌞",
             "text": "<p><strong>For orders over €90<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
@@ -379,8 +379,8 @@
         "e0ab27cd-8f82-49cc-8244-29c954f3296b": {
           "type": "column",
           "settings": {
-            "available_zones": "EU, EU2, AU, CA, ROW",
-            "heading": "EU, EU2, AU, CA, ROW Returns",
+            "available_zones": "EU1, EU2, AU, CA, ROW",
+            "heading": "EU1, EU2, AU, CA, ROW Returns",
             "title": "✅ 30-Day Returns 😃",
             "text": "<p><strong>On all non-custom backdrops<\/strong><\/p>",
             "link_label": "Returns policy",

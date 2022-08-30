@@ -77,7 +77,10 @@
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
-                {% comment %}CLUB - see if cart is valid, disable checkout button if not{% endcomment %}
+                {% comment %}CLUB - see if cart is valid, disable Check out button if:
+                1. Mystery Pack is only item in cart
+                2. Holiday mode setting is on
+                {% endcomment %}
                 {% assign disabled_cart = false %}
                 {% assign disabled_cart_messages = '' %}
                 {% if mystery_pack_total > 0 and cart.item_count == 1 %}

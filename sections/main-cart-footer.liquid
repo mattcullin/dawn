@@ -71,7 +71,7 @@
                   {%- endif -%}
                 {%- endfor -%}
                 {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
-                {% render 'club-bulk-discount-banner', cart_item_count_ex_mystery_packs: cart_item_count_ex_mystery_packs %}
+                {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_mystery_packs %}
                 {% render 'club-shipping-discount-banner' %}
                 
               </div>
@@ -101,7 +101,7 @@
                 {% endif %}
               </div>
 
-              {% comment %}CLUB - hiding additional checkout buttons
+              {% comment %}CLUB - hiding additional checkout buttons (e.g. PayPal/G pay)
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}

@@ -141,13 +141,6 @@
             "share_label": "Share"
           }
         },
-        "509ff83b-5db2-46b7-a934-45d192a3a337": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": "contact"
-          }
-        },
         "e9f9d233-2c9f-43db-9bb9-13ecb9e0764e": {
           "type": "custom_liquid",
           "disabled": true,
@@ -177,7 +170,6 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
-        "509ff83b-5db2-46b7-a934-45d192a3a337",
         "e9f9d233-2c9f-43db-9bb9-13ecb9e0764e"
       ],
       "settings": {

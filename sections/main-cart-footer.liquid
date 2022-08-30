@@ -84,8 +84,8 @@
                   {% assign disabled_cart_messages = disabled_cart_messages | append: "Mystery Packs must be purchased alongside another backdrop.;" %}
                   {% assign disabled_cart = true %}
                 {% endif %} 
-                {% if section.settings.holiday_mode_enabled %}
-                  {% assign disabled_cart_messages = disabled_cart_messages | append: section.settings.holiday_mode_message | append: ";" %}
+                {% if settings.holiday_mode_enabled %}
+                  {% assign disabled_cart_messages = disabled_cart_messages | append: settings.holiday_mode_message | append: ";" %}
                 {% endif %}
 
                 <noscript>

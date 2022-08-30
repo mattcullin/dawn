@@ -67,13 +67,13 @@
         },
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.tags contains 'Tone: Dark' %}\n<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Darker backdrops reflect more light so require <a href=\"#beacon-modal-optimal-colour\">extra skill to work with &rarr;<\/a><\/p>\n<\/div>\n{% endif %}"
           }
         },
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\" target=\"_blank\">10p donated to Edinburgh Dog & Cat Home →<\/a>",
             "text_style": "uppercase"

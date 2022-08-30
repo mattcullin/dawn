@@ -64,28 +64,50 @@
                 </small>
 
                 {% comment %}CLUB - Bulk Discount + Shipping Banner{% endcomment %}
-                {% render 'club-bulk-discount-banner' %}
+                {% assign mystery_pack_total = 0 %}
+                {%- for item in cart.items -%}
+                  {%- if item.sku contains 'MYST' -%}
+                    {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
+                  {%- endif -%}
+                {%- endfor -%}
+                {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
+                {% render 'club-bulk-discount-banner', cart_item_count_ex_mystery_packs: cart_item_count_ex_mystery_packs %}
                 {% render 'club-shipping-discount-banner' %}
                 
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
+                {% comment %}CLUB - see if cart is valid, disable checkout button if not{% endcomment %}
+                {% assign disable_cart = false %}
+                {% assign disable_cart_message = '' %}
+                {% assign holiday_mode = false %}
+                {% if mystery_pack_total > 0 and cart.item_count == 1 %}
+                  {% assign disable_cart_message = disable_cart_message | append: 'Mystery Packs must be purchased alongside another backdrop. ' %}
+                  {% assign disable_cart = true %}
+                {% endif %} 
+
                 <noscript>
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
                     {{ 'sections.cart.update' | t }}
                   </button>
                 </noscript>
 
-                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty or disable_cart == true %} disabled{% endif %} form="cart">
                   {{ 'sections.cart.checkout' | t }}
                 </button>
+                
+                {% if disable_cart %}
+                  <small>{{ disable_cart_message }}</small>
+                {% endif %}
               </div>
 
+              {% comment %}CLUB - hiding additional checkout buttons
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
+              {% endcomment %}
           {%- endcase -%}
         {% endfor %}
 

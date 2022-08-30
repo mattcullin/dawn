@@ -1153,7 +1153,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Turn on to disable Checkout button on cart."
+        "content": "Disable check out button."
       },
       {
         "type": "checkbox",
@@ -1165,7 +1165,7 @@
         "type": "text",
         "id": "holiday_mode_message",
         "label": "Holiday mode message",
-        "info": "Displays under Checkout button."
+        "info": "Display under check out button."
       }
     ]
   }

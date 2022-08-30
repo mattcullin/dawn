@@ -80,13 +80,12 @@
                 {% comment %}CLUB - see if cart is valid, disable checkout button if not{% endcomment %}
                 {% assign disabled_cart = false %}
                 {% assign disabled_cart_messages = '' %}
-                {% assign holiday_mode = true %}
                 {% if mystery_pack_total > 0 and cart.item_count == 1 %}
                   {% assign disabled_cart_messages = disabled_cart_messages | append: "Mystery Packs must be purchased alongside another backdrop.;" %}
                   {% assign disabled_cart = true %}
                 {% endif %} 
-                {% if holiday_mode %}
-                  {% assign disabled_cart_messages = disabled_cart_messages | append: "We're closed until 1-Oct-2022.;" %}
+                {% if section.settings.holiday_mode_enabled %}
+                  {% assign disabled_cart_messages = disabled_cart_messages | append: section.settings.holiday_mode_message | append: ";" %}
                 {% endif %}
 
                 <noscript>

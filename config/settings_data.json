@@ -111,6 +111,7 @@
             "type": "announcement",
             "settings": {
               "text": "Get 25% off 4+ items",
+              "text_alignment": "center",
               "color_scheme": "accent-2",
               "link": "#beacon-modal-bulk"
             }
@@ -133,7 +134,8 @@
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
-          "margin_bottom": 0
+          "mobile_logo_position": "center",
+          "margin_bottom": 20
         }
       },
       "footer": {
@@ -143,21 +145,21 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "info"
+              "menu": ""
             }
           },
           "footer-0": {
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "quick-links"
+              "menu": ""
             }
           },
           "2dbfd991-6c38-497c-8f6c-db596865072b": {
             "type": "link_list",
             "settings": {
               "heading": "Collections",
-              "menu": "collections"
+              "menu": ""
             }
           },
           "694453d8-a649-41d8-8826-50c3690f2976": {

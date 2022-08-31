@@ -324,6 +324,7 @@
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
+              {% comment %}
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
                   {%- if shop.taxes_included -%}
@@ -334,6 +335,17 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
+              {% endcomment %}
+              {%- liquid 
+                capture tax_message
+                  render 'club-tax-message'
+                endcapture 
+              -%}
+              {%- if tax_message.size > 0 -%}
+                <div class="product__tax caption rte">
+                  {{ tax_message }}
+                </div>
+              {%- endif -%}              
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}

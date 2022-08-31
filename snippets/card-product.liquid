@@ -103,7 +103,7 @@
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
-            {% comment %}CLUB - add a 'New' badge if product is in the 'New' collection - takes precedence over 'Sale'{% endcomment %}
+            {% comment %}CLUB - add a 'New' badge if product is in the 'New' collection{% endcomment %}
             {% for collection in card_product.collections %}
               {% if collection.title == 'New' %}
                 {% assign card_product_new = true %}

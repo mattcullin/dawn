@@ -30,8 +30,6 @@
     assign gross_total = cart.total_price
 -%}
 
-{% comment %}| plus: cart.total_discount{% endcomment %}
-
 <div class="club-shipping-discount-banner">
     {% if gross_total > 0 and gross_total < free_shipping_threshold %}
         <p class="dashed-banner accent-text accent-border">🚚 Spend <strong>another {{ free_shipping_threshold | minus: gross_total | money }}</strong> to get<br><span class="highlight">FREE shipping</span></p>

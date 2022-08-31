@@ -73,13 +73,27 @@
                 {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
                 {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_mystery_packs %}
                 {% render 'club-shipping-discount-banner' %}
+
+                {% comment %}CLUB - container for hidden cart attributes{% endcomment %}
+                <div id="club-cart-attributes">
+                  {%- liquid 
+                    capture zone
+                        render 'club-zone'
+                    endcapture
+                    if zone == 'AU' or zone == 'CA'
+                      zone = 'ROW'
+                    endif
+                  -%}
+                  <input type="hidden" name="attributes[cart_currency]" value="{{ cart.currency.iso_code }}" />
+                  <input type="hidden" name="attributes[Zone]" value="{{ zone }}" />
+                </div>
                 
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 {% comment %}CLUB - see if cart is valid, disable Check out button if:
-                1. Mystery Pack is only item in cart
-                2. Holiday mode setting is on
+                  1. Mystery Pack is only item in cart
+                  2. Holiday mode setting is on
                 {% endcomment %}
                 {% assign disabled_cart = false %}
                 {% assign disabled_cart_messages = '' %}

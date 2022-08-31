@@ -31,6 +31,13 @@
   --gradient-background: var(--gradient-base-accent-2);
 }
 
+/* CLUB - addition of 3rd accent colour, to move to settings */
+.color-accent-3 {
+  --color-foreground: var(--color-base-solid-button-labels);
+  --color-background: var(--color-base-accent-3);
+  --gradient-background: var(--gradient-base-accent-2);
+}
+
 .color-foreground-outline-button {
   --color-foreground: var(--color-base-outline-button-labels);
 }
@@ -117,7 +124,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-badge-background: var(--color-background);
   --color-badge-border: var(--color-background);
   --alpha-badge-border: 1;

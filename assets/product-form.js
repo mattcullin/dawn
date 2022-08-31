@@ -26,8 +26,11 @@ if (!customElements.get('product-form')) {
       delete config.headers['Content-Type'];
 
       const formData = new FormData(this.form);
-      formData.append('sections', this.cartNotification.getSectionsToRender().map((section) => section.id));
-      formData.append('sections_url', window.location.pathname);
+      if (this.cart) {
+        formData.append('sections', this.cart.getSectionsToRender().map((section) => section.id));
+        formData.append('sections_url', window.location.pathname);
+        this.cart.setActiveElement(document.activeElement);
+      }
       config.body = formData;
 
       fetch(`${routes.cart_add_url}`, config)
@@ -42,6 +45,9 @@ if (!customElements.get('product-form')) {
             this.submitButton.querySelector('span').classList.add('hidden');
             soldOutMessage.classList.remove('hidden');
             this.error = true;
+            return;
+          } else if (!this.cart) {
+            window.location = window.routes.cart_url;
             return;
           }
 

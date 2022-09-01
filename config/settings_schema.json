@@ -1180,7 +1180,7 @@
         "id": "tag_filter_enabled",
         "label": "Enable tag filter",
         "default": false
-      } 
+      }
     ]
   }
 ]

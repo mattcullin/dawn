@@ -103,7 +103,6 @@
     "checkout_accent_color": "#0077cc",
     "checkout_button_color": "#0077cc",
     "checkout_error_color": "#cd193c",
-    "tag_filter_enabled": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

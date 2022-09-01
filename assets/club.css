@@ -31,6 +31,7 @@ button,
 /* Cart Notification 
 - hide checkout button */
 .cart-notification__links form { display: none; }
+.cart-notification-product { padding-bottom: 2rem; }
 
 /* Discount Cart App Adjustments */
 /* .scDiscount__container input#submit,

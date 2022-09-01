@@ -50,6 +50,9 @@ class CartNotification extends HTMLElement {
         selector: `[id="cart-notification-product-${this.cartItemKey}"]`,
       },
       {
+        id: 'club-cart-notification-banners'
+      },
+      {
         id: 'cart-notification-button'
       },
       {

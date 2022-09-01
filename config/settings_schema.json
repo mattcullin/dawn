@@ -1166,20 +1166,6 @@
         "id": "holiday_mode_message",
         "label": "Holiday mode message",
         "info": "Display under check out button."
-      },
-      {
-        "type": "header",
-        "content": "Tag filter"
-      },
-      {
-        "type": "paragraph",
-        "content": "Show legacy tag filter options on collection page."
-      },
-      {
-        "type": "checkbox",
-        "id": "tag_filter_enabled",
-        "label": "Enable tag filter",
-        "default": false
       }
     ]
   }

@@ -19,6 +19,7 @@ button,
 
 .highlight { background: rgb(var(--color-base-accent-2)); color: #fff; padding: 2px 4px; font-weight: 700; }
 .highlight-alt { background: rgb(var(--color-base-accent-3)); color: #fff; padding: 2px 4px; font-weight: 700; }
+.disclaimer { font-size: 1.3rem; }
 
 /* Global */
 .dashed-banner { border-width: 2px; border-style: dashed; border-color: var(--color-base-accent-1); color: var(--color-base-text); text-align: center; padding: 10px; font-size: 1.3rem; } 

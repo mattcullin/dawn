@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
             "beaconArticleID": "620679b168cd260cc2d3a303"
         },
         {
-            "hashLink": "beacon-modal-colour",
+            "hashLink": "beacon-modal-optimal-colour",
             "beaconArticleID": "609a43c539590458eb889390"
         },
         {

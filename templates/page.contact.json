@@ -65,7 +65,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Frequently Asked Questions",
+        "heading": "How can we help?",
         "heading_size": "h2",
         "heading_alignment": "left",
         "layout": "row",
@@ -88,11 +88,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1662121191d2218151": {
+      "type": "rich-text",
+      "blocks": {
+        "1662121191928f025e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Message Us",
+            "button_link": "#beacon-message",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1662121191928f025e-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "16621201984e89d901",
-    "form"
+    "form",
+    "1662121191d2218151"
   ]
 }

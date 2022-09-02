@@ -72,5 +72,16 @@ window.addEventListener('DOMContentLoaded', () => {
         });    
     
     });
+  
+    const beaconMessageNodes = document.querySelectorAll('a[href^="#beacon-message"]');
+    beaconMessageNodes.forEach(function(messageNode) {
+        node.addEventListener('click', function() {
+            // var subject_prefill = "";
+            // if($(this).data('subject')) { subject_prefill = $(this).data('subject') };
+            Beacon('navigate', '/ask/message/');
+            // Beacon('prefill', { subject: subject_prefill });
+            Beacon('open'); 
+        });
+    });
 
 });

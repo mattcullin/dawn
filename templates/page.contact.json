@@ -15,7 +15,7 @@
           "settings": {
             "heading": "Where is my order?",
             "icon": "plane",
-            "row_content": "<p><strong>Have you:<\/strong><\/p><p>1. Checked your spam folder for our shipping update?<\/p><p>2. Contacted the <a href=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"#beacon-modal-latest\" title=\"#beacon-modal-latest\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! Please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> and we'll look into this for you as a priority.<\/p>",
+            "row_content": "<p><strong>Have you:<\/strong><\/p><p>1. Checked your spam folder for our shipping update?<\/p><p>2. Contacted the <a href=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"#beacon-modal-latest\" title=\"#beacon-modal-latest\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! Please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> and we'll look into this for you as a priority.<\/p><p><\/p>",
             "page": ""
           }
         },
@@ -24,7 +24,7 @@
           "settings": {
             "heading": "I'd like to return an item",
             "icon": "return",
-            "row_content": "<p>We're more than happy to accept returns <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">as outlined in our return policy<\/a>. Items must be:<\/p><p>- <strong>Within 30 days <\/strong>of the delivery date<\/p><p>- <strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">the appropriate returns address<\/a>, then <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your return tracking details.<\/p>",
+            "row_content": "<p>We're more than happy to accept returns <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">as outlined in our return policy<\/a>. Items must be:<\/p><p>- <strong>Within 30 days <\/strong>of the delivery date<\/p><p>- <strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">the appropriate returns address<\/a>, then <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your return tracking details.<\/p><p><\/p>",
             "page": ""
           }
         },
@@ -33,7 +33,7 @@
           "settings": {
             "heading": "The website or editor isn't working",
             "icon": "question_mark",
-            "row_content": "<p>Sorry to hear you're having some trouble! We first suggest to try the following:<\/p><p><strong>1. Clear your browser cache <\/strong>or reload the site an incognito\/private window<\/p><p><strong>2. Try another browser<\/strong><\/p><p>If you continue to experience an issue please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with a brief description. You can also add a screenshot so we can better troubleshoot for you. 😀<\/p>",
+            "row_content": "<p>Sorry to hear you're having some trouble! We first suggest to try the following:<\/p><p><strong>1. Clear your browser cache <\/strong>or reload the site an incognito\/private window<\/p><p><strong>2. Try another browser<\/strong><\/p><p>If you continue to experience an issue please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with a brief description. You can also add a screenshot so we can better troubleshoot for you. 😀<\/p><p><\/p>",
             "page": ""
           }
         },
@@ -42,7 +42,7 @@
           "settings": {
             "heading": "Can we collaborate?",
             "icon": "heart",
-            "row_content": "<p>At this time we're not accepting upfront offers to collaborate. We actively search for collaboration opportunities when have a specific project in mind from within our follower network.<\/p><p>What do we look for?<br\/><strong>Out-of-this-world photography.<\/strong><\/p><p>We're less impressed by numbers.<br\/>We care most about the craft and your art.<br\/>We like to work with <strong>studio photographers<\/strong> who are better than us!<br\/>Who are creating imagery that <strong>excites and inspires us<\/strong> and our followers.<\/p><p>Like the phenomenal <a href=\"https:\/\/www.instagram.com\/daryna_barykina\/\" target=\"_blank\">@daryna_barykina<\/a><br\/>Or the utterly alluring <a href=\"https:\/\/www.instagram.com\/gerardbelevender\/\" target=\"_blank\">@gerardbelevender<\/a><br\/>And the meticulously polished <a href=\"https:\/\/www.instagram.com\/karolinaimg\/\" target=\"_blank\">@karolinaimg<\/a><\/p><p>And we make it worthwhile for those that <strong>blow our minds<\/strong>.<\/p><p>If you think you're up to it:<br\/>Get familiar with our product.<br\/>Take sublime pictures.<br\/>Get to know us.<br\/>If you make an impression, we can take it from there...<\/p><p>We don't respond to any upfront requests for free product.<\/p>",
+            "row_content": "<p>At this time we're not accepting upfront offers to collaborate. We actively search for collaboration opportunities when have a specific project in mind from within our follower network.<\/p><p>What do we look for?<br\/><strong>Out-of-this-world photography.<\/strong><\/p><p>We're less impressed by numbers.<br\/>We care most about the craft and your art.<br\/>We like to work with <strong>studio photographers<\/strong> who are better than us!<br\/>Who are creating imagery that <strong>excites and inspires us<\/strong> and our followers.<\/p><p>Like the phenomenal <a href=\"https:\/\/www.instagram.com\/daryna_barykina\/\" target=\"_blank\">@daryna_barykina<\/a><br\/>Or the utterly alluring <a href=\"https:\/\/www.instagram.com\/gerardbelevender\/\" target=\"_blank\">@gerardbelevender<\/a><br\/>And the meticulously polished <a href=\"https:\/\/www.instagram.com\/karolinaimg\/\" target=\"_blank\">@karolinaimg<\/a><\/p><p>And we make it worthwhile for those that <strong>blow our minds<\/strong>.<\/p><p>If you think you're up to it:<br\/>Get familiar with our product.<br\/>Take sublime pictures.<br\/>Get to know us.<br\/>If you make an impression, we can take it from there...<\/p><p>We don't respond to any upfront requests for free product.<\/p><p><\/p>",
             "page": ""
           }
         },
@@ -51,7 +51,7 @@
           "settings": {
             "heading": "Something else...",
             "icon": "chat_bubble",
-            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">What are your shipping & delivery options?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your query.<\/p>",
+            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">What are your shipping & delivery options?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your query.<\/p><p><\/p>",
             "page": ""
           }
         }

@@ -7,8 +7,80 @@
         "padding_bottom": 36
       }
     },
+    "16621201984e89d901": {
+      "type": "collapsible-content",
+      "blocks": {
+        "16621201985543a64a-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where is my order?",
+            "icon": "plane",
+            "row_content": "<p><strong>Have you:<\/strong><\/p><p><strong>1. Checked your spam folder for our shipping update?<\/strong><\/p><p>2. Contacted the <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! Please message us and we'll look into this for you as a priority.<\/p>",
+            "page": ""
+          }
+        },
+        "16621201985543a64a-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I'd like to return an item",
+            "icon": "return",
+            "row_content": "<p>We're more than happy to accept returns <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">as outlined in our return policy<\/a>. Items must be:<\/p><p><strong>Within 30 days <\/strong>from the date of receipt<\/p><p><strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">the appropriate returns address<\/a>, then message us below with your return tracking details.<\/p>",
+            "page": ""
+          }
+        },
+        "16621201985543a64a-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The website or editor isn't working",
+            "icon": "question_mark",
+            "row_content": "<p>Sorry to hear you're having some trouble! We first suggest to try the following:<\/p><p><strong>1. Clear your browser cache <\/strong>or reload the site an incognito\/private window<\/p><p><strong>2. Try another browser<\/strong><\/p><p>If you continue to experience an issue please message us below with a brief description. You can also add a screenshot so we can better troubleshoot for you 😀<\/p>",
+            "page": ""
+          }
+        },
+        "16621201985543a64a-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can we collaborate?",
+            "icon": "heart",
+            "row_content": "<p>At this time we're not accepting upfront offers to collaborate. We actively search for collaboration opportunities when have a specific project in mind from within our follower network.<\/p><p>What do we look for?<br\/><strong>Out-of-this-world photography.<\/strong><\/p><p>We're less impressed by numbers.<br\/>We care most about the craft and your art.<br\/>We like to work with <strong>studio photographers<\/strong> who are better than us!<br\/>Who are creating imagery that <strong>excites and inspires us<\/strong> and our followers.<\/p><p>Like the phenomenal <a href=\"https:\/\/www.instagram.com\/daryna_barykina\/\" target=\"_blank\">@daryna_barykina<\/a><br\/>Or the utterly alluring <a href=\"https:\/\/www.instagram.com\/gerardbelevender\/\" target=\"_blank\">@gerardbelevender<\/a><br\/>And the meticulously polished <a href=\"https:\/\/www.instagram.com\/karolinaimg\/\" target=\"_blank\">@karolinaimg<\/a><\/p><p>And we make it worthwhile for those that <strong>blow our minds<\/strong>.<\/p><p>If you think you're up to it:<br\/>Get familiar with our product.<br\/>Take sublime pictures.<br\/>Get to know us.<br\/>If you make an impression, we can take it from there...<\/p><p>We don't respond to any upfront requests for free product.<\/p>",
+            "page": ""
+          }
+        },
+        "db15c6c0-06f1-403e-ab63-af17057d2bf5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Something else...",
+            "icon": "chat_bubble",
+            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">What are your delivery times?<\/a><\/p><p><a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply message us with your query.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "16621201985543a64a-0",
+        "16621201985543a64a-1",
+        "16621201985543a64a-2",
+        "16621201985543a64a-3",
+        "db15c6c0-06f1-403e-ab63-af17057d2bf5"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -20,6 +92,7 @@
   },
   "order": [
     "main",
+    "16621201984e89d901",
     "form"
   ]
 }

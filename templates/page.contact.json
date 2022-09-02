@@ -15,7 +15,7 @@
           "settings": {
             "heading": "Where is my order?",
             "icon": "plane",
-            "row_content": "<p><strong>Have you:<\/strong><\/p><p>1. Checked your spam folder for our shipping update?<\/p><p>2. Contacted the <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\" target=\"_blank\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"#beacon-modal-latest\" title=\"#beacon-modal-latest\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! <a href=\"#beacon-message\" title=\"#beacon-message\">Please message us<\/a> and we'll look into this for you as a priority.<\/p>",
+            "row_content": "<p><strong>Have you:<\/strong><\/p><p>1. Checked your spam folder for our shipping update?<\/p><p>2. Contacted the <a href=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"#beacon-modal-latest\" title=\"#beacon-modal-latest\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! Please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> and we'll look into this for you as a priority.<\/p>",
             "page": ""
           }
         },
@@ -51,7 +51,7 @@
           "settings": {
             "heading": "Something else...",
             "icon": "chat_bubble",
-            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">What are your delivery times?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\" title=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\" title=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your query.<\/p>",
+            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">What are your shipping & delivery options?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\" title=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\" title=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your query.<\/p>",
             "page": ""
           }
         }

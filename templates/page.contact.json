@@ -108,7 +108,7 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "166212964878df893a": {
@@ -153,6 +153,63 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16621332025d6898d9": {
+      "type": "collage",
+      "blocks": {
+        "bef4f7d2-171c-415d-8ea0-af263052d9e6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-food-shoot.jpg",
+            "image_padding": false
+          }
+        },
+        "bc19ea00-1abd-4183-b0d1-489722a926fa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-logo-backdrop.jpg",
+            "image_padding": false
+          }
+        },
+        "42de2f9e-2c08-4d5a-bb73-1a020a513357": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-shelves.jpg",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "bef4f7d2-171c-415d-8ea0-af263052d9e6",
+        "bc19ea00-1abd-4183-b0d1-489722a926fa",
+        "42de2f9e-2c08-4d5a-bb73-1a020a513357"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1662130426f71e839d": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
     }
   },
   "order": [
@@ -160,6 +217,8 @@
     "16621201984e89d901",
     "form",
     "1662121191d2218151",
-    "166212964878df893a"
+    "166212964878df893a",
+    "16621332025d6898d9",
+    "1662130426f71e839d"
   ]
 }

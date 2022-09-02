@@ -15,7 +15,7 @@
           "settings": {
             "heading": "Where is my order?",
             "icon": "plane",
-            "row_content": "<p><strong>Have you:<\/strong><\/p><p><strong>1. Checked your spam folder for our shipping update?<\/strong><\/p><p>2. Contacted the <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! Please message us and we'll look into this for you as a priority.<\/p>",
+            "row_content": "<p><strong>Have you:<\/strong><\/p><p>1. Checked your spam folder for our shipping update?<\/p><p>2. Contacted the <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\" target=\"_blank\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"#beacon-modal-latest\" title=\"#beacon-modal-latest\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! <a href=\"#beacon-message\" title=\"#beacon-message\">Please message us<\/a> and we'll look into this for you as a priority.<\/p>",
             "page": ""
           }
         },
@@ -24,7 +24,7 @@
           "settings": {
             "heading": "I'd like to return an item",
             "icon": "return",
-            "row_content": "<p>We're more than happy to accept returns <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">as outlined in our return policy<\/a>. Items must be:<\/p><p><strong>Within 30 days <\/strong>from the date of receipt<\/p><p><strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">the appropriate returns address<\/a>, then message us below with your return tracking details.<\/p>",
+            "row_content": "<p>We're more than happy to accept returns <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">as outlined in our return policy<\/a>. Items must be:<\/p><p>- <strong>Within 30 days <\/strong>of the delivery date<\/p><p>- <strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">the appropriate returns address<\/a>, then <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your return tracking details.<\/p>",
             "page": ""
           }
         },
@@ -33,7 +33,7 @@
           "settings": {
             "heading": "The website or editor isn't working",
             "icon": "question_mark",
-            "row_content": "<p>Sorry to hear you're having some trouble! We first suggest to try the following:<\/p><p><strong>1. Clear your browser cache <\/strong>or reload the site an incognito\/private window<\/p><p><strong>2. Try another browser<\/strong><\/p><p>If you continue to experience an issue please message us below with a brief description. You can also add a screenshot so we can better troubleshoot for you 😀<\/p>",
+            "row_content": "<p>Sorry to hear you're having some trouble! We first suggest to try the following:<\/p><p><strong>1. Clear your browser cache <\/strong>or reload the site an incognito\/private window<\/p><p><strong>2. Try another browser<\/strong><\/p><p>If you continue to experience an issue please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with a brief description. You can also add a screenshot so we can better troubleshoot for you. 😀<\/p>",
             "page": ""
           }
         },
@@ -51,7 +51,7 @@
           "settings": {
             "heading": "Something else...",
             "icon": "chat_bubble",
-            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">What are your delivery times?<\/a><\/p><p><a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/clubbackdrops.com\/pages\/contact#\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply message us with your query.<\/p>",
+            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">What are your delivery times?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\" title=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\" title=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your query.<\/p>",
             "page": ""
           }
         }

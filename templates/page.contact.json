@@ -157,32 +157,32 @@
     "16621332025d6898d9": {
       "type": "collage",
       "blocks": {
+        "42de2f9e-2c08-4d5a-bb73-1a020a513357": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-square-packing.jpg",
+            "image_padding": false
+          }
+        },
         "bef4f7d2-171c-415d-8ea0-af263052d9e6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-food-shoot.jpg",
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-square-office.jpg",
             "image_padding": false
           }
         },
         "bc19ea00-1abd-4183-b0d1-489722a926fa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-logo-backdrop.jpg",
-            "image_padding": false
-          }
-        },
-        "42de2f9e-2c08-4d5a-bb73-1a020a513357": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-shelves.jpg",
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-food-shoot.jpg",
             "image_padding": false
           }
         }
       },
       "block_order": [
+        "42de2f9e-2c08-4d5a-bb73-1a020a513357",
         "bef4f7d2-171c-415d-8ea0-af263052d9e6",
-        "bc19ea00-1abd-4183-b0d1-489722a926fa",
-        "42de2f9e-2c08-4d5a-bb73-1a020a513357"
+        "bc19ea00-1abd-4183-b0d1-489722a926fa"
       ],
       "settings": {
         "heading": "",

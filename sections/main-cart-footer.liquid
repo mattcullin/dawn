@@ -40,7 +40,6 @@
                 </div>
 
                 <small class="tax-note caption-large rte">
-                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                   {% comment %}CLUB - switching default tax message code with Zone specific code
                     {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                       {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}

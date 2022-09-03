@@ -1508,5 +1508,30 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       }
     ]
+  },
+  {
+    "name": "CLUB Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Holiday mode"
+      },
+      {
+        "type": "paragraph",
+        "content": "Disable check out button."
+      },
+      {
+        "type": "checkbox",
+        "id": "holiday_mode_enabled",
+        "label": "Enable holiday mode",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "holiday_mode_message",
+        "label": "Holiday mode message",
+        "info": "Display under check out button."
+      }
+    ]
   }
 ]

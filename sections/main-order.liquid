@@ -34,6 +34,7 @@
         {%- assign cancelled_at = order.cancelled_at | time_tag: format: "date_at_time" -%}
         <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
         <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
+        <p><a target='_blank' href='https://clubbackdrops.com/apps/download-pdf/orders/241d52a6b674e8bc6204/{{ order.id | times: 9292 }}/{{ order.name | handleize }}.pdf'>&#128195; Download Invoice (PDF)</a></p>
       {%- endif -%}
 
       <table role="table" class="order-details">

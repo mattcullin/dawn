@@ -80,7 +80,7 @@
           "settings": {
             "heading": "Features",
             "icon": "lightning_bolt",
-            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>📷 Original, realistic, true-scale textures.<\/strong> All found, crafted and captured by us, our 100+ megapixel artwork is never enlarged or pixelated. Suitable for close-crops (though not for macro photography). <\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tubing.<\/p>",
+            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%. Certain colours can display a slight grain when viewed very close-up - for this reason solid colours are not recommended for extreme close-up or macro photography.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tubing.<\/p>",
             "page": ""
           }
         },
@@ -173,9 +173,9 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-parquet-to-screen-2.png",
-            "title": "Realistic replicas",
-            "text": "<p>100+ megapixel professional prints of original textures<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-true-colour.png",
+            "title": "True colour accuracy",
+            "text": "<p>Printed on X-Rite® calibrated printers<\/p>",
             "link_label": "",
             "link": ""
           }

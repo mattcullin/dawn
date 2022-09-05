@@ -3,14 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "51e499e1-919e-4835-a1da-61e60880c561": {
           "type": "custom_liquid",
           "settings": {
@@ -78,13 +70,6 @@
             "text_style": "uppercase"
           }
         },
-        "dd91c6ec-d938-41ac-ace6-0bc36911b074": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<img class=\"payment-icons\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0016\/5370\/2750\/t\/34\/assets\/payment-icons_438x.png?v=139658810260107009791631609627\" width=\"219\" height=\"29\" alt=\"\">"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -135,22 +120,21 @@
             "page": ""
           }
         },
+        "2c6d8870-5b27-4c86-b0c0-422da2aa05cd": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.collaborator_credits | metafield_text }}",
+            "text_style": "uppercase"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
           }
-        },
-        "e9f9d233-2c9f-43db-9bb9-13ecb9e0764e": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<a href=\"\/pages\/charity-edinburgh-dog-cat-home\"><img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0016\/5370\/2750\/files\/club-backdrops-charity-edinburgh-dog-cat-home-badge_850x170.gif?v=3620219825969458203\" width=\"405\" height=\"81\" alt=\"We donate 10p from every backdrop sold to the Edinburgh Dog and Cat home\"><\/a>"
-          }
         }
       },
       "block_order": [
-        "vendor",
         "51e499e1-919e-4835-a1da-61e60880c561",
         "title",
         "caption",
@@ -162,18 +146,18 @@
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd",
-        "dd91c6ec-d938-41ac-ace6-0bc36911b074",
         "description",
         "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3",
         "collapsible-row-1",
         "collapsible-row-0",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share",
-        "e9f9d233-2c9f-43db-9bb9-13ecb9e0764e"
+        "2c6d8870-5b27-4c86-b0c0-422da2aa05cd",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "media_position": "left",
         "gallery_layout": "stacked",
         "media_size": "large",
         "mobile_thumbnails": "hide",

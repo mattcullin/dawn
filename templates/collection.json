@@ -4,7 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "color_scheme": "background-1"
       }
     },
@@ -29,6 +29,7 @@
     },
     "16531349608894d2a5": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1653134960f8578618-0": {
           "type": "heading",

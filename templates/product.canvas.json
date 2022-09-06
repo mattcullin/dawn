@@ -40,7 +40,7 @@
         "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe": {
           "type": "text",
           "settings": {
-            "text": "✅ In-stock & ready to ship",
+            "text": "⚡ +1 working day to print",
             "text_style": "uppercase"
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "heading": "Features",
             "icon": "lightning_bolt",
-            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>📷 Original, realistic, true-scale textures.<\/strong> All found, crafted and captured by us, our 100+ megapixel artwork is never enlarged or pixelated. Suitable for close-crops (though not for macro photography). <\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tubing.<\/p>",
+            "content": "<p><strong>✅ Canvas fabric studio backdrop<\/strong> for full-length, portraiture, headshots & video.<\/p><p><strong>💪 Heavy-weight 390gsm cotton canvas<\/strong>, with a durable satin-matte finish for minimal glare.<\/p><p><strong>⚡ Portable by design<\/strong>, perfect for location-independent photographers, content creators, online fashion & beauty.<\/p><p><strong>💌 Delivered crease free<\/strong>, rolled and ready-to-shoot<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p>",
             "page": ""
           }
         },
@@ -89,7 +89,7 @@
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>✅ This vinyl backdrop is <strong>in-stock and ready to ship<\/strong>.<\/p><p><em>Get <\/em><em><strong>FREE <\/strong><\/em><em>or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">Shipping rates & delivery times →<\/a><\/p>",
+            "content": "<p>⚡ Canvas backdrops take an extra <strong>1 working day to print<\/strong> before shipping, but we always get them out sooner if we can!<\/p><p><em>Get <\/em><em><strong>FREE <\/strong><\/em><em>or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">Shipping rates & delivery times →<\/a><\/p>",
             "page": ""
           }
         },
@@ -108,7 +108,7 @@
             "heading": "Sizing",
             "icon": "ruler",
             "content": "",
-            "page": "sizing-vinyl-backdrops"
+            "page": "sizing-canvas-backdrops"
           }
         },
         "collapsible-row-3": {
@@ -116,7 +116,7 @@
           "settings": {
             "heading": "Care Tips",
             "icon": "heart",
-            "content": "<p>With proper care, our vinyl backdrops can last you a long time.<\/p><p><a href=\"https:\/\/img.clubbackdrops.com\/cb-a5-vinyl-insert-rgb.gif\" target=\"_blank\" title=\"https:\/\/img.clubbackdrops.com\/cb-a5-vinyl-insert-rgb.gif\">Vinyl backdrop care tips →<\/a><\/p>",
+            "content": "<p>With proper care, our canvas backdrops can last you a long time.<\/p><p><a href=\"https:\/\/img.clubbackdrops.com\/cb-a5-canvas-insert-rgb.gif\" target=\"_blank\" title=\"https:\/\/img.clubbackdrops.com\/cb-a5-canvas-insert-rgb.gif\">Canvas backdrop care tips →<\/a><\/p>",
             "page": ""
           }
         },
@@ -173,9 +173,9 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-parquet-to-screen-2.png",
-            "title": "Realistic replicas",
-            "text": "<p>100+ megapixel professional prints of original textures<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-canvas-original-textures.jpg",
+            "title": "High-end prints",
+            "text": "<p>Professional reproductions of original hand-painted art & textures<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -183,9 +183,9 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-vinyl-wave.png",
-            "title": "Durable waterproof vinyl",
-            "text": "<p>Robust UV inks on 415gsm matte media that wipes clean<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-canvas.jpg",
+            "title": "Premium canvas fabric",
+            "text": "<p>Heavy-weight 390gsm cotton canvas with a satin-matte finish<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -193,9 +193,9 @@
         "7bad87fd-707c-4b2c-924f-6ec36c34fec9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-colour-backdrops_6f49cf3a-99ac-40d3-8119-1963d09f846f.png",
-            "title": "Lays flat for instant use",
-            "text": "<p>Delivered crease-free, rolled & ready to shoot<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-product-icon-canvas-portable.jpg",
+            "title": "Portable by design",
+            "text": "<p>Full-length and portrait sizes available<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -240,22 +240,22 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Working with our vinyl",
+            "heading": "Working with our canvas",
             "heading_size": "h2"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>New to vinyl backdrops? <\/strong>Read our post on how to best handle your backdrop, simple ways to use it in a home\/studio environment and techniques for lighting your scene.<\/p>",
+            "text": "<p><strong>New to canvas  backdrops? <\/strong>Read our post on how to best handle your backdrop, simple ways to use it in a home\/studio environment and techniques for lighting your scene.<\/p>",
             "text_style": "body"
           }
         },
         "55436df4-8c60-41bc-bbb7-8465df703ace": {
           "type": "button",
           "settings": {
-            "button_label": "Top vinyl tips →",
-            "button_link": "shopify:\/\/blogs\/how-to\/getting-started-with-vinyl-photography-backdrops"
+            "button_label": "Top canvas tips →",
+            "button_link": "shopify:\/\/blogs\/how-to\/getting-started-with-canvas-backdrops"
           }
         }
       },
@@ -265,7 +265,7 @@
         "55436df4-8c60-41bc-bbb7-8465df703ace"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
+        "image": "shopify:\/\/shop_images\/club-backdrops-hero-square-working-with-canvas.jpg",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",

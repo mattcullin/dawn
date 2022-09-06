@@ -4,7 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "color_scheme": "background-1"
       }
     },
@@ -18,93 +18,12 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "enable_filtering": true,
+        "enable_filtering": false,
         "filter_type": "horizontal",
-        "enable_sorting": true,
+        "enable_sorting": false,
+        "enable_tag_filter": false,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "165313487387bec25f": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{{ collection.handle }}",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "1653135454720f3671": {
-      "type": "collage",
-      "blocks": {
-        "42faa4bc-8d2d-4d14-b9e4-7455ba376194": {
-          "type": "product",
-          "settings": {
-            "product": "rustic-blue-wood-vinyl-photography-backdrop",
-            "second_image": true
-          }
-        },
-        "31a3bddd-0c08-430f-82f4-774b931a0f78": {
-          "type": "product",
-          "settings": {
-            "product": "psychedelic-floral-vinyl-photography-backdrop",
-            "second_image": false
-          }
-        },
-        "7b36c850-75c8-446a-8c97-6dc635fc783a": {
-          "type": "product",
-          "settings": {
-            "product": "grey-wood-vinyl-backdrop",
-            "second_image": false
-          }
-        }
-      },
-      "block_order": [
-        "42faa4bc-8d2d-4d14-b9e4-7455ba376194",
-        "31a3bddd-0c08-430f-82f4-774b931a0f78",
-        "7b36c850-75c8-446a-8c97-6dc635fc783a"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1653135590286f0c2f": {
-      "type": "collection-list",
-      "blocks": {
-        "1653135590f4518581-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "christmas-photography-backdrops"
-          }
-        },
-        "1653135590f4518581-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "fall-vinyl-backdrops"
-          }
-        }
-      },
-      "block_order": [
-        "1653135590f4518581-0",
-        "1653135590f4518581-2"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -118,7 +37,7 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/pages\/contact"
+            "link": "#beacon-modal-bulk"
           }
         },
         "16531356553e3ade54-1": {
@@ -128,7 +47,7 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/join"
           }
         },
         "16531356553e3ade54-2": {
@@ -138,7 +57,7 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "#beacon-modal-delivery"
           }
         }
       },
@@ -149,70 +68,18 @@
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1653136147bb832972": {
-      "type": "image-with-text",
-      "blocks": {
-        "5d09ee54-452b-4fd1-ba51-af197cc87e91": {
-          "type": "caption",
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "1653136146f57357e8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "1653136146f57357e8-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "1653136146f57357e8-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "5d09ee54-452b-4fd1-ba51-af197cc87e91",
-        "1653136146f57357e8-0",
-        "1653136146f57357e8-1",
-        "1653136146f57357e8-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 16,
         "padding_bottom": 36
       }
     }
@@ -220,10 +87,6 @@
   "order": [
     "banner",
     "product-grid",
-    "165313487387bec25f",
-    "1653135454720f3671",
-    "1653135590286f0c2f",
-    "1653135655c73d6373",
-    "1653136147bb832972"
+    "1653135655c73d6373"
   ]
 }

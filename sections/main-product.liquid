@@ -3,6 +3,10 @@
   class="page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
+  {% comment %}
+    AURIGMA - 22-09-2022 - Include main editor initialization code
+  {% endcomment %}}
+  {% render 'cc-init' %}
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -606,21 +610,10 @@
                       disabled
                     >
                     <div class="product-form__buttons">
-                      <button
-                        type="submit"
-                        name="add"
-                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-                        {% if product.selected_or_first_available_variant.available == false %}
-                          disabled
-                        {% endif %}
-                      >
-                        <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
-                          {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
-                          {%- endif -%}
-                        </span>
+                        {% comment %}
+                           AURIGMA - 22-09-2022 - Add to cart button / Personalize button for BackOffice
+                        {% endcomment %}
+                        {% render 'cc-add-to-cart-button' %}
                         <div class="loading-overlay__spinner hidden">
                           <svg
                             aria-hidden="true"

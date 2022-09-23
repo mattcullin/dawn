@@ -83,7 +83,7 @@
 
         ccPages: function() {
             return {
-                "product": document.querySelector(".product-template__container"),
+                "product": document.querySelector(".product product--"),
                 "editor": document.querySelector("#cc-editor-page")
             }
         },

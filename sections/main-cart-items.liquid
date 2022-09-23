@@ -1,3 +1,6 @@
+{% comment %}
+  AURIGMA - 23.09.2022 - 
+{% endcomment %}
 {{ 'cc-cart.js' | asset_url | script_tag }}
 
 {% schema %}
@@ -9,7 +12,7 @@
 <script>
   window.ecommerceSystem = {
     checkoutUrl: "{{ routes.cart_url }}",
-    tenantId: 'TENANT_ID',
+    tenantId: '1162',
     projectsBufferUrl: 'API_GATEWAY_URL/api/buffer/v1/'
   };
 </script>

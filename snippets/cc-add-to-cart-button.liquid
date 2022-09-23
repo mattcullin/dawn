@@ -5,7 +5,7 @@
 {% endif %}
 {% if product.metafields.BackOffice.CustomersCanvasLinked and productNotCopied %}
   {% comment %}
-     AURIGMA - 22-09-2022 - Moved classes from main-product.liquid
+     AURIGMA - 23-09-2022 - Moved classes from main-product.liquid
   {% endcomment %}
   <button id="AddToCart-{{ section.id }}" type="button" target="cc-editor-button" 
     class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}">
@@ -20,7 +20,10 @@
   </button>
 
 {% else %}
-
+  {% comment %}
+    AURIGMA - 23-09-2022 - There is no current variant alias in this topic, 
+    we use the existing variant - product.selected_or_first_available_variant
+  {% endcomment %}
   <button id="AddToCart-{{ section.id }}" type="submit" name="add"
           {% unless product.selected_or_first_available_variant.available %}disabled="disabled"{% endunless %}
           class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}">

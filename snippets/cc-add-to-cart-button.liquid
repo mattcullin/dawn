@@ -4,12 +4,14 @@
 	{% assign productNotCopied = true %}
 {% endif %}
 {% if product.metafields.BackOffice.CustomersCanvasLinked and productNotCopied %}
-
-  <button id="AddToCart-{{ section.id }}" type="button" target="cc-editor-button" class="btn add-to-cart" style="color:white"
-          {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+  {% comment %}
+     AURIGMA - 22-09-2022 - Moved classes from main-product.liquid
+  {% endcomment %}
+  <button id="AddToCart-{{ section.id }}" type="button" target="cc-editor-button" 
+    class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}">
     
     <span id="AddToCartText-{{ section.id }}">
-      {% unless current_variant.available %}
+      {% unless product.selected_or_first_available_variant.available %}
       	{{ 'products.product.sold_out' | t }}
       {% else %}
       	{{ 'Design product' }}
@@ -20,11 +22,11 @@
 {% else %}
 
   <button id="AddToCart-{{ section.id }}" type="submit" name="add"
-          {% unless current_variant.available %}disabled="disabled"{% endunless %}
-          class="btn product-form__cart-submit{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}">
+          {% unless product.selected_or_first_available_variant.available %}disabled="disabled"{% endunless %}
+          class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}">
     
     <span id="AddToCartText-{{ section.id }}">
-      {% unless current_variant.available %}
+      {% unless product.selected_or_first_available_variant.available %}
       	{{ 'products.product.sold_out' | t }}
       {% else %}
       	{{ 'products.product.add_to_cart' | t }}

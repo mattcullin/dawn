@@ -1,5 +1,5 @@
 {% comment %}
-  AURIGMA - 23.09.2022 -
+  AURIGMA - 23.09.2022 - 
 {% endcomment %}
 {{ 'cc-cart.js' | asset_url | script_tag }}
 
@@ -13,7 +13,7 @@
   window.ecommerceSystem = {
     checkoutUrl: "{{ routes.cart_url }}",
     tenantId: '1162',
-    projectsBufferUrl: 'https://cch-apigateway.azurewebsites.net/'
+    projectsBufferUrl: 'https://api.customerscanvashub.com/api/buffer/v1/'
   };
 </script>
 <customers-canvas-cart/>

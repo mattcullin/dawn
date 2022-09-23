@@ -99,7 +99,9 @@
   {% else %}
     <script>
       document.addEventListener('DOMContentLoaded', async function() {
-        overrideThemeStrings();
+        {% comment %}
+          AURIGMA - 23.09.2022 - Delete overrideThemeStrings() function
+        {% endcomment %}
         const designButton = document.querySelector('[target="cc-editor-button"]');
         const editorContainer = document.getElementById('editor-parent-for-product');
         const preloader = document.getElementById('preloader-holder');
@@ -172,10 +174,6 @@
           designButton.click();
         }
       });
-
-      function overrideThemeStrings() {
-        theme.strings.addToCart = theme.productStrings.addToCart = 'Design products';
-      }
     </script>
   {% endif %}
 {% endif %}

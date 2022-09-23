@@ -83,7 +83,7 @@
 
         ccPages: function() {
             return {
-                "product": document.querySelector(".product product--"),
+                "product": document.querySelector("product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}"),
                 "editor": document.querySelector("#cc-editor-page")
             }
         },

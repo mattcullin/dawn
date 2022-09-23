@@ -1,0 +1,44 @@
+{% assign productId = product.id | downcase %}
+{% assign productNotCopied = false %}
+{% if product.metafields.BackOffice.ProductId == blank or product.metafields.BackOffice.ProductId == productId %}
+	{% assign productNotCopied = true %}
+{% endif %}
+{% if product.metafields.BackOffice.CustomersCanvasLinked and productNotCopied %}
+  {% comment %}
+     AURIGMA - 23-09-2022 - Moved classes from main-product.liquid
+  {% endcomment %}
+  <button id="AddToCart-{{ section.id }}" type="button" target="cc-editor-button" 
+    class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}">
+    
+    <span id="AddToCartText-{{ section.id }}">
+      {% unless product.selected_or_first_available_variant.available %}
+      	{{ 'products.product.sold_out' | t }}
+      {% else %}
+      	{{ 'Design product' }}
+      {% endunless %}
+    </span>
+  </button>
+
+{% else %}
+  {% comment %}
+    AURIGMA - 23-09-2022 - There is no current variant alias in this topic, 
+    we use the existing variant - product.selected_or_first_available_variant
+  {% endcomment %}
+  <button id="AddToCart-{{ section.id }}" type="submit" name="add"
+          {% unless product.selected_or_first_available_variant.available %}disabled="disabled"{% endunless %}
+          class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}">
+    
+    <span id="AddToCartText-{{ section.id }}">
+      {% unless product.selected_or_first_available_variant.available %}
+      	{{ 'products.product.sold_out' | t }}
+      {% else %}
+      	{{ 'products.product.add_to_cart' | t }}
+      {% endunless %}
+    </span>
+  </button>
+
+  {% if section.settings.enable_payment_button %}
+  	{{ form | payment_button }}
+  {% endif %}
+
+{% endif %} 

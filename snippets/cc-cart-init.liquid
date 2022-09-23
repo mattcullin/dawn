@@ -1,0 +1,59 @@
+<script>
+  {% comment %}
+    AURIGMA - 26.09.2022 - A function has been added to the script that creates a mutationObserver to track changes in the cart
+  {% endcomment %}
+  const prepareCartInterface = function() {
+      var mutationObserver = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+          if (mutation.addedNodes) {
+            setTimeout(() => {
+              const form = Array.from(mutation.addedNodes).find(x => x.tagName == 'TABLE');
+              if (form) {
+                Aurigma.CcHelper.renderCart();
+                //console.log(mutation);
+              }
+            }, 0);
+          }
+        });
+      });
+
+      // Starts listening for changes in the '#CartContainer' HTML element
+      mutationObserver.observe(document.querySelector('#cart'), {
+        childList: true,
+        subtree: true
+      });
+  };
+  
+  document.addEventListener("DOMContentLoaded", cartInit());
+
+  function cartInit() {
+    if (Aurigma.CcHelper == undefined || Aurigma.Storefront.projectsBufferUrl == undefined) {
+      const ecommerceSystem = {
+        {%  if customer %}
+          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}', '{{ customer.id }}'),
+        {%  else %}
+          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}'),
+        {% endif %}
+        pluginSettings: { currency: ShopifyInit.getCurrency() },
+        tenantId: '1162',
+        storefrontId: '1131',
+        existingOrder: ShopifyInit.getExistingOrder()
+      };
+      new CcHelper().loadProductForCc().then(ccProduct => {
+          {% comment %}
+            AURIGMA - 26.09.2022 - Calling the added function
+          {% endcomment %}
+          prepareCartInterface();
+          let tenantId = ecommerceSystem.tenantId.toString();
+          let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
+          Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
+          Aurigma.CcHelper.renderCart();
+      });
+    } else {
+      {% comment %}
+        AURIGMA - 26.09.2022 - Calling the added function
+      {% endcomment %}
+      prepareCartInterface();
+    }
+  }
+</script>

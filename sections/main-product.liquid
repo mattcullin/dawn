@@ -5,7 +5,7 @@
 >
   {% comment %}
     AURIGMA - 22-09-2022 - Include main editor initialization code
-  {% endcomment %}}
+  {% endcomment %}
   {% render 'cc-init' %}
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -51,6 +51,10 @@
     >
   {%- endif -%}
 
+  {% comment %}
+    AURIGMA - 23-09-2022 - Add render code for cc-editor liquid file.
+  {% endcomment %}
+  {% render 'cc-editor' %}
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery

@@ -80,7 +80,6 @@
                 });   
             }
         },
-
         ccPages: function() {
             return {
                 "product": document.querySelector(".product.product"),

@@ -53,52 +53,7 @@
         <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
-                {% comment %} 
-          AURIGMA - 26.09.2022 - 
-        {% endcomment %}
-         <script>
-            // When calling this function, you need to be sure that the selectors exist in this theme
-            function prepareInterface() {
-              const inputs = document.querySelectorAll('input[name="updates[]"');
-              const removeLinks = document.querySelectorAll('[data-cart-remove]');
-              for (let i = 0; i < removeLinks.length; i++) {
-                removeLinks[i].href = 'javascript: void(0)';
-                removeLinks[i].addEventListener('click', async (e) => {
-                  e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
-                  const itemQuantity = 0;
-                  const itemKey = e.target.closest('tr').getAttribute('data-cart-item-key');
-                  try {
-                    await updateShopifyCart(e, itemKey, itemQuantity);
-                  }
-                  catch (error) {
-                    console.error(error);
-                  }
-                });
-              }
-            }
-            
-            // When calling this function, you need to be sure that the selectors exist in this theme
-            async function updateShopifyCart(e, itemKey, itemQuantity) {
-              try {
-                // update the cart and get updated data
-                const updatedData = await Aurigma.CcHelper.updateCart(itemKey, itemQuantity);
-                if (itemQuantity == 0) {
-                  e.target.closest('tr').remove();
-                  document.querySelector('[data-cart-subtotal]').innerHTML = new Intl.NumberFormat('en', { style: 'currency', currency: Aurigma.CcHelper.cart.currency }).format((Aurigma.CcHelper.cart.items_subtotal_price / 100).toFixed(2));
-                  document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = Aurigma.CcHelper.cart.item_count;
-                } else {
-                  //update price box and cart count box
-                  e.target.closest('tr').querySelector('.cart__final-price').querySelector('[data-cart-item-regular-price]').innerHTML = updatedData.updatedItemPrice;
-                  document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = updatedData.cartCount;
-                  document.querySelector('[data-cart-subtotal]').innerHTML = updatedData.subtotal;
-                }
-              }
-              catch(error) {
-                console.error(error);
-              }
-            }
-          </script>
-          {% include 'cc-cart-init' %}
+                
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
@@ -117,7 +72,13 @@
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                             <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
-                            <img class="cart-item__image"src="{{ item | img_url: '95x95', scale: 2 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}" {% if item.properties['_itemId'] %} name="product-image-{{item.properties['_itemId']}}" {% else %} name="product-image-{{item.key}}" {% endif %}>
+                            <img class="cart-item__image"
+                              src="{{ item.image | image_url: width: 300 }}"
+                              alt="{{ item.image.alt | escape }}"
+                              loading="lazy"
+                              width="150"
+                              height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                            >
                           {% endif %}
                         </td>
 

@@ -37,7 +37,7 @@
         existingOrder: ShopifyInit.getExistingOrder()
       };
       new CcHelper().loadProductForCc().then(ccProduct => {
-          prepareCartInterface();
+          Aurigma.CcHelper.renderCart();
           let tenantId = ecommerceSystem.tenantId.toString();
           let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
           Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);

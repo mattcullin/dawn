@@ -52,7 +52,7 @@
         {%- if cart != empty -%}
           <script>
             function prepareInterface() {
-              let inputs = document.querySelectorAll('input[name="updates[]"');
+              let inputs = document.querySelectorAll('input[name="updates[]');
               let removeLinks = document.querySelectorAll('[data-cart-remove]');
               for (let i = 0; i < removeLinks.length; i++) {
                 removeLinks[i].href = "javascript: void(0)";
@@ -68,20 +68,6 @@
                         console.error(error);
                       }
               	});
-            	}
-              for (let i = 0; i < inputs.length; i++) {
-                inputs[i].addEventListener(
-                  "change", async (e) => {
-                    e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
-                    let itemQuantity = Number.parseInt(e.target.value);
-                    let itemKey = e.target.id.split('_').slice(-1)[0];
-                    try {
-                      await updateShopifyCart(e, itemKey, itemQuantity);
-                    }
-                    catch(error) {
-                      console.error(error);
-                    }
-                  }, true);
             	}
             }
       

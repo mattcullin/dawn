@@ -43,28 +43,27 @@
   }
 
   document.addEventListener("DOMContentLoaded", function() {
-    if (Aurigma.CcHelper == undefined) {
+    if (Aurigma.Storefront == undefined || Aurigma.Storefront.projectsBufferUrl == undefined) {
       const ecommerceSystem = {
         {%  if customer %}
           userId: ShopifyInit.getUserIdForCc('{{shop.domain}}', '{{ customer.id }}'),
-        {%  else %}
-          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}'),
-        {% endif %}
-        pluginSettings: { currency: ShopifyInit.getCurrency() },
-        tenantId: '1162',
-        storefrontId: '1131',
-        existingOrder: ShopifyInit.getExistingOrder()
+		    {%  else %}
+	      	userId: ShopifyInit.getUserIdForCc('{{shop.domain}}'),
+		    {% endif %}                       
+		    pluginSettings: { currency: ShopifyInit.getCurrency() },
+		    tenantId: 1162
       };
-    
       new CcHelper().loadProductForCc().then(ccProduct => {
+        Aurigma.Storefront.loadIntegrationInfo(ecommerceSystem, ccProduct).then(result => {
           let tenantId = ecommerceSystem.tenantId.toString();
-          let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
+          let bufferUrl = Aurigma.Storefront.projectsBufferUrl + `/tenants/${tenantId}/projects/`;
           Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
           prepareInterface();
           Aurigma.CcHelper.renderCart();
-      });
-    } else {
-      Aurigma.CcHelper.renderCart();
-    }
+        });
+      });     
+  	} else {
+		Aurigma.CcHelper.renderCart();
+  	}
   });
 </script>

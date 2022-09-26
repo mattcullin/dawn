@@ -165,28 +165,27 @@
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
-                          
                           {% comment %} 
                             AURIGMA - 26.09.2022 - Replacing the img tag with one capable of displaying previews from BackOffice 
                           {% endcomment %}
                           {%- if property.last != blank and property_first_char != '_' -%}
-                    
-                          {%- endif -%}
-                          div class="cart__meta-text">
+                            <div class="cart__meta-text">
                                 {% if item.properties['_itemId'] %}
                                 <div id="cc-product-{{item.properties['_itemId']}}-data"></div>
                                 {% endif %}
                             </div>
-                          {% unless property.last == blank %}
-                            {{ property.first }}:
+                          {%- endif -%}
+                          
+                          {% unless p.last == blank %}
+                            {{ p.first }}:
                             
                             {% comment %}
                                 Check if there was an uploaded file associated
                             {% endcomment %}
-                            {% if property.last contains '/uploads/' %}
-                                <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+                            {% if p.last contains '/uploads/' %}
+                                <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
                             {% else %}
-                                {{ property.last }}
+                                {{ p.last }}
                             {% endif %}
                           {% endunless %}
                         {%- endfor -%}

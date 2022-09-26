@@ -51,7 +51,7 @@
       <div class="js-contents">
         {%- if cart != empty -%}
         {% comment %} 
-          AURIGMA - 26.09.2022 - 
+          AURIGMA - 26.09.2022 - Added script to update cart data ( quantity )
         {% endcomment %}
          <script>
             // When calling this function, you need to be sure that the selectors exist in this theme
@@ -115,6 +115,7 @@
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                         <div class="cart-item__image-container gradient global-media-settings">
+                          {% comment %} AURIGMA - 26.09.2022 - Replacing the img tag with one capable of displaying previews from BackOffice {% endcomment %}
                           <img class="cart-item__image" src="{{ item | img_url: '95x95', scale: 2 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}" {% if item.properties['_itemId'] %} name="product-image-{{item.properties['_itemId']}}" {% else %} name="product-image-{{item.key}}" {% endif %}>
                         </div>
                     {% endif %}

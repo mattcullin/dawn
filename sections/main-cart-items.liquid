@@ -128,7 +128,7 @@
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                         <div class="cart-item__image-container gradient global-media-settings">
-                          <img class="cart__image" src="{{ item | img_url: '95x95', scale: 2 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}" {% if item.properties['_itemId'] %} name="product-image-{{item.properties['_itemId']}}" {% else %} name="product-image-{{item.key}}" {% endif %}>
+                          <img class="cart-item__image" src="{{ item | img_url: '95x95', scale: 2 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}" {% if item.properties['_itemId'] %} name="product-image-{{item.properties['_itemId']}}" {% else %} name="product-image-{{item.key}}" {% endif %}>
                         </div>
                     {% endif %}
                   </td>

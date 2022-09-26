@@ -51,25 +51,26 @@
       <div class="js-contents">
         {%- if cart != empty -%}
           <script>
-            function prepareInterface() {
-              let inputs = document.querySelectorAll('input[name="updates[]');
-              let removeLinks = document.querySelectorAll('[data-cart-remove]');
-              for (let i = 0; i < removeLinks.length; i++) {
-                removeLinks[i].href = "javascript: void(0)";
-                removeLinks[i].addEventListener(
-                  "click", async (e) => {
-                  	e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
-                		let itemQuantity = 0;
-                		let itemKey = e.target.closest('tr').getAttribute('data-cart-item-key');
-                      try {
-                        await updateShopifyCart(e, itemKey, itemQuantity);
-                      }
-                      catch (error) {
-                        console.error(error);
-                      }
-              	});
-            	}
-            }
+             function prepareInterface() {
+               let inputs = document.querySelectorAll('input[name="updates[]"');
+               let removeLinks = document.querySelectorAll('[data-cart-remove]');
+               for (let i = 0; i < removeLinks.length; i++) {
+                 removeLinks[i].href = "javascript: void(0)";
+                 removeLinks[i].addEventListener(
+                   "click", async (e) => {
+                   	e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
+                 		let itemQuantity = 0;
+                 		let itemKey = e.target.closest('tr').getAttribute('data-cart-item-key');
+                       try {
+                         await updateShopifyCart(e, itemKey, itemQuantity);
+                       }
+                       catch (error) {
+                         console.error(error);
+                       }
+               	});
+             	}
+               
+             }
       
             async function updateShopifyCart(e, itemKey, itemQuantity) {
               try {

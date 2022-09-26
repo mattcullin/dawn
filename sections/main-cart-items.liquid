@@ -53,7 +53,7 @@
           <script>
             function prepareInterface() {
               let inputs = document.querySelectorAll('input[name="updates[]"');
-              let removeLinks = document.querySelectorAll('[cart-remove-button]');
+              let removeLinks = document.querySelectorAll('cart-remove-button');
               for (let i = 0; i < removeLinks.length; i++) {
                 removeLinks[i].href = "javascript: void(0)";
                 removeLinks[i].addEventListener(

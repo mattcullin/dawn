@@ -19,19 +19,6 @@
         }
       });
     }
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].addEventListener('change', async (e) => {
-        e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
-        const itemQuantity = Number.parseInt(e.target.value);
-        const itemKey = e.target.id.split('-').slice(-1)[0];
-        try {
-          await updateShopifyCart(e, itemKey, itemQuantity);
-        }
-        catch(error) {
-          console.error(error);
-        }
-      }, true);
-    }
   }
   
   // When calling this function, you need to be sure that the selectors exist in this theme

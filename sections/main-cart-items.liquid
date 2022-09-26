@@ -170,13 +170,13 @@
                             AURIGMA - 26.09.2022 - Replacing the img tag with one capable of displaying previews from BackOffice 
                           {% endcomment %}
                           {%- if property.last != blank and property_first_char != '_' -%}
-                            <div class="cart__meta-text">
+                    
+                          {%- endif -%}
+                          div class="cart__meta-text">
                                 {% if item.properties['_itemId'] %}
                                 <div id="cc-product-{{item.properties['_itemId']}}-data"></div>
                                 {% endif %}
                             </div>
-                          {%- endif -%}
-                          
                           {% unless property.last == blank %}
                             {{ property.first }}:
                             

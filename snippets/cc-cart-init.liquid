@@ -1,12 +1,12 @@
 <script>
-  const prepareMiniCartInterface = function() {
+  const prepareCartInterface = function() {
       var mutationObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
           if (mutation.addedNodes) {
             setTimeout(() => {
               const form = Array.from(mutation.addedNodes).find(x => x.tagName == 'FORM');
               if (form) {
-                Aurigma.CcHelper.renderMiniCart();
+                Aurigma.CcHelper.renderCart();
                 //console.log(mutation);
               }
             }, 500);
@@ -41,10 +41,10 @@
           let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
           Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
           prepareInterface();
-          Aurigma.CcHelper.renderCart();
+          prepareCartInterface();
       });
     } else {
-      Aurigma.CcHelper.renderCart();
+      prepareCartInterface();
     }
   }
 </script>

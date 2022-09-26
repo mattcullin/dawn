@@ -74,7 +74,7 @@
                   "change", async (e) => {
                     e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
                     let itemQuantity = Number.parseInt(e.target.value);
-                    let itemKey = e.target.id.split('-').slice(-1)[0];
+                    let itemKey = e.target.id.split('_').slice(-1)[0];
                     try {
                       await updateShopifyCart(e, itemKey, itemQuantity);
                     }

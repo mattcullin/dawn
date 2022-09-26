@@ -1,5 +1,8 @@
 <script>
-  document.addEventListener("click", function() {
+  document.addEventListener("DOMContentLoaded", cartInit());
+  document.addEventListener("click", cartInit());
+
+  function cartInit() {
     if (Aurigma.CcHelper == undefined || Aurigma.Storefront.projectsBufferUrl == undefined) {
       const ecommerceSystem = {
         {%  if customer %}
@@ -22,5 +25,5 @@
     } else {
       Aurigma.CcHelper.renderCart();
     }
-  });
+  }
 </script>

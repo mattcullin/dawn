@@ -166,7 +166,7 @@
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
                           {% comment %} 
-                            AURIGMA - 26.09.2022 - Replacing the img tag with one capable of displaying previews from BackOffice 
+                            AURIGMA - 26.09.2022 - Add return to edit link
                           {% endcomment %}
                           {%- if property.last != blank and property_first_char != '_' -%}
                             <div class="cart__meta-text">
@@ -175,19 +175,6 @@
                                 {% endif %}
                             </div>
                           {%- endif -%}
-                          
-                          {% unless p.last == blank %}
-                            {{ p.first }}:
-                            
-                            {% comment %}
-                                Check if there was an uploaded file associated
-                            {% endcomment %}
-                            {% if p.last contains '/uploads/' %}
-                                <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
-                            {% else %}
-                                {{ p.last }}
-                            {% endif %}
-                          {% endunless %}
                         {%- endfor -%}
                       </dl>
 

@@ -40,6 +40,9 @@
         existingOrder: ShopifyInit.getExistingOrder()
       };
       new CcHelper().loadProductForCc().then(ccProduct => {
+          {% comment %}
+            AURIGMA - 26.09.2022 - Calling the added function
+          {% endcomment %}
           prepareCartInterface();
           let tenantId = ecommerceSystem.tenantId.toString();
           let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
@@ -47,6 +50,9 @@
           Aurigma.CcHelper.renderCart();
       });
     } else {
+      {% comment %}
+        AURIGMA - 26.09.2022 - Calling the added function
+      {% endcomment %}
       prepareCartInterface();
     }
   }

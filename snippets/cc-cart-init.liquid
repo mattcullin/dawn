@@ -37,11 +37,10 @@
         existingOrder: ShopifyInit.getExistingOrder()
       };
       new CcHelper().loadProductForCc().then(ccProduct => {
+          prepareCartInterface();
           let tenantId = ecommerceSystem.tenantId.toString();
           let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
-          prepareInterface();
           Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
-          prepareCartInterface();
       });
     } else {
       prepareCartInterface();

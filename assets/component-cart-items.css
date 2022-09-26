@@ -33,7 +33,7 @@
 }
 
 .cart-item__image {
-  height: auto;
+  height: 190;
   max-width: calc(10rem / var(--font-body-scale));
 }
 

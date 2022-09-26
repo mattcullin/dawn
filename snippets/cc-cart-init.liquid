@@ -1,4 +1,26 @@
 <script>
+  const prepareMiniCartInterface = function() {
+      var mutationObserver = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+          if (mutation.addedNodes) {
+            setTimeout(() => {
+              const form = Array.from(mutation.addedNodes).find(x => x.tagName == 'FORM');
+              if (form) {
+                Aurigma.CcHelper.renderMiniCart();
+                //console.log(mutation);
+              }
+            }, 500);
+          }
+        });
+      });
+
+      // Starts listening for changes in the '#CartContainer' HTML element
+      mutationObserver.observe(document.querySelector('#CartContainer'), {
+        childList: true,
+        subtree: true
+      });
+  };
+  
   document.addEventListener("DOMContentLoaded", cartInit());
 
   function cartInit() {

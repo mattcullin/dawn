@@ -15,7 +15,7 @@
       });
 
       // Starts listening for changes in the '#CartContainer' HTML element
-      mutationObserver.observe(document.querySelector('#CartContainer'), {
+      mutationObserver.observe(document.querySelector('.cart__items'), {
         childList: true,
         subtree: true
       });

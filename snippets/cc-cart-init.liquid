@@ -41,27 +41,30 @@
       console.error(error);
     }
   }
-  if (Aurigma.CcHelper == undefined) {
-    const ecommerceSystem = {
-      {%  if customer %}
-        userId: ShopifyInit.getUserIdForCc('{{shop.domain}}', '{{ customer.id }}'),
-      {%  else %}
-        userId: ShopifyInit.getUserIdForCc('{{shop.domain}}'),
-      {% endif %}
-      pluginSettings: { currency: ShopifyInit.getCurrency() },
-      tenantId: '1162',
-      storefrontId: '1131',
-      existingOrder: ShopifyInit.getExistingOrder()
-    };
-  
-    new CcHelper().loadProductForCc().then(ccProduct => {
-        let tenantId = ecommerceSystem.tenantId.toString();
-        let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
-        Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
-        prepareInterface();
-        Aurigma.CcHelper.renderCart();
-    });
-  } else {
-    Aurigma.CcHelper.renderCart();
-  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (Aurigma.CcHelper == undefined) {
+      const ecommerceSystem = {
+        {%  if customer %}
+          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}', '{{ customer.id }}'),
+        {%  else %}
+          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}'),
+        {% endif %}
+        pluginSettings: { currency: ShopifyInit.getCurrency() },
+        tenantId: '1162',
+        storefrontId: '1131',
+        existingOrder: ShopifyInit.getExistingOrder()
+      };
+    
+      new CcHelper().loadProductForCc().then(ccProduct => {
+          let tenantId = ecommerceSystem.tenantId.toString();
+          let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
+          Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
+          prepareInterface();
+          Aurigma.CcHelper.renderCart();
+      });
+    } else {
+      Aurigma.CcHelper.renderCart();
+    }
+}
 </script>

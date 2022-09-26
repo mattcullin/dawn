@@ -69,20 +69,7 @@
                       }
               	});
             	}
-              for (let i = 0; i < inputs.length; i++) {
-                inputs[i].addEventListener(
-                  "change", async (e) => {
-                    e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
-                    let itemQuantity = Number.parseInt(e.target.value);
-                    let itemKey = e.target.id.split('_').slice(-1)[0];
-                    try {
-                      await updateShopifyCart(e, itemKey, itemQuantity);
-                    }
-                    catch(error) {
-                      console.error(error);
-                    }
-                  }, true);
-            	}
+              
             }
       
             async function updateShopifyCart(e, itemKey, itemQuantity) {

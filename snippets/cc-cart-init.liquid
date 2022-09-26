@@ -23,7 +23,7 @@
       inputs[i].addEventListener('change', async (e) => {
         e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
         const itemQuantity = Number.parseInt(e.target.value);
-        const itemKey = e.target.id.split('_').slice(-1)[0];
+        const itemKey = e.target.id.split('-').slice(-1)[0];
         try {
           await updateShopifyCart(e, itemKey, itemQuantity);
         }

@@ -95,6 +95,9 @@
               }
             }
           </script>
+          {% comment %} 
+            AURIGMA - 26.09.2022 - Embeds cc-cart-init into the standard cart
+          {% endcomment %}
           {% render 'cc-cart-init' %}
           <table class="cart-items">
             <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
@@ -162,6 +165,10 @@
 
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
+                          
+                          {% comment %} 
+                            AURIGMA - 26.09.2022 - Replacing the img tag with one capable of displaying previews from BackOffice 
+                          {% endcomment %}
                           {%- if property.last != blank and property_first_char != '_' -%}
                             <div class="cart__meta-text">
                                 {% if item.properties['_itemId'] %}
@@ -170,17 +177,17 @@
                             </div>
                           {%- endif -%}
                           
-                          {% unless p.last == blank %}
-                          {{ p.first }}:
-                          
-                          {% comment %}
-                              Check if there was an uploaded file associated
-                          {% endcomment %}
-                          {% if p.last contains '/uploads/' %}
-                              <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
-                          {% else %}
-                              {{ p.last }}
-                          {% endif %}
+                          {% unless property.last == blank %}
+                            {{ property.first }}:
+                            
+                            {% comment %}
+                                Check if there was an uploaded file associated
+                            {% endcomment %}
+                            {% if property.last contains '/uploads/' %}
+                                <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+                            {% else %}
+                                {{ property.last }}
+                            {% endif %}
                           {% endunless %}
                         {%- endfor -%}
                       </dl>

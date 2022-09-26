@@ -41,7 +41,6 @@
           let bufferUrl = "https://cch-apigateway.azurewebsites.net/api/buffer/v1" + `/tenants/${tenantId}/projects`;
           prepareInterface();
           Aurigma.CcHelper = new CcHelper(tenantId, bufferUrl);
-          prepareInterface();
           prepareCartInterface();
       });
     } else {

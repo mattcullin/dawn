@@ -4,7 +4,7 @@
       mutations.forEach(function(mutation) {
           if (mutation.addedNodes) {
             setTimeout(() => {
-              const form = Array.from(mutation.addedNodes).find(x => x.tagName == 'FORM');
+              const form = Array.from(mutation.addedNodes).find(x => x.tagName == 'form');
               if (form) {
                 Aurigma.CcHelper.renderCart();
                 //console.log(mutation);

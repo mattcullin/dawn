@@ -441,7 +441,7 @@ h5,
 .h0 {
   /* CLUB - slightly reduced size of Large header on mobile
   font-size: calc(var(--font-heading-scale) * 4rem); */
-  font-size: calc(var(--font-heading-scale) * 3.6rem);
+  font-size: calc(var(--font-heading-scale) * 3.2rem);
 }
 
 @media only screen and (min-width: 750px) {

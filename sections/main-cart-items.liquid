@@ -4,9 +4,22 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-{{ 'storefrontInit.js' | asset_url | script_tag }}
-{{ 'storefront.js' | asset_url | script_tag }}
-{{ 'cc-helper.js' | asset_url | script_tag }}
+
+{% comment %}CLUB - AURIGMA CLEANUP - parse through items to see if custom items exist, only load external JS if true{% endcomment %}
+{% for item in cart.items %}
+  {% if item.properties['_itemId'] %}
+    {% assign custom_items_exist = true %}
+    {% break %} 
+  {% endif %}
+{% endfor %}
+
+{% if custom_items_exist %}
+  {% comment %}theme-check-disable ParserBlockingScriptTag{% endcomment %}
+  {{ 'storefrontInit.js' | asset_url | script_tag }}
+  {{ 'storefront.js' | asset_url | script_tag }}
+  {{ 'cc-helper.js' | asset_url | script_tag }}
+  {% comment %}theme-check-enable ParserBlockingScriptTag{% endcomment %}
+{% endif %}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -50,55 +63,57 @@
     <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
       <div class="js-contents">
         {%- if cart != empty -%}
-        {% comment %} 
-          AURIGMA - 26.09.2022 - Added script to update cart data ( quantity )
-        {% endcomment %}
-         <script>
-            // When calling this function, you need to be sure that the selectors exist in this theme
-            function prepareInterface() {
-              const inputs = document.querySelectorAll('input[name="updates[]"');
-              const removeLinks = document.querySelectorAll('[data-cart-remove]');
-              for (let i = 0; i < removeLinks.length; i++) {
-                removeLinks[i].href = 'javascript: void(0)';
-                removeLinks[i].addEventListener('click', async (e) => {
-                  e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
-                  const itemQuantity = 0;
-                  const itemKey = e.target.closest('tr').getAttribute('data-cart-item-key');
-                  try {
-                    await updateShopifyCart(e, itemKey, itemQuantity);
-                  }
-                  catch (error) {
-                    console.error(error);
-                  }
-                });
-              }
-            }
-            
-            // When calling this function, you need to be sure that the selectors exist in this theme
-            async function updateShopifyCart(e, itemKey, itemQuantity) {
-              try {
-                // update the cart and get updated data
-                const updatedData = await Aurigma.CcHelper.updateCart(itemKey, itemQuantity);
-                if (itemQuantity == 0) {
-                  e.target.closest('tr').remove();
-                  document.querySelector('[data-cart-subtotal]').innerHTML = new Intl.NumberFormat('en', { style: 'currency', currency: Aurigma.CcHelper.cart.currency }).format((Aurigma.CcHelper.cart.items_subtotal_price / 100).toFixed(2));
-                  document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = Aurigma.CcHelper.cart.item_count;
-                } else {
-                  //update price box and cart count box
-                  e.target.closest('tr').querySelector('.cart__final-price').querySelector('[data-cart-item-regular-price]').innerHTML = updatedData.updatedItemPrice;
-                  document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = updatedData.cartCount;
-                  document.querySelector('[data-cart-subtotal]').innerHTML = updatedData.subtotal;
+          {% comment %} 
+            AURIGMA - 26.09.2022 - Added script to update cart data ( quantity )
+          {% endcomment %}
+          {% if custom_items_exist %}
+            <script>
+              // When calling this function, you need to be sure that the selectors exist in this theme
+              function prepareInterface() {
+                const inputs = document.querySelectorAll('input[name="updates[]"');
+                const removeLinks = document.querySelectorAll('[data-cart-remove]');
+                for (let i = 0; i < removeLinks.length; i++) {
+                  removeLinks[i].href = 'javascript: void(0)';
+                  removeLinks[i].addEventListener('click', async (e) => {
+                    e.stopPropagation ? e.stopPropagation() : (e.cancelBubble=true);
+                    const itemQuantity = 0;
+                    const itemKey = e.target.closest('tr').getAttribute('data-cart-item-key');
+                    try {
+                      await updateShopifyCart(e, itemKey, itemQuantity);
+                    }
+                    catch (error) {
+                      console.error(error);
+                    }
+                  });
                 }
               }
-              catch(error) {
-                console.error(error);
+              
+              // When calling this function, you need to be sure that the selectors exist in this theme
+              async function updateShopifyCart(e, itemKey, itemQuantity) {
+                try {
+                  // update the cart and get updated data
+                  const updatedData = await Aurigma.CcHelper.updateCart(itemKey, itemQuantity);
+                  if (itemQuantity == 0) {
+                    e.target.closest('tr').remove();
+                    document.querySelector('[data-cart-subtotal]').innerHTML = new Intl.NumberFormat('en', { style: 'currency', currency: Aurigma.CcHelper.cart.currency }).format((Aurigma.CcHelper.cart.items_subtotal_price / 100).toFixed(2));
+                    document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = Aurigma.CcHelper.cart.item_count;
+                  } else {
+                    //update price box and cart count box
+                    e.target.closest('tr').querySelector('.cart__final-price').querySelector('[data-cart-item-regular-price]').innerHTML = updatedData.updatedItemPrice;
+                    document.querySelector('#CartCount').querySelector('[data-cart-count]').innerHTML = updatedData.cartCount;
+                    document.querySelector('[data-cart-subtotal]').innerHTML = updatedData.subtotal;
+                  }
+                }
+                catch(error) {
+                  console.error(error);
+                }
               }
-            }
-          </script>
-          {% comment %} 
-            AURIGMA - 26.09.2022 - Embeds cc-cart-init into the standard cart
-          {% endcomment %}
-          {% render 'cc-cart-init' %}
+            </script>
+            {% comment %} 
+              AURIGMA - 26.09.2022 - Embeds cc-cart-init into the standard cart
+            {% endcomment %}
+            {% render 'cc-cart-init' %}
+          {% endif %}
           <table class="cart-items">
             <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
             <thead>
@@ -119,7 +134,16 @@
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                         <div class="cart-item__image-container gradient global-media-settings">
                           {% comment %} AURIGMA - 26.09.2022 - Replacing the img tag with one capable of displaying previews from BackOffice {% endcomment %}
-                          <img class="cart-item__image" src="{{ item | img_url: '95x95', scale: 0.5 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}" {% if item.properties['_itemId'] %} name="product-image-{{item.properties['_itemId']}}" {% else %} name="product-image-{{item.key}}" {% endif %}>
+                          <img src="{{ item.image | image_url: width: 300 }}"
+                            class="cart-item__image"
+                            alt="{{ item.image.alt | escape }}"
+                            loading="lazy"
+                            width="150"
+                            height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                            data-item-url="{{ item.url }}"
+                            {% if item.properties['_itemId'] %} name="product-image-{{ item.properties['_itemId'] }}" {% else %} name="product-image-{{ item.key }}" {% endif %}
+                          >
+                        </div>                          
                         </div>
                     {% endif %}
                   </td>
@@ -153,7 +177,8 @@
                     {%- endif -%}
 
                     {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
-                      <dl>
+                      {% comment %}CLUB - added smaller styling for product options{% endcomment %}
+                      <dl class="product-options">
                         {%- if item.product.has_only_default_variant == false -%}
                           {%- for option in item.options_with_values -%}
                             <div class="product-option">
@@ -167,12 +192,31 @@
                           {%- assign property_first_char = property.first | slice: 0 -%}
                           {% comment %} 
                             AURIGMA - 26.09.2022 - Add return to edit link
+                            CLUB - AURIGMA CLEANUP - moved back into <dl>, added edit/add emoji
                           {% endcomment %}
                           {%- if property.last != blank and property_first_char != '_' -%}
-                            <div class="cart__meta-text">
-                                {% if item.properties['_itemId'] %}
-                                <div id="cc-product-{{item.properties['_itemId']}}-data"></div>
-                                {% endif %}
+                            <div class="product-option">
+                              {% if item.properties['_itemId'] %}
+                                  <dt>&#9194;</dt>
+                                  <dd>
+                                    <div id="cc-product-{{ item.properties['_itemId'] }}-data"></div>
+                                  </dd>
+                                </div>
+                                <div class="product-option">
+                                  <dt>&#10133;</dt>
+                                  <dd><a href="{{ item.url }}">Add another {{ item.product.title }}</a></dd>
+                              {% else %}
+                                <dt>{{ property.first }}: </dt>
+                                <dd>
+                                  {%- if property.last contains '/uploads/' -%}
+                                    <a href="{{ property.last }}" class="link" target="_blank">
+                                      {{ property.last | split: '/' | last }}
+                                    </a>
+                                  {%- else -%}
+                                    {{ property.last }}
+                                  {%- endif -%}
+                                </dd>
+                              {% endif %}
                             </div>
                           {%- endif -%}
                         {%- endfor -%}

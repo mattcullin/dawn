@@ -111,6 +111,15 @@
   line-height: calc(1 + 0.5 / var(--font-body-scale));
 }
 
+/* CLUB - styling for product-options list */
+dl.product-options .product-option dt {
+  min-width: 20px;
+  display: inline-block;
+}
+dl.product-options .product-option {
+  font-size: 1.2rem;
+}
+
 .cart-item cart-remove-button {
   display: flex;
   margin-left: 1rem;

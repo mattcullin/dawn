@@ -311,7 +311,10 @@
 
   {% comment %}
     AURIGMA - 26.09.2022 - 
+    CLUB - AURIGMA CLEANUP - only load Aurigma code if product or cart page
   {% endcomment %}
-  {% include 'cc-onlogin' %}
+  {% if template.name == 'product' or template.name == 'cart' %}
+    {% include 'cc-onlogin' %}
+  {% endif %}
 </body>
 </html>

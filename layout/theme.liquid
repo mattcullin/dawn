@@ -314,7 +314,7 @@
     CLUB - AURIGMA CLEANUP - only load Aurigma code if product or cart page
   {% endcomment %}
   {% if template.name == 'product' or template.name == 'cart' %}
-    {% include 'cc-onlogin' %}
+    {% render 'cc-onlogin' %}
   {% endif %}
 </body>
 </html>

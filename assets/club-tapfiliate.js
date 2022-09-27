@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
         tap_click_id_attribute.type = 'hidden';
         tap_click_id_attribute.name = 'attributes[tap_click_id]';
         tap_click_id_attribute.value = click_id;
+        tap_click_id_attribute.setAttribute('form', 'cart');
         club_cart_attributes.appendChild(tap_click_id_attribute);
     }
   }

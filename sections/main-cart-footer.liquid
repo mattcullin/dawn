@@ -82,8 +82,8 @@
                       assign zone = 'ROW'
                     endif
                   -%}
-                  <input type="hidden" name="attributes[cart_currency]" value="{{ cart.currency.iso_code }}" />
-                  <input type="hidden" name="attributes[Zone]" value="{{ zone }}" />
+                  <input type="hidden" name="attributes[cart_currency]" value="{{ cart.currency.iso_code }}" form="cart" />
+                  <input type="hidden" name="attributes[Zone]" value="{{ zone }}" form="cart" />
                 </div>
                 
               </div>

@@ -28,7 +28,7 @@
           {% else %}
             userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}'),
           {% endif %}
-          pluginSettings: { shopifyBaseUrl: 'https://' + '{{ shop.domain }}', currency: ShopifyInit.getCurrency() },
+          pluginSettings: { shopifyBaseUrl: window.location.origin, currency: ShopifyInit.getCurrency() },
           tenantId: '1162', 
           storefrontId: '1131',
           existingOrder: ShopifyInit.getExistingOrder(),
@@ -116,7 +116,7 @@
           {% else %}
             userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}'),
           {% endif %}
-          pluginSettings: { shopifyBaseUrl: 'https://' + '{{ shop.domain }}', currency: ShopifyInit.getCurrency() },
+          pluginSettings: { shopifyBaseUrl: window.location.origin, currency: ShopifyInit.getCurrency() },
           tenantId: '1162', 
           storefrontId: '1131',
           existingOrder: ShopifyInit.getExistingOrder(),

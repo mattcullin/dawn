@@ -29,10 +29,10 @@
   function cartInit() {
     if (Aurigma.CcHelper == undefined || Aurigma.Storefront.projectsBufferUrl == undefined) {
       const ecommerceSystem = {
-        {%  if customer %}
-          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}', '{{ customer.id }}'),
-        {%  else %}
-          userId: ShopifyInit.getUserIdForCc('{{shop.domain}}'),
+        {% if customer %}
+          userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}', '{{ customer.id }}'),
+        {% else %}
+          userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}'),
         {% endif %}
         pluginSettings: { currency: ShopifyInit.getCurrency() },
         tenantId: '1162',

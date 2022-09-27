@@ -12,7 +12,7 @@ jobs:
           store: ${{ secrets.SHOP_STORE }}
           password: ${{ secrets.SHOP_PASSWORD }}
           access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
-          product_handle: puppy
+          product_handle: white-marble-vinyl-photography-backdrop
           collection_handle: all
           lhci_github_app_token: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
   theme-check:

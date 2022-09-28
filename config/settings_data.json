@@ -101,8 +101,8 @@
     "holiday_mode_message": "We're closed until 1-Oct-2023.",
     "checkout_logo_image": "shopify:\/\/shop_images\/club-backdrops-logo-black.png",
     "checkout_accent_color": "#0077cc",
-    "checkout_button_color": "#0077cc",
-    "checkout_error_color": "#cd193c",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#ff8200",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -111,6 +111,7 @@
             "type": "announcement",
             "settings": {
               "text": "Get 25% off 4+ items",
+              "text_alignment": "center",
               "color_scheme": "accent-2",
               "link": "#beacon-modal-bulk"
             }
@@ -133,7 +134,10 @@
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
-          "margin_bottom": 0
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
         }
       },
       "footer": {

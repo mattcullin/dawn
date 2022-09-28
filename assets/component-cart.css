@@ -221,3 +221,6 @@ cart-items {
     gap: 1rem;
   }
 }
+
+/* CLUB - Hide Club Cart Attributes */
+#club-cart-attributes { display: none; }

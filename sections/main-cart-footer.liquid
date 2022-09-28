@@ -5,6 +5,20 @@
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
+    {% comment %}CLUB - container for hidden cart attributes{% endcomment %}
+    <div id="club-cart-attributes">
+      {%- liquid 
+        capture zone
+            render 'club-zone'
+        endcapture
+        if zone == 'AU' or zone == 'CA'
+          assign zone = 'ROW'
+        endif
+      -%}
+      <input type="hidden" name="attributes[cart_currency]" value="{{ cart.currency.iso_code }}" form="cart" />
+      <input type="hidden" name="attributes[Zone]" value="{{ zone }}" form="cart" />
+    </div>
+    
     <div class="cart__footer">
       {%- if settings.show_cart_note -%}
         <cart-note class="cart__note field">
@@ -71,20 +85,6 @@
                 {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
                 {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_mystery_packs %}
                 {% render 'club-shipping-discount-banner' %}
-
-                {% comment %}CLUB - container for hidden cart attributes{% endcomment %}
-                <div id="club-cart-attributes">
-                  {%- liquid 
-                    capture zone
-                        render 'club-zone'
-                    endcapture
-                    if zone == 'AU' or zone == 'CA'
-                      assign zone = 'ROW'
-                    endif
-                  -%}
-                  <input type="hidden" name="attributes[cart_currency]" value="{{ cart.currency.iso_code }}" form="cart" />
-                  <input type="hidden" name="attributes[Zone]" value="{{ zone }}" form="cart" />
-                </div>
                 
               </div>
             {%- else -%}

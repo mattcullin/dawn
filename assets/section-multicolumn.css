@@ -21,6 +21,11 @@
   }
 }
 
+/* CLUB - added icon width */
+.multicolumn-card__image-wrapper--icon-width {
+  width: 48px;
+}
+
 .multicolumn-card__image-wrapper--third-width {
   width: 33%;
 }

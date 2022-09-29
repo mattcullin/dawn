@@ -58,6 +58,14 @@ window.addEventListener('DOMContentLoaded', () => {
         {
             "hashLink": "beacon-modal-editor",
             "beaconArticleID": "61f2b0ae2130e5169468139c"
+        },
+        {
+            "hashLink": "beacon-modal-vinyl-care-tips",
+            "beaconArticleID": "6335a0d8e1c306062a1d2ac9"
+        },
+        {
+            "hashLink": "beacon-modal-canvas-care-tips",
+            "beaconArticleID": "6335a0fd3f38fe1e4686208d"
         }
     ]
 

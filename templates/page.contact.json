@@ -19,13 +19,22 @@
             "page": ""
           }
         },
+        "11454a1c-2c2a-46d7-b005-8f6b904f47f9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "My order arrived incorrect or damaged",
+            "icon": "box",
+            "row_content": "",
+            "page": "order-issue"
+          }
+        },
         "16621201985543a64a-1": {
           "type": "collapsible_row",
           "settings": {
             "heading": "I'd like to return an item",
             "icon": "return",
-            "row_content": "<p>We're more than happy to accept returns <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">as outlined in our return policy<\/a>. Items must be:<\/p><p>- <strong>Within 30 days <\/strong>of the delivery date<\/p><p>- <strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">the appropriate returns address<\/a>, then <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your return tracking details.<\/p><p><\/p>",
-            "page": ""
+            "row_content": "",
+            "page": "return"
           }
         },
         "16621201985543a64a-2": {
@@ -58,6 +67,7 @@
       },
       "block_order": [
         "16621201985543a64a-0",
+        "11454a1c-2c2a-46d7-b005-8f6b904f47f9",
         "16621201985543a64a-1",
         "16621201985543a64a-2",
         "16621201985543a64a-3",

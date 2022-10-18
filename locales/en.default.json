@@ -432,7 +432,15 @@
       },
       "contact": {
         "company_label": "Company (EU companies include EORI)",
-        "optional_company_label": "Company (optional) - EU companies include EORI"
+        "optional_company_label": "Company (optional) - EU companies include EORI",
+        "phone_label": "Mobile phone number",
+        "optional_phone_label": "Mobile phone number (optional)",
+        "phone_placeholder": "Mobile phone number",
+        "phone_tooltip": "For important delivery messages"
+      },
+      "field_errors": {
+        "shipping_line_phone_blank": "A mobile phone number is required for important delivery messages",
+        "shipping_line_phone_invalid": "A valid mobile phone number is required for important delivery messages"
       }
     }
   }

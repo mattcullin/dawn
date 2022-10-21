@@ -852,7 +852,18 @@ class VariantSelects extends HTMLElement {
 
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+        
+        this.updateProductionTime(html); // CLUB - re-renders production time liquid block
       });
+  }
+
+  // CLUB - function to re-render section based on fetched variant html - to-do: change into a class based selector (instead of ID), e.g. 're-render' or 'js-contents' class, then any section wrapped in the class will be re-rendered
+  updateProductionTime(html) {
+    const elementToReplace = document.getElementById("production-time");
+    const replaceElementWith = html.getElementById("production-time");
+    if (elementToReplace && replaceElementWith) {
+      elementToReplace.innerHTML = replaceElementWith.innerHTML;  
+    }
   }
 
   toggleAddButton(disable = true, text, modifyClass = true) {

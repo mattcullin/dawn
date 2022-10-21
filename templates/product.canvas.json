@@ -37,18 +37,17 @@
             "picker_type": "button"
           }
         },
-        "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe": {
-          "type": "text",
-          "settings": {
-            "text": "⚡ +1 working day to print",
-            "text_style": "uppercase"
-          }
-        },
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d": {
           "type": "text",
           "settings": {
             "text": "👍 30-Day Return Policy",
             "text_style": "uppercase"
+          }
+        },
+        "e0e220cf-051c-4a17-b140-925260e2a226": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign production_time = product.selected_or_first_available_variant.metafields.custom.production_time %}\n\n<p class=\"product__text caption-with-letter-spacing\" id=\"production-time\">\n{% if production_time == 1 %}\n⚡ +{{ production_time }}  working day to print\n{% elsif production_time > 1 %}\n⚡ +{{ production_time }}  working days to print\n{% else %}\n✅ In-stock &amp; ready to ship{% endif %}\n<\/p>"
           }
         },
         "buy_buttons": {
@@ -141,8 +140,8 @@
         "price",
         "loox-rating",
         "variant_picker",
-        "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe",
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
+        "e0e220cf-051c-4a17-b140-925260e2a226",
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd",

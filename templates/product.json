@@ -37,11 +37,10 @@
             "picker_type": "button"
           }
         },
-        "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe": {
-          "type": "text",
+        "a347825a-b226-45bb-8b11-40812f1ab06c": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "✅ In-stock & ready to ship",
-            "text_style": "uppercase"
+            "custom_liquid": "{% assign production_time = product.selected_or_first_available_variant.metafields.custom.production_time %}\n\n<p class=\"product__text caption-with-letter-spacing production-time\">\n{% if production_time == 1 %}\n⚡ +{{ production_time }}  working day to print\n{% elsif production_time > 1 %}\n⚡ +{{ production_time }}  working days to print\n{% else %}\n✅ In-stock &amp; ready to ship{% endif %}\n<\/p>"
           }
         },
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d": {
@@ -141,7 +140,7 @@
         "price",
         "loox-rating",
         "variant_picker",
-        "7bba8ac7-b44d-4084-a2c4-3ade17c1a0fe",
+        "a347825a-b226-45bb-8b11-40812f1ab06c",
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",

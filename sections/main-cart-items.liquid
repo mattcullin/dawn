@@ -220,6 +220,15 @@
                             </div>
                           {%- endif -%}
                         {%- endfor -%}
+
+                        {% comment %}CLUB - show production time on line items, leaving off for now but may decide to include
+                          {%- if item.variant.metafields.custom.production_time > 0 -%}
+                            <div class="product-option">
+                                <dt></dt>
+                                <dt>+{{ item.variant.metafields.custom.production_time }} working day to print</dt>
+                            </div>
+                          {%- endif -%}
+                        {% endcomment %}
                       </dl>
 
                       <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>

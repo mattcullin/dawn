@@ -94,8 +94,8 @@
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>⚡ Custom backdrops take an extra <strong>1 working day to print<\/strong> before shipping, but we always get them out sooner if we can!<\/p><p><em>Get <\/em><em><strong>FREE <\/strong><\/em><em>or reduced shipping rates the higher your cart value.<\/em><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">Shipping rates & delivery times →<\/a><\/p>",
-            "page": ""
+            "content": "",
+            "page": "product-accordion-shipping"
           }
         },
         "collapsible-row-0": {

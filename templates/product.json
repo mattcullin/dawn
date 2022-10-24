@@ -88,8 +88,8 @@
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>We offer fast shipping worldwide. See our <a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">shipping rates & delivery times here →<\/a><\/p><p><em>Get <\/em><em><strong>FREE <\/strong><\/em><em>or reduced shipping rates the higher your cart value.<\/em><\/p>",
-            "page": ""
+            "content": "",
+            "page": "product-accordion-shipping"
           }
         },
         "collapsible-row-0": {

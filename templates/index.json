@@ -71,14 +71,14 @@
         "8f0f98f7-ca68-45ea-bc7f-673812ac4f55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-hero-home-zebra-wood.jpg",
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/home-header-october-22-club-backdrops.jpg",
+        "image_overlay_opacity": 50,
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false

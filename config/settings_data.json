@@ -110,10 +110,10 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Get 25% off 4+ items",
+              "text": "Get a FREE Pure White! - Ends Monday - Find out how",
               "text_alignment": "center",
               "color_scheme": "accent-2",
-              "link": "#beacon-modal-bulk"
+              "link": "#beacon-modal-sale"
             }
           }
         },

@@ -97,8 +97,8 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "<p>👍 If for any reason you are unhappy with your backdrop, you have<strong> up to 30 days<\/strong> from delivery to return it for a refund.<\/p><p><a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">Full return policy →<\/a><\/p>",
-            "page": ""
+            "content": "",
+            "page": "product-accordion-returns"
           }
         },
         "collapsible-row-2": {
@@ -285,6 +285,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1920
           }

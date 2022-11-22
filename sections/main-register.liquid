@@ -26,15 +26,16 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
+  {% comment %}CLUB - updated styling for form errors{% endcomment %}
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
-      <h2 class="form__message" tabindex="-1" autofocus>
+      <h2 class="form__message" tabindex="-1">{% comment %} autofocus>{% endcomment %}
         <svg aria-hidden="true" focusable="false" role="presentation">
           <use href="#icon-error" />
         </svg>
         {{ 'templates.contact.form.error_heading' | t }}
       </h2>
-      <ul> 
+      <ul class="form__errors">
         {%- for field in form.errors -%}
           <li>
             {%- if field == 'form' -%}

@@ -21,6 +21,11 @@
   margin-top: 4rem;
 }
 
+/* CLUB - rewards form */
+form#rewards {
+  margin-top: 0;
+}
+
 .customer button {
   margin: 4rem 0 1.5rem;
 }
@@ -32,12 +37,19 @@
   margin-bottom: 4rem;
 }
 
+/* CLUB - form errors new styling */
+.customer ul.form__errors {
+  padding-bottom: 4rem;
+  border-bottom: .1rem solid rgba(var(--color-foreground),.08);
+}
+
 .customer ul a {
   display: inline;
 }
 
 .customer strong {
-  font-weight: normal;
+  /* CLUB - adjustment to font weight */
+  /* font-weight: normal; */
   color: rgb(var(--color-foreground));
 }
 
@@ -427,6 +439,27 @@
     padding-right: 3.2rem;
   }
 }
+
+/* CLUB - account footer styling */
+@media screen and (min-width: 990px) {
+  .account-footer {
+    display: flex;
+    border-top: .1rem solid rgba(var(--color-foreground),.08);
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  .account-footer > div {
+    width: 50%;
+  }
+  .account-footer > div:not(:first-child) {
+    border-left: .1rem solid rgba(var(--color-foreground),.08);
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+}
+form#rewards_claim { margin-top: 0; }
+#rewards_success,
+#rewards_error { display: none; }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .order > div:nth-of-type(2) > div:last-of-type {

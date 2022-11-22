@@ -37,8 +37,10 @@
               <tr role="row">
                 <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
                 <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
+                {% comment %}CLUB - simplified table view with no payment or fulfilment status
                 <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
                 <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                {% endcomment %}
                 <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
                 <th id="ColumnPDF" scope="col" role="columnheader">Invoice</th>
               </tr>
@@ -59,12 +61,14 @@
                   <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
                     {{ order.created_at | date: '%d %b %Y' }}
                   </td>
+                  {% comment %}CLUB - simplified table view with no payment or fulfilment status
                   <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
                     {{ order.financial_status_label }}
                   </td>
                   <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
                     {{ order.fulfillment_status_label }}
                   </td>
+                  {% endcomment %}
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_price | money_without_currency }}</td>
                   <td headers="RowOrder ColumnPDF" role="cell" data-label="Invoice">
@@ -130,10 +134,14 @@
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
-
     </div>
   </div>
-  {% render 'club-account-referral-banner' %}
+
+  {% comment %}CLUB - account footer with Club Rewards and Club Referrals banners{% endcomment %}
+  <div class="account-footer">
+    {% render 'club-account-rewards-banner' %}
+    {% render 'club-account-referral-banner' %}
+  </div>
 </div>
 
 {% schema %}

@@ -1,0 +1,49 @@
+{% comment %}CLUB - show Club Rewards banner with Claim Credits option on account page{% endcomment %}
+<div class="rewards">
+    <h2>🏆 Club Rewards</h2>
+    {%- if customer.metafields.my_fields.loyalty_points > 20 -%}
+        {% comment %}CLUB - load rewards claim script if enough loyalty points{% endcomment %}
+        <script src="{{ 'club-rewards-claim.js' | asset_url }}" defer="defer"></script>
+
+        {%- assign club_credits = customer.metafields.my_fields.loyalty_points | divided_by: 20 -%}
+        <div id="rewards_container">
+            <p>You have {{ customer.metafields.my_fields.loyalty_points }} points, worth <strong>{{ club_credits }} Club Credits</strong>*</p>
+
+            <form action="https://eorgx1qu1y5k19a.m.pipedream.net" method="post" id="rewards_claim">
+            <input type="hidden" id="credits" name="credits" value="{{ club_credits }}">
+            <input type="hidden" id="customer_id" name="customer_id" value="{{ customer.id }}">
+            <button type="submit" id="rewards_claim_submit" value="Submit" class="button button--primary" style="margin: 0 0 20px 0;">
+                <span>Claim {{ club_credits }} Club Credits</span>
+                <div class="loading-overlay__spinner hidden">
+                <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="spinner"
+                    viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+                </div>  
+            </button>
+            </form>
+            <p>Club Credits will be emailed to you as a Gift Card, valid for 1 year. 1 Club Credit = 1 GBP or 1.5 USD/EUR or 2 AUD/CAD, redeemable at the Club Backdrops website only.</p>
+            <small><em>*Read the full <a href="https://clubbackdrops.com/pages/club-rewards-terms">Club Rewards Terms &amp; Conditions here &rarr;</a></em></small>
+        </div>
+        <div id="rewards_success">
+            <p><strong>Your Club Credits have been successfully claimed!</strong> A Gift Card should arrive in your email shortly. 🙂</p>
+            <p class="accent-text"><em>If it seems it hasn't arrived please check your spam folder.</em></p>
+            <p>Your points have been reset to zero (0).</p>
+        </div>
+        <div id="rewards_error">
+            <p>There seems to have been a problem processing your Club Credits. 😢</p>
+            <p>Please wait a minute to refresh your page then try again.</p>
+            <p>If that doesn't work, we're really sorry! <a href="/care">Let us know here</a> so we can get this resolved for you right away.</p>
+        </div>
+    {%- else -%}
+        <p><strong>Earn points for every purchase!</strong> Then exchange your points here for Club Credits to use towards future orders.</p>
+        <p><em>You currently don't have enough points to claim a reward. Check back here after placing your next order.</em></p>
+        <small><em>*Read the full <a href="https://clubbackdrops.com/pages/club-rewards-terms">Club Rewards Terms &amp; Conditions here &rarr;</a></em></small>
+    {%- endif -%}
+  </div>

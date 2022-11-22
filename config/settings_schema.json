@@ -1514,6 +1514,20 @@
     "settings": [
       {
         "type": "header",
+        "content": "Club Rewards"
+      },
+      {
+        "type": "paragraph",
+        "content": "Show Club Rewards on Account page."
+      },
+      {
+        "type": "checkbox",
+        "id": "club_rewards_enabled",
+        "label": "Enable Club Rewards",
+        "default": true
+      },
+      {
+        "type": "header",
         "content": "Holiday mode"
       },
       {

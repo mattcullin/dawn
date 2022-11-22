@@ -1,4 +1,6 @@
 {% comment %}CLUB - show Club Rewards banner with Claim Credits option on account page{% endcomment %}
+
+{%- if settings.club_rewards_enabled -%}
 <div class="rewards">
     <h2>🏆 Club Rewards</h2>
     {%- if customer.metafields.my_fields.loyalty_points > 20 -%}
@@ -46,4 +48,5 @@
         <p><em>You currently don't have enough points to claim a reward. Check back here after placing your next order.</em></p>
         <small><em>*Read the full <a href="https://clubbackdrops.com/pages/club-rewards-terms">Club Rewards Terms &amp; Conditions here &rarr;</a></em></small>
     {%- endif -%}
-  </div>
+</div>
+{%- endif -%}

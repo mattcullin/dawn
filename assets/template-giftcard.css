@@ -42,6 +42,19 @@ body {
   font-weight: var(--font-body-weight);
 }
 
+/* CLUB - Typography */
+h2, .h2 {
+  text-transform: uppercase !important;
+}
+
+button,
+.button { 
+    font-family: var(--font-heading-family) !important; 
+    font-style: var(--font-heading-style) !important;
+    font-weight: var(--font-heading-weight) !important;
+    text-transform: uppercase !important;
+}
+
 @media only screen and (min-width: 750px) {
   body {
     font-size: 1.6rem;

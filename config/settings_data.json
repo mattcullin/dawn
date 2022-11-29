@@ -111,10 +111,10 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Get 25% off 4+ items",
+              "text": "Last Orders! Closed from 23rd Dec",
               "text_alignment": "center",
               "color_scheme": "accent-2",
-              "link": "#beacon-modal-bulk"
+              "link": "#beacon-modal-latest"
             }
           }
         },

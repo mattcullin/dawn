@@ -1,0 +1,58 @@
+{%- comment -%}
+    CLUB - Renders Colourway swatches for a product card
+
+    Usage:
+    {% render 'club-card-product-swatches' %}
+{%- endcomment -%}
+
+{% assign option_title = "Colourway" %}
+{% assign option_index = "" %}
+{% assign option_values = "" %}
+
+{% for option in card_product.options %}
+  {% if option == option_title %}
+    {% assign option_index = forloop.index %}
+  {% endif %}
+{% endfor %}
+
+{% for variant in card_product.variants %}
+  {% assign variant_option_value = "" %}
+  {% if option_index == 1 %}
+    {% assign variant_option_value = variant.option1 %}
+  {% elsif option_index == 2 %}
+    {% assign variant_option_value = variant.option2 %}
+  {% elsif option_index == 3 %}
+    {% assign variant_option_value = variant.option3 %}
+  {% endif %}
+  {% assign option_values = option_values | append: "," | append: variant_option_value %}
+{% endfor %}
+
+{% assign option_values = option_values | remove_first: "," | split: "," | uniq %}
+
+{% if option_values.size > 1 %}
+  <ul class="colourway-swatches">
+    {% comment %} <li style="display: inline-block; margin: 0; padding: 0px; letter-spacing: 0.03rem;">Colours:</li> {% endcomment %}
+    {% assign total_colourways = 0 %}
+    {% for option_value in option_values %}
+
+      {% for image in card_product.images %}
+        {% assign image_found = false %}
+        {% for variant in image.variants %}
+              {% if variant.title contains option_value %}
+                <li class="colourway-swatch">
+                  <img src="{{ variant.image.src | image_url: width: 20 }}" width="20" height="20" alt="{{ variant.title }}" />
+                </li>
+                {% assign image_found = true %}
+                {% assign total_colourways = total_colourways | plus: 1 %}
+                {% break %}
+              {% endif %}
+        {% endfor %}
+        {% if image_found %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    <li class="colourway-total">({{ total_colourways }} colours)</li>
+  </ul>
+{% else %}
+{% endif %}

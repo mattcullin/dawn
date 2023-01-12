@@ -336,3 +336,10 @@
 .card-article-info {
   margin-top: 1rem;
 }
+
+/* CLUB - card product swatches */
+ul.colourway-swatches { margin: 0.7rem 0 0 0; padding: 0; letter-spacing: -0.5rem; }
+ul.colourway-swatches li { display: inline-block; padding: 0px; }
+li.colourway-swatch { margin: 0; width: 17px; height: 17px; overflow: hidden; border-radius: 100%; position: relative; top: 2px; }
+li.colourway-swatch img { margin: -2px -2px 0 0; padding: 0; }
+li.colourway-total { /* margin: 0 0 0 5px; */ margin: 0; letter-spacing: 0.03rem; }

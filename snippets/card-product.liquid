@@ -219,6 +219,8 @@
               </p>
             {%- endif -%}
 
+            {% comment %}CLUB - show thumbnails for each available colourway variant{% endcomment %}
+            {% render 'club-card-product-swatches', card_product: card_product %}
             <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
             {% render 'price', product: card_product, price_class: '' %}
           </div>

@@ -71,8 +71,8 @@
         "8f0f98f7-ca68-45ea-bc7f-673812ac4f55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home-header-october-22-club-backdrops.jpg",
-        "image_overlay_opacity": 50,
+        "image": "shopify:\/\/shop_images\/club-backdrops-vinyl-gradients-siroco-exo.jpg",
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-left",
@@ -87,10 +87,10 @@
     "165824098506c5f22d": {
       "type": "collection-list",
       "blocks": {
-        "1658240985159b1d2b-2": {
+        "306031bc-bfcc-4e3f-be69-f97390ab0362": {
           "type": "featured_collection",
           "settings": {
-            "collection": "custom-photography-backdrops"
+            "collection": "gradients"
           }
         },
         "1658240985159b1d2b-0": {
@@ -99,24 +99,24 @@
             "collection": "replica-surfaces-vinyl-backdrops"
           }
         },
+        "1658240985159b1d2b-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-photography-backdrops"
+          }
+        },
         "1658240985159b1d2b-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "block-colour-vinyl-backdrops"
           }
-        },
-        "306031bc-bfcc-4e3f-be69-f97390ab0362": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "canvas-studio-backdrops"
-          }
         }
       },
       "block_order": [
-        "1658240985159b1d2b-2",
+        "306031bc-bfcc-4e3f-be69-f97390ab0362",
         "1658240985159b1d2b-0",
-        "1658240985159b1d2b-1",
-        "306031bc-bfcc-4e3f-be69-f97390ab0362"
+        "1658240985159b1d2b-2",
+        "1658240985159b1d2b-1"
       ],
       "settings": {
         "title": "",

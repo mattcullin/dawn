@@ -111,7 +111,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Last Chance! Get 25% off 4+ items",
+              "text": "Get 20% off 5+ items",
               "text_alignment": "center",
               "color_scheme": "accent-1",
               "link": "#beacon-modal-bulk"

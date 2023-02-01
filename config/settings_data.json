@@ -111,7 +111,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Get 20% off 5+ items",
+              "text": "Get up to 20% off 😀",
               "text_alignment": "center",
               "color_scheme": "accent-1",
               "link": "#beacon-modal-bulk"

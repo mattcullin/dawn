@@ -254,6 +254,12 @@
                 method: 'GET'
             });
             return response.ok;
+        },
+
+		isSnapshot: function() {
+            var self = this;
+            let queryParameters = self.getQueryParameters();
+            return queryParameters.hasOwnProperty('snapshot');
         }
     }
 

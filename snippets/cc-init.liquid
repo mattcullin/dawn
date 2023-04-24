@@ -109,6 +109,9 @@
         const editorContainer = document.getElementById('editor-parent-for-product');
         const preloader = document.getElementById('preloader-holder');
         const queryParams = ShopifyInit.getQueryParameters();
+
+        if(ShopifyInit.isSnapshot())
+            preloader.style.display = 'flex';
         
         const ecommerceSystem = {
           {% if customer %}

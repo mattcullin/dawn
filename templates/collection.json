@@ -20,7 +20,7 @@
         "enable_quick_add": false,
         "enable_filtering": false,
         "filter_type": "horizontal",
-        "enable_sorting": false,
+        "enable_sorting": true,
         "enable_tag_filter": true,
         "columns_mobile": "2",
         "padding_top": 36,

@@ -71,7 +71,7 @@
         "8f0f98f7-ca68-45ea-bc7f-673812ac4f55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home-header-neo-classics-club-backdrops-2.jpg",
+        "image": "shopify:\/\/shop_images\/club-backdrops-vinyl-gradients-siroco-exo.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -140,7 +140,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "home",
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": false,
@@ -156,6 +156,60 @@
         "swipe_on_mobile": false,
         "padding_top": 24,
         "padding_bottom": 0
+      }
+    },
+    "506b480a-7eff-4b2d-bcdd-333db0794892": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "vinyl-best-sellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "16624678692b095618": {
+      "type": "rich-text",
+      "blocks": {
+        "16624678690c45f259-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop all vinyl",
+            "button_link": "shopify:\/\/collections\/vinyl-backdrops",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16624678690c45f259-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     },
     "16624611931172d8e4": {
@@ -234,33 +288,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "16624678692b095618": {
-      "type": "rich-text",
-      "blocks": {
-        "16624678690c45f259-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop all vinyl",
-            "button_link": "shopify:\/\/collections\/vinyl-backdrops",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16624678690c45f259-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 52
       }
     },
     "featured_collection": {
@@ -784,8 +811,9 @@
     "image_banner",
     "165824098506c5f22d",
     "16595607590a998055",
-    "16624611931172d8e4",
+    "506b480a-7eff-4b2d-bcdd-333db0794892",
     "16624678692b095618",
+    "16624611931172d8e4",
     "featured_collection",
     "16624622629ed1079d",
     "16582378894a0b6caf",

@@ -1154,6 +1154,23 @@
       ]
     }
   </script>
+
+  {% comment %}CLUB - add Loox reviews to rich results schema{% endcomment %}
+  {% if product.metafields.loox.num_reviews %}
+    <script id="looxSchemaJson" type="application/ld+json">
+      { 
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "@id": {{ canonical_url | json }},
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "{{ product.metafields.loox.avg_rating }}",
+          "reviewCount": "{{ product.metafields.loox.num_reviews }}"
+        },
+        "name": {{ product.title | json }}
+      }
+    </script>
+  {% endif %}	
 </section>
 
 {% schema %}

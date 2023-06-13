@@ -15,20 +15,6 @@ class CcHelper {
         this.cart = cart;
     }
 
-    async loadProductForCc() {
-        if (this.cart == undefined || Object.keys(this.cart).length == 0) {
-            await this.loadCart();
-        }
-        let ccProduct = this.cart.items.filter(x => x.properties && Object.keys(x.properties).includes('_projectId'))[0];
-        if (ccProduct == undefined || ccProduct == null) {
-            throw new Error('There are no configured product in cart');
-        }
-        let data = await fetch(`/products/${ccProduct.handle}.js`);
-        let product = await data.json();
-
-        return product;
-    }
-
     async updateCart(itemKey, itemQuantity) {
         let response = await fetch('/cart/change.js', {
             method: 'POST',
@@ -89,33 +75,31 @@ class CcHelper {
 
     renderItem(item) {
         if (Object.keys(item.properties).includes('_hidden')) {
-            if (Object.keys(item.properties._hidden).includes('images')) {
-                let imgElement = document.querySelector(`img[name='product-image-${item.key}']`);
-                if (imgElement != null && item.properties._hidden.images[0] != undefined && item.properties._hidden.images[0] != "") {
-                    let symbol = item.properties._hidden.images[0].indexOf("?") > -1 ? "&v=" : "?v=";
-
-                    if (item.properties._hidden.images[0].includes('data:image')) {
-                        imgElement.src = item.properties._hidden.images[0];
-                    } else {
+                if (Object.keys(item.properties._hidden).includes('images')) {
+                    let imgElement = document.querySelector(`img[name='product-image-${item.key}']`);
+                    if (imgElement != null && item.properties._hidden.images[0] != undefined && item.properties._hidden.images[0] != "") {
+                        let symbol = item.properties._hidden.images[0].indexOf("?") > -1 ? "&v=" : "?v=";
                         imgElement.src = item.properties._hidden.images[0] + symbol + Date.now().toString();
                     }
                 }
-            }
-            if (Object.keys(item.properties._hidden).includes('snapshot')) {
-                let cartItem = this.cart.items.filter(x => x.properties && x.properties['_itemId'] == item.key)[0];
-                let productUrl = cartItem.url;
-                let parentElement = document.getElementById(`cc-product-${item.key}-data`).parentElement;
-                let snapshot = item.properties._hidden.snapshot;
+                if (Object.keys(item.properties._hidden).includes('snapshot')) {
+                    let cartItem = this.cart.items.filter(x => x.properties && x.properties['_itemId'] == item.key)[0];
+                    let productUrl = item.properties._hidden.originalProductUrl;
+                    if (!productUrl) {
+                        productUrl = cartItem.url;
+                    }
+                    let parentElement = document.getElementById(`cc-product-${item.key}-data`).parentElement;
+                    let snapshot = item.properties._hidden.snapshot;
 
-                if (snapshot != null) {
-                    productUrl += `&snapshot=${snapshot}`;
+                    if (snapshot != null) {
+                        productUrl += `?snapshot=${snapshot}`;
+                    }
+                    productUrl += `&key=${cartItem.key}&quantity=${cartItem.quantity}&page=design`;
+                    let link = document.createElement("a");
+                    link.href = productUrl;
+                    link.text = "Return to edit";
+                    parentElement.appendChild(link);
                 }
-                productUrl += `&key=${cartItem.key}&quantity=${cartItem.quantity}&page=design`;
-                let link = document.createElement("a");
-                link.href = productUrl;
-                link.text = "Return to edit";
-                parentElement.appendChild(link);
-            }
         }
     }
 

@@ -4,68 +4,36 @@
 	{% assign productNotCopied = true %}
 {% endif %}
 {% if product.metafields.BackOffice.CustomersCanvasLinked and productNotCopied %}
-  {% comment %}
-     AURIGMA - 23-09-2022 - Moved classes from main-product.liquid
-  {% endcomment %}
-  <button
-    id="AddToCart-{{ section.id }}" 
-    type="button"
-    target="cc-editor-button"
-    class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-  >    
+
+  <button id="AddToCart-{{ section.id }}" type="button" target="cc-editor-button" class="btn add-to-cart" style="color:white"
+          {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+    
     <span id="AddToCartText-{{ section.id }}">
-      {%- if product.selected_or_first_available_variant.available -%}
-      	{{ 'Design backdrop' }}
-      {%- else -%}
-        {{ 'products.product.sold_out' | t }}
-      {%- endif -%}
+      {% unless current_variant.available %}
+      	{{ 'products.product.sold_out' | t }}
+      {% else %}
+      	{{ 'Design product' }}
+      {% endunless %}
     </span>
-    <div class="loading-overlay__spinner hidden">
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        role="presentation"
-        class="spinner"
-        viewBox="0 0 66 66"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-      </svg>
-    </div>
   </button>
 
 {% else %}
-  {% comment %}
-    AURIGMA - 23-09-2022 - There is no current variant alias in this topic, 
-    we use the existing variant - product.selected_or_first_available_variant
-  {% endcomment %}
-  <button
-    id="AddToCart-{{ section.id }}" 
-    type="submit"
-    name="add"
-    class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-    {% if product.selected_or_first_available_variant.available == false %}
-      disabled
-    {% endif %}
-  >
+
+  <button id="AddToCart-{{ section.id }}" type="submit" name="add"
+          {% unless current_variant.available %}disabled="disabled"{% endunless %}
+          class="btn product-form__cart-submit{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}">
+    
     <span id="AddToCartText-{{ section.id }}">
-      {%- if product.selected_or_first_available_variant.available -%}
-        {{ 'products.product.add_to_cart' | t }}
-      {%- else -%}
-        {{ 'products.product.sold_out' | t }}
-      {%- endif -%}
+      {% unless current_variant.available %}
+      	{{ 'products.product.sold_out' | t }}
+      {% else %}
+      	{{ 'products.product.add_to_cart' | t }}
+      {% endunless %}
     </span>
-    <div class="loading-overlay__spinner hidden">
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        role="presentation"
-        class="spinner"
-        viewBox="0 0 66 66"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-      </svg>
-    </div>
   </button>
+
+  {% if section.settings.enable_payment_button %}
+  	{{ form | payment_button }}
+  {% endif %}
+
 {% endif %} 

@@ -1,8 +1,8 @@
  <script>
     (async () => {
      	const storageKey = "BO_users";
-      const shopDomain = '{{ shop.permanent_domain }}';
-      const shopDomainForUserId = '{{ shop.domain }}'.split('.')[0];
+      const shopDomain = '{{shop.permanent_domain}}';
+      const shopDomainForUserId = '{{shop.domain}}'.split('.')[0];
 		  const getCurrentSessionId = function() {
             var sessionId = "guest";
             var coockie = document.cookie;
@@ -58,7 +58,7 @@
       	shopifySessionOrUserGuid: sessionId,
         origin: window.location.origin,      
         id: userId,
-        email: '{{ customer.email }}',
+        email: '{{customer.email}}',
         firstName: '{{ customer.first_name }}',
         lastName: '{{ customer.last_name }}'
       };

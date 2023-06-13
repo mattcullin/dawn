@@ -80,9 +80,10 @@
                 });   
             }
         },
+
         ccPages: function() {
             return {
-                "product": document.querySelector(".product.product"),
+                "product": document.querySelector(".product-template__container"),
                 "editor": document.querySelector("#cc-editor-page")
             }
         },
@@ -219,9 +220,12 @@
         saveProject: async function(createEndpoint) {
             let project = { line_items: [] };
             let lineItemsKeys = [];
+            let pathName = window.location.pathname;
+            let originalProductUrl = pathName.substring(pathName.indexOf('/products'));
             this.ecDriver.cart.lineItems.forEach(lineItem => {
                 let lineItemKey = `${Date.now()}:${Math.floor(Math.random() * 101)}:${lineItem.quantity}`;
                 lineItem.data.itemId = lineItemKey;
+                lineItem.props['_hidden']['originalProductUrl'] = originalProductUrl
                 let projectLineItem = {
                     key: lineItemKey,
                     quantity: lineItem.quantity,
@@ -254,12 +258,6 @@
                 method: 'GET'
             });
             return response.ok;
-        },
-
-		isSnapshot: function() {
-            var self = this;
-            let queryParameters = self.getQueryParameters();
-            return queryParameters.hasOwnProperty('snapshot');
         }
     }
 

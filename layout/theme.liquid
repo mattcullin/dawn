@@ -308,13 +308,6 @@
 
   {% comment %}CLUB - cookie banner{% endcomment %}
   {% render 'club-cookie-banner' %}
-
-  {% comment %}
-    AURIGMA - 26.09.2022 - 
-    CLUB - AURIGMA CLEANUP - only load Aurigma code if product or cart page
-  {% endcomment %}
-  {% if template.name == 'product' or template.name == 'cart' %}
-    {% render 'cc-onlogin' %}
-  {% endif %}
+  {% render 'cc-onlogin' %}
 </body>
 </html>

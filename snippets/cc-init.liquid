@@ -28,9 +28,13 @@
           {% else %}
             userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}'),
           {% endif %}
-          pluginSettings: { shopifyBaseUrl: window.location.origin, currency: ShopifyInit.getCurrency() },
+          pluginSettings: { 
+            shopifyBaseUrl: window.location.origin, 
+            currency: ShopifyInit.getCurrency(),
+            shopifyAdapterUrl: 'https://shopify-adapter.azurewebsites.net/'
+          },
           tenantId: '1162', 
-          storefrontId: '1131',
+          storefrontId: '1364',
           existingOrder: ShopifyInit.getExistingOrder(),
           ecommerceSystemDomain: '{{ shop.permanent_domain }}'
         };
@@ -39,6 +43,7 @@
         storefront = new Aurigma.BackOffice({
           options: { useProjectBuffer: true },
           tenantId: ecommerceSystem.tenantId,
+          ecommerceSystemId: ecommerceSystem.storefrontId,
           backOfficeUrl: 'https://customerscanvashub.com/',
           pluginSettings: ecommerceSystem.pluginSettings
         });
@@ -119,9 +124,9 @@
           {% else %}
             userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}'),
           {% endif %}
-          pluginSettings: { shopifyBaseUrl: window.location.origin, currency: ShopifyInit.getCurrency() },
+          pluginSettings: { shopifyBaseUrl: window.location.origin, currency: ShopifyInit.getCurrency(), shopifyAdapterUrl: 'https://shopify-adapter.azurewebsites.net/' },
           tenantId: '1162', 
-          storefrontId: '1131',
+          storefrontId: '1364',
           existingOrder: ShopifyInit.getExistingOrder(),
           ecommerceSystemDomain: '{{ shop.permanent_domain }}'
         };

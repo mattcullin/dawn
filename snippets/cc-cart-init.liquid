@@ -34,7 +34,10 @@
         {% else %}
           userId: ShopifyInit.getUserIdForCc('{{ shop.domain }}'),
         {% endif %}
-        pluginSettings: { currency: ShopifyInit.getCurrency() },
+        pluginSettings: { 
+          currency: ShopifyInit.getCurrency(), 
+          shopifyAdapterUrl: 'https://shopify-adapter.azurewebsites.net/' 
+        },
         tenantId: '1162',
         storefrontId: '1364',
         existingOrder: ShopifyInit.getExistingOrder()

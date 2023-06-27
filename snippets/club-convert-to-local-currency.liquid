@@ -1,0 +1,48 @@
+{%- comment -%}
+    CLUB - Renders currency conversion based on current local zone - can be used with 'capture' liquid to assign conversion amount to a variable
+
+    Usage:
+    {% render 'club-convert-to-local-currency', amount_in_gbp: [integer] %}
+    
+    or to render to a variable:
+    {%- liquid 
+        capture amount_coverted
+            render 'club-zone', amount_in_gbp: [integer]
+        endcapture 
+    -%}
+{%- endcomment -%}
+
+{%- liquid 
+    capture zone
+        render 'club-zone'
+    endcapture 
+-%}
+{%- liquid 
+    case zone
+      when 'GB'
+        assign conversion_rate = 1
+        assign symbol = "£"
+        assign iso_code = "GBP"
+      when 'EU1', 'EU2', 'EU3'
+        assign conversion_rate = 1.5
+        assign symbol = "€"
+        assign iso_code = "EUR"
+      when 'US'
+        assign conversion_rate = 1.5
+        assign symbol = "$"
+        assign iso_code = "USD"
+      when 'AU'
+        assign conversion_rate = 2
+        assign symbol = "$"
+        assign iso_code = "AUD"
+      when 'CA'
+        assign conversion_rate = 2
+        assign symbol = "$"
+        assign iso_code = "CAD"
+      else
+        assign conversion_rate = 1
+        assign symbol = "£"
+        assign iso_code = "GBP"
+    endcase
+-%}
+{{ symbol }}{{ amount_in_gbp | times: conversion_rate | times: 100 | money_without_currency }} {{ iso_code }}

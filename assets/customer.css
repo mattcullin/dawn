@@ -460,6 +460,8 @@ form#rewards {
 form#rewards_claim { margin-top: 0; }
 #rewards_success,
 #rewards_error { display: none; }
+.referral-link { border: 2px dashed rgba(var(--color-base-accent-2)); border-radius: 5px; padding: 10px 20px; text-align: center; }
+a.copy-link { text-decoration: none; }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .order > div:nth-of-type(2) > div:last-of-type {

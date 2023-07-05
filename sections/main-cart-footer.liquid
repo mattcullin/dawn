@@ -79,17 +79,21 @@
 
                 {% comment %}CLUB - Bulk Discount + Shipping Banner + Est. Production Time{% endcomment %}
                 {% assign mystery_pack_total = 0 %}
+                {% assign bundle_total = 0 %}
                 {% assign total_production_time = 0 %}
                 {%- for item in cart.items -%}
                   {%- if item.sku contains 'MYST' -%}
                     {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
                   {%- endif -%}
+                  {%- if item.sku contains 'BUND' -%}
+                    {% assign bundle_total = bundle_total | plus: item.quantity %}          
+                  {%- endif -%}
                   {%- if item.variant.metafields.custom.production_time -%}
                     {% assign total_production_time = total_production_time | at_least: item.variant.metafields.custom.production_time %}
                   {%- endif -%}
                 {%- endfor -%}
-                {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
-                {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_mystery_packs %}
+                {% assign cart_item_count_ex_bundles = cart.item_count | minus: mystery_pack_total | minus: bundle_total %}
+                {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_bundles %}
                 {% render 'club-shipping-discount-banner' %}
                 {%- if total_production_time == 0 -%}
                   <small class="tax-note caption-large rte">✅ All your items are in-stock &amp; ready to ship</small>

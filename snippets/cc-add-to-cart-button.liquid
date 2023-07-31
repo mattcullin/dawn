@@ -4,25 +4,26 @@
 	{% assign productNotCopied = true %}
 {% endif %}
 {% if product.metafields.BackOffice.CustomersCanvasLinked and productNotCopied %}
-  {% comment %}
-     AURIGMA - 23-09-2022 - Moved classes from main-product.liquid
+ {% comment %}
+    AURIGMA - 23-09-2022 - Moved classes from main-product.liquid
+    AURIGMA - 31-07-2023 - The button is disabled by default
   {% endcomment %}
   <button
-    id="AddToCart-{{ section.id }}" 
+    id="AddToCart-{{ section.id }}"
     type="button"
     target="cc-editor-button"
-    class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-  >    
+    class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %} loading"
+    disabled
+  >
     <span id="AddToCartText-{{ section.id }}">
       {%- if product.selected_or_first_available_variant.available -%}
-      	{{ 'Design backdrop' }}
+        {{ 'Design backdrop' }}
       {%- else -%}
         {{ 'products.product.sold_out' | t }}
       {%- endif -%}
     </span>
-    <div class="loading-overlay__spinner hidden">
+    <div class="loading-overlay__spinner">
       <svg
-        aria-hidden="true"
         focusable="false"
         role="presentation"
         class="spinner"

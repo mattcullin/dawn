@@ -115,6 +115,14 @@
         const preloader = document.getElementById('preloader-holder');
         const queryParams = ShopifyInit.getQueryParameters();
 
+        {% comment %}
+          AURIGMA - 31.07.2023 - Activate the personalization button after loading the editor.
+        {% endcomment %}
+        editorContainer.addEventListener('stepInited', () => {
+          designButton.classList.remove('loading');
+          designButton.removeAttribute('disabled');
+        });
+    
         if(ShopifyInit.isSnapshot())
             preloader.style.display = 'flex';
         
@@ -180,9 +188,20 @@
         // notify loaded
         ShopifyInit.editorLoaded = true;
 
+        {% comment %}
+          AURIGMA - 31.07.2023 - Refactoring Return to edit due to disabled personalize button.
+        {% endcomment %}
         // return to edit
         if (queryParams && queryParams['page'] === 'design') {
-          designButton.click();
+          if (ShopifyInit.editorLoaded === true) {
+            // update product model state
+            ShopifyInit.isApplyOptions = true;
+            ShopifyInit.applyOptions();
+          }
+
+          // to editor
+          ShopifyInit.navigateToPage('editor');
+          editorContainer.scrollIntoView();
         }
       });
     </script>

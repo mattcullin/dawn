@@ -119,13 +119,6 @@
             "page": ""
           }
         },
-        "2c6d8870-5b27-4c86-b0c0-422da2aa05cd": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.collaborator_credits | metafield_text }}",
-            "text_style": "uppercase"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -151,7 +144,6 @@
         "collapsible-row-0",
         "collapsible-row-2",
         "collapsible-row-3",
-        "2c6d8870-5b27-4c86-b0c0-422da2aa05cd",
         "share"
       ],
       "settings": {

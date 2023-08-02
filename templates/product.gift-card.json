@@ -68,13 +68,6 @@
           "settings": {
           }
         },
-        "2c6d8870-5b27-4c86-b0c0-422da2aa05cd": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.collaborator_credits | metafield_text }}",
-            "text_style": "uppercase"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -94,7 +87,6 @@
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd",
         "description",
-        "2c6d8870-5b27-4c86-b0c0-422da2aa05cd",
         "share"
       ],
       "settings": {

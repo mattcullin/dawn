@@ -195,7 +195,8 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo_max_width": 100,
+          "logo": "shopify:\/\/shop_images\/club-backdrops-logo-black_5fbf8f8c-3548-4a0b-b9de-734ff61e0ce2.png",
+          "logo_max_width": 200,
           "color_scheme": "background-1"
         }
       },

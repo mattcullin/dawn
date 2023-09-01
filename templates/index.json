@@ -2,7 +2,6 @@
   "sections": {
     "1662468258bac8e3eb": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "166246825824a875b4-0": {
           "type": "slide",
@@ -26,6 +25,7 @@
       "block_order": [
         "166246825824a875b4-0"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -87,8 +87,15 @@
     "165824098506c5f22d": {
       "type": "collection-list",
       "blocks": {
+        "9fc80dc1-23f5-4ba4-91d3-debb40bac56b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vinyl-backdrop-bundles"
+          }
+        },
         "306031bc-bfcc-4e3f-be69-f97390ab0362": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "gradients"
           }
@@ -113,6 +120,7 @@
         }
       },
       "block_order": [
+        "9fc80dc1-23f5-4ba4-91d3-debb40bac56b",
         "306031bc-bfcc-4e3f-be69-f97390ab0362",
         "1658240985159b1d2b-0",
         "1658240985159b1d2b-2",
@@ -214,7 +222,6 @@
     },
     "16624611931172d8e4": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "166246119326b1732f-0": {
           "type": "column",
@@ -273,6 +280,7 @@
         "a3a9edbb-8544-418c-91d9-8e3864d0d01c",
         "6461e096-f56c-4c3a-ade1-e247bc18abae"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -696,7 +704,6 @@
     },
     "165823455059910c2d": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "165823454926469c5d-0": {
           "type": "heading",
@@ -725,6 +732,7 @@
         "165823454926469c5d-1",
         "165823454926469c5d-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
         "height": "large",
@@ -790,7 +798,7 @@
       "type": "apps",
       "blocks": {
         "b7011275-7e0f-40f7-9285-6be8a5517252": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 20,
             "feed_width": 100,

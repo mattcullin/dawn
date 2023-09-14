@@ -1,0 +1,8 @@
+{
+  "parent": "product.colour-or-graphic-vinyl.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+  }
+}

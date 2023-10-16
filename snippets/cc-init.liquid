@@ -117,10 +117,12 @@
 
         {% comment %}
           AURIGMA - 31.07.2023 - Activate the personalization button after loading the editor.
+          AURIGMA - 10.10.2023 - Changed event stepIniter to load.
         {% endcomment %}
-        editorContainer.addEventListener('stepInited', () => {
+        editorContainer.addEventListener('load', () => {
           designButton.classList.remove('loading');
           designButton.removeAttribute('disabled');
+          preloader.style.display = 'none';
         });
     
         if(ShopifyInit.isSnapshot())
@@ -146,10 +148,6 @@
           backOfficeUrl: 'https://customerscanvashub.com/',
           pluginSettings: ecommerceSystem.pluginSettings,
           ecommerceSystemId: ecommerceSystem.storefrontId
-        });
-
-        editorContainer.addEventListener('load', () => {
-          preloader.style.display = 'none';
         });
 
         const integrationInfo = await storefront.templates.findByProduct(product.id);

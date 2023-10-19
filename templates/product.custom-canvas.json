@@ -59,6 +59,12 @@
             "custom_liquid": "{% assign production_time = product.selected_or_first_available_variant.metafields.custom.production_time %}\n\n<p class=\"product__text caption-with-letter-spacing\" id=\"production-time\">\n{% if production_time == 1 %}\n⚡ +{{ production_time }}  working day to print\n{% elsif production_time > 1 %}\n⚡ +{{ production_time }}  working days to print\n{% else %}\n✅ In-stock &amp; ready to ship{% endif %}\n<\/p>"
           }
         },
+        "a29f4b45-3fbe-4d72-9977-759b48cb91ba": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Please read the <a href=\"#beacon-modal-proofing-guide\">Custom Proofing Guide<\/a> for critical tips on colour &amp; artwork preparation<\/p>\n<p>⏲ Have patience whilst the editor loads, if you need help <a href=\"#beacon-modal-editor\">see our guide here<\/a><\/p>\n<\/div>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -151,6 +157,7 @@
         "variant_picker",
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
         "e0e220cf-051c-4a17-b140-925260e2a226",
+        "a29f4b45-3fbe-4d72-9977-759b48cb91ba",
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
         "09c3347b-6024-45ae-865f-3e2cc5a59ccd",

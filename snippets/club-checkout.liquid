@@ -26,6 +26,12 @@
     {% comment %} <p class="callout" id="shipping_warning_fedex" style="display: none;">⚠ FedEx may not send text updates to business addresses. <a href="https://help.clubbackdrops.com/article/59-fedex-delivery-notifications" target="_blank">Read more &rarr;</a></p> {% endcomment %}
 </div>
 
+<div id="checkout_attributes">
+    {% for attribute in checkout.attributes %}
+        <input type=hidden name="checkout[attributes][{{ attribute.first }}]" value="{{ attribute.last  }}">
+      {% endfor %}
+</div>
+
 <script>
     (function($) {
         $(document).on("page:load page:change", function() {
@@ -110,7 +116,7 @@
                 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
                 ];
 
-                let dateNow = new Date(Date.now()); // TBD - will this be our (local) time or their (server) time - test via VPN
+                let dateNow = new Date(Date.now()); // this is UTC - TBD: convert during BST
                 dateNow.setDate(dateNow.getDate()); // add +(x) to test future dates
                 let dateNowSeconds = dateNow.getTime();
 
@@ -119,11 +125,6 @@
                 var dayOfWeek = shipDate.getDay();
                 var isWeekend = (dayOfWeek === 6) || (dayOfWeek  === 0); // 6 = Saturday, 0 = Sunday
                 var containsPto = pto_items(); 
-
-                //console.log(dateNow.toLocaleString("en-GB", {timeZone: "Europe/London"}));
-                console.log(dateNow); // TBD - remove once confirmed local vs remote time above
-                console.log(dateNowSeconds); // TBD - remove once confirmed local vs remote time above
-                console.log(dateNowHours); // TBD - remove once confirmed local vs remote time above
 
                 if(dateNowHours >= 13 || containsPto || isWeekend) {
                     // if Print to Order items, add an extra day - TBD - this should ultimately be based on max production time meta from products
@@ -150,6 +151,8 @@
             }
             // END GET SHIP DATE
 
+            $('#checkout_attributes').appendTo($('.step__sections'));
+
             // Contact Information customisation
             if (Shopify.Checkout.step === "contact_information") {
                 eu_update();
@@ -171,7 +174,13 @@
                 $('.shipping_warning').appendTo($('.step__sections'));
                 $('#shipping_warning_default').show();
                 if(pto_items()) { $('#shipping_warning_pto').show() };
-                $('#shipping_warning_ship_day').html("{{ shipping_warning_ship_day_prepend }}<strong>"+getShipDay()+"</strong>.").show();
+                let shipDay = getShipDay();
+                $('#shipping_warning_ship_day').html("{{ shipping_warning_ship_day_prepend }}<strong>"+shipDay+"</strong>.").show();
+                // add/replace checkout attributes
+                $('input[name="checkout[attributes][ship_day]"]').remove();
+                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day]" value="'+shipDay+'">');
+                $('input[name="checkout[attributes][checkout_zone]"]').remove();
+                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][checkout_zone]" value="{{ zone }}">');
 
                 {% comment %}
                 // If FedEx & company address, show FedEx no-text warning (TBD - Order Desk override)

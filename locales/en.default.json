@@ -428,11 +428,11 @@
   "shopify": {
     "checkout": {
       "shipping": {
-        "shipping_method_notice": "*On average we see 90% of orders arrive within the stated delivery time. Please always allow extra time for possible delays. Estimates are working days from ship date and do not include production time for custom or canvas."
+        "shipping_method_notice": "Estimates are working days from ship date."
       },
       "contact": {
-        "company_label": "Company (EU companies include EORI)",
-        "optional_company_label": "Company (optional) - EU companies include EORI",
+        "company_label": "Registered company name",
+        "optional_company_label": "Registered company name (optional)",
         "phone_label": "Mobile phone number",
         "optional_phone_label": "Mobile phone number (optional)",
         "phone_placeholder": "Mobile phone number",

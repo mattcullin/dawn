@@ -1,0 +1,195 @@
+{%- comment -%}
+    CLUB - custom checkout.liquid
+
+    Usage:
+    {% render 'club-checkout' %}
+{%- endcomment -%}
+
+{% assign checkout_shipping_address_company_placeholder = "Registered company name (optional) + EORI" %}
+{% assign shipping_warning_ship_day_prepend = "🚛 Order now and we'll ship your order by end of " %}
+
+<style>
+    /* .callout { margin: 20px 0 0 0; border-left: 3px solid #ffd56d; background: #fff6e2; border-radius: 2px; padding: 20px; color: #c28b2b; } */ /* Helpscout style */
+    .callout { margin: 20px 0 0 0; border: 1px solid #f0e4bc; background: #fff8de; border-radius: 4px; padding: 1em; color: ##545454; } /* Shopify style */
+    .callout.blue { border: 1px solid #d3e7f5; background: #eff8ff; } /* Shopify style - blue */
+    .callout.green { border: 1px solid #c8edb6; background: #e9ffde; } /* Shopify style - green */
+</style>
+
+<div class="contact_information_warning">
+    <p class="callout" id="contact_information_warning_eori" style="display: none;">⚠ EU companies <em>must</em> include an EORI number (<a href="https://help.clubbackdrops.com/article/39-why-do-eu-businesses-have-to-add-an-eori-at-checkout" target="_blank">Find out why →</a>). Orders missing an EORI may be subject to delays &amp; additional costs. Please include it alongside your company name, or alternatively deliver to a residential address.  {{ zone }}</p>
+</div>
+
+<div class="shipping_warning">
+    <p class="callout" id="shipping_warning_default" style="display: none;">*Delivery times are averages and not guaranteed (~90% on-time rate, including AM services). Please order with time to spare &amp; check your tracking. <a href="https://help.clubbackdrops.com/article/25-covid-19-update" target="_blank">Read more →</a></p>
+    <p class="callout" id="shipping_warning_pto" style="display: none;">🕛 Your order contains print-to-order items which will add +1 working day to print.</p>
+    <p class="callout blue" id="shipping_warning_ship_day" style="display: none;"></p>
+    {% comment %} <p class="callout" id="shipping_warning_fedex" style="display: none;">⚠ FedEx may not send text updates to business addresses. <a href="https://help.clubbackdrops.com/article/59-fedex-delivery-notifications" target="_blank">Read more &rarr;</a></p> {% endcomment %}
+</div>
+
+<script>
+    (function($) {
+        $(document).on("page:load page:change", function() {
+            // Capture zone via liquid to be passed as cart/checkout attributes (TBD)
+            {%- liquid 
+            capture zone
+                render 'club-zone', country_code: checkout.shipping_address.country_code
+            endcapture 
+            -%}
+            // Capture country for contact_information page
+            let zone = '{{ zone }}';
+            var shipping_address_country = $("#checkout_shipping_address_country").find(":selected").attr("data-code");
+            var shipping_address_company = $('#checkout_shipping_address_company').val();
+
+            function eu_check() {
+                let eu_countries = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'];
+                shipping_address_country = $("#checkout_shipping_address_country").find(":selected").attr("data-code");
+                var in_eu = false;
+                if(eu_countries.includes(shipping_address_country)) { in_eu = true };
+                return in_eu;
+            }
+
+            function company_check() {
+                shipping_address_company = $('#checkout_shipping_address_company').val();
+                var is_company = false;
+                if(shipping_address_company.length>0) { is_company = true };
+                return is_company;
+            }
+
+            function set_eu_company_placeholder() {
+                $('#checkout_shipping_address_company').attr('placeholder','{{ checkout_shipping_address_company_placeholder }}');
+                $('label[for="checkout_shipping_address_company"]').html('{{ checkout_shipping_address_company_placeholder }}');
+            }
+
+            function eu_update() {
+                if(eu_check()) {
+                    set_eu_company_placeholder();
+                    if(company_check()) {
+                    $('#contact_information_warning_eori').show();
+                    }
+                } else {
+                    $('#contact_information_warning_eori').hide();
+                }
+                if(!company_check()) {
+                    $('#contact_information_warning_eori').hide();
+                }
+            }
+
+            function pto_items() {
+                var contains_pto = false;
+                var line_items = "";
+                {% for line_item in checkout.line_items %}
+                    //line_items.push('{{ line_item.sku }}');
+                    line_items = line_items + '{{ line_item.sku }}' + ', ';
+                {% endfor %}
+                if(line_items.includes('PRNT')) { contains_pto = true };
+                if(line_items.includes('CUST')) { contains_pto = true };
+                return contains_pto;
+            }
+
+            // GET SHIP DATE 231031
+            // get next working day
+            function getNextWorkingDate(fromDate) {
+                var dateVar = fromDate;
+                var daysFromDate = 0;
+                var dayOfWeek = 0;
+                var isWeekend = false;
+                do {
+                    dateVar.setDate(dateVar.getDate() + 1);
+                    dayOfWeek = dateVar.getDay();
+                    isWeekend = (dayOfWeek === 6) || (dayOfWeek  === 0); // 6 = Saturday, 0 = Sunday
+                    daysFromDate++;
+                } while (isWeekend == true);
+                return dateVar;
+            }
+
+            // get friendly ship day string (e.g. today, tomorrow, Monday, etc.)
+            function getShipDay() {
+
+                // get the current day of the week
+                const daysOfWeek = [
+                'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+                ];
+
+                let dateNow = new Date(Date.now()); // TBD - will this be our (local) time or their (server) time - test via VPN
+                dateNow.setDate(dateNow.getDate()); // add +(x) to test future dates
+                let dateNowSeconds = dateNow.getTime();
+
+                let dateNowHours = dateNow.getHours();
+                var shipDate = dateNow;
+                var dayOfWeek = shipDate.getDay();
+                var isWeekend = (dayOfWeek === 6) || (dayOfWeek  === 0); // 6 = Saturday, 0 = Sunday
+                var containsPto = pto_items(); 
+
+                //console.log(dateNow.toLocaleString("en-GB", {timeZone: "Europe/London"}));
+                console.log(dateNow); // TBD - remove once confirmed local vs remote time above
+                console.log(dateNowSeconds); // TBD - remove once confirmed local vs remote time above
+                console.log(dateNowHours); // TBD - remove once confirmed local vs remote time above
+
+                if(dateNowHours >= 13 || containsPto || isWeekend) {
+                    // if Print to Order items, add an extra day - TBD - this should ultimately be based on max production time meta from products
+                    if (containsPto) { 
+                        shipDate = getNextWorkingDate(shipDate);
+                    }
+                    shipDate = getNextWorkingDate(shipDate);
+                }
+
+                // work out difference in ship date to now, to determine if today/tomorrow strings can be used
+                let shipDateSeconds = shipDate.getTime();
+                var secondsToShip = ((shipDateSeconds - dateNowSeconds)/1000);
+                var daysToShip = ((secondsToShip/60)/60)/24;
+
+                dayOfWeek = shipDate.getDay();
+                var dayString = daysOfWeek[dayOfWeek];
+                if (daysToShip==0) { 
+                    dayString = "today ("+dayString+")";
+                } else if (daysToShip ==1) {
+                    dayString = "tomorrow ("+dayString+")";
+                }
+
+                return dayString;
+            }
+            // END GET SHIP DATE
+
+            // Contact Information customisation
+            if (Shopify.Checkout.step === "contact_information") {
+                eu_update();
+                $('.contact_information_warning').appendTo($('.step__sections'));
+                // Display EU warnings
+                if(eu_check()) {
+                    set_eu_company_placeholder();
+                }
+                $("#checkout_shipping_address_company, #checkout_shipping_address_country").change(function(e) {
+                    eu_update();
+                })
+                $("#checkout_shipping_address_country").on("click", function(e) {
+                    eu_update();
+                })
+            }
+
+            // Shipping Method customisation
+            if (Shopify.Checkout.step === "shipping_method") {
+                $('.shipping_warning').appendTo($('.step__sections'));
+                $('#shipping_warning_default').show();
+                if(pto_items()) { $('#shipping_warning_pto').show() };
+                $('#shipping_warning_ship_day').html("{{ shipping_warning_ship_day_prepend }}<strong>"+getShipDay()+"</strong>.").show();
+
+                {% comment %}
+                // If FedEx & company address, show FedEx no-text warning (TBD - Order Desk override)
+                $('fieldset[data-shipping-methods] input:radio').on("change", function(e) {
+                    var selected_shipping_method = $(this).val();
+                    console.log(selected_shipping_method);
+                    if(selected_shipping_method.includes('FedEx')) { 
+                        let company_name = '{{ checkout.shipping_address.company }}';
+                    if(company_name.length>0) {
+                        $('#shipping_warning_fedex').show()
+                    }
+                    } else {
+                        $('#shipping_warning_fedex').hide()
+                    }
+                });
+                {% endcomment %}
+            }
+
+        });
+    })(Checkout.$);
+</script>

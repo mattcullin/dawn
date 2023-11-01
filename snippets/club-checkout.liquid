@@ -10,7 +10,7 @@
 
 <style>
     /* .callout { margin: 20px 0 0 0; border-left: 3px solid #ffd56d; background: #fff6e2; border-radius: 2px; padding: 20px; color: #c28b2b; } */ /* Helpscout style */
-    .callout { margin: 20px 0 0 0; border: 1px solid #f0e4bc; background: #fff8de; border-radius: 4px; padding: 1em; color: ##545454; } /* Shopify style */
+    .callout { margin: 20px 0 0 0; border: 1px solid #f0e4bc; background: #fff8de; border-radius: 4px; padding: 1em; color: #545454; } /* Shopify style */
     .callout.blue { border: 1px solid #d3e7f5; background: #eff8ff; } /* Shopify style - blue */
     .callout.green { border: 1px solid #c8edb6; background: #e9ffde; } /* Shopify style - green */
 </style>
@@ -109,7 +109,7 @@
             }
 
             // get friendly ship day string (e.g. today, tomorrow, Monday, etc.)
-            function getShipDay() {
+            function get_ship_day() {
 
                 // get the current day of the week
                 const daysOfWeek = [
@@ -171,16 +171,19 @@
 
             // Shipping Method customisation
             if (Shopify.Checkout.step === "shipping_method") {
+                let shipDay = get_ship_day();
+                let ptoItems = pto_items(); 
                 $('.shipping_warning').appendTo($('.step__sections'));
                 $('#shipping_warning_default').show();
                 if(pto_items()) { $('#shipping_warning_pto').show() };
-                let shipDay = getShipDay();
                 $('#shipping_warning_ship_day').html("{{ shipping_warning_ship_day_prepend }}<strong>"+shipDay+"</strong>.").show();
                 // add/replace checkout attributes
                 $('input[name="checkout[attributes][ship_day]"]').remove();
                 $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day]" value="'+shipDay+'">');
                 $('input[name="checkout[attributes][checkout_zone]"]').remove();
                 $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][checkout_zone]" value="{{ zone }}">');
+                $('input[name="checkout[attributes][pto_items]"]').remove();
+                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][pto_items]" value="'+ptoItems+'">');
 
                 {% comment %}
                 // If FedEx & company address, show FedEx no-text warning (TBD - Order Desk override)

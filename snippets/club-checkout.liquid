@@ -96,14 +96,12 @@
             // get next working day
             function getNextWorkingDate(fromDate) {
                 var dateVar = fromDate;
-                var daysFromDate = 0;
                 var dayOfWeek = 0;
                 var isWeekend = false;
                 do {
-                    dateVar.setDate(dateVar.getDate() + 1);
-                    dayOfWeek = dateVar.getDay();
+                    dateVar.setDate(dateVar.getDate() + 1); // TBD - getUTCDate doesn't work - but is getDate correct? to review real world data in 7 days
+                    dayOfWeek = dateVar.getUTCDay();
                     isWeekend = (dayOfWeek === 6) || (dayOfWeek  === 0); // 6 = Saturday, 0 = Sunday
-                    daysFromDate++;
                 } while (isWeekend == true);
                 return dateVar;
             }
@@ -116,31 +114,31 @@
                 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
                 ];
 
-                let dateNow = new Date(Date.now()); // this is UTC - TBD: convert during BST
-                dateNow.setDate(dateNow.getDate()); // add +(x) to test future dates
-                let dateNowSeconds = dateNow.getTime();
+                var dateNow = new Date(); // this is time local to user
+                var shipDate = new Date();
 
-                let dateNowHours = dateNow.getHours();
-                var shipDate = dateNow;
-                var dayOfWeek = shipDate.getDay();
+                // TEMP - for testing date increments
+                /* dateNow.setDate(dateNow.getDate() + 1);
+                shipDate.setDate(shipDate.getDate() + 1); */
+
+                var dateNowHours = dateNow.getUTCHours();
+                var dayOfWeek = dateNow.getUTCDay();
                 var isWeekend = (dayOfWeek === 6) || (dayOfWeek  === 0); // 6 = Saturday, 0 = Sunday
                 var containsPto = pto_items(); 
 
                 if(dateNowHours >= 13 || containsPto || isWeekend) {
+                    shipDate = getNextWorkingDate(shipDate);
                     // if Print to Order items, add an extra day - TBD - this should ultimately be based on max production time meta from products
                     if (containsPto) { 
                         shipDate = getNextWorkingDate(shipDate);
                     }
-                    shipDate = getNextWorkingDate(shipDate);
                 }
 
                 // work out difference in ship date to now, to determine if today/tomorrow strings can be used
-                let shipDateSeconds = shipDate.getTime();
-                var secondsToShip = ((shipDateSeconds - dateNowSeconds)/1000);
-                var daysToShip = ((secondsToShip/60)/60)/24;
+                var daysToShip = ((((shipDate-dateNow)/1000)/60)/60)/24;
 
-                dayOfWeek = shipDate.getDay();
-                var dayString = daysOfWeek[dayOfWeek];
+                var shipDayOfWeek = shipDate.getUTCDay();
+                var dayString = daysOfWeek[shipDayOfWeek];
                 if (daysToShip==0) { 
                     dayString = "today ("+dayString+")";
                 } else if (daysToShip ==1) {
@@ -148,20 +146,16 @@
                 }
             
                 console.log('dateNow: '+dateNow); // TEMP - testing incorrect time
-                console.log('dateNowSeconds: '+dateNowSeconds); // TEMP - testing incorrect time
                 console.log('dateNowHours: '+dateNowHours); // TEMP - testing incorrect time
-                console.log('shipDateSeconds: '+shipDateSeconds); // TEMP - testing incorrect time
-                console.log('secondsToShip: '+secondsToShip); // TEMP - testing incorrect time
-                console.log('daysToShip: '+daysToShip); // TEMP - testing incorrect time
                 console.log('dayOfWeek: '+dayOfWeek); // TEMP - testing incorrect time
+                console.log('daysToShip: '+daysToShip); // TEMP - testing incorrect time
+                console.log('shipDayOfWeek: '+shipDayOfWeek); // TEMP - testing incorrect time
                 console.log('dayString: '+dayString); // TEMP - testing incorrect time
                 dayString = 'dateNow: '+dateNow+
-                    ', dateNowSeconds: '+dateNowSeconds+
                     ', dateNowHours: '+dateNowHours+
-                    ', shipDateSeconds: '+shipDateSeconds+
-                    ', secondsToShip: '+secondsToShip+
-                    ', daysToShip: '+daysToShip+
                     ', dayOfWeek: '+dayOfWeek+
+                    ', daysToShip: '+daysToShip+
+                    ', shipDayOfWeek: '+shipDayOfWeek+
                     ', dayString: '+dayString; // TEMP - testing incorrect time
 
                 return dayString;

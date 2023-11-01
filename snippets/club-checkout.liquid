@@ -95,7 +95,7 @@
             // GET SHIP DATE 231031
             // get next working day
             function getNextWorkingDate(fromDate) {
-                var dateVar = fromDate;
+                var dateVar = new Date(fromDate);
                 var dayOfWeek = 0;
                 var isWeekend = false;
                 do {

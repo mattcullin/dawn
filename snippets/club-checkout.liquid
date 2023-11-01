@@ -146,6 +146,23 @@
                 } else if (daysToShip ==1) {
                     dayString = "tomorrow ("+dayString+")";
                 }
+            
+                console.log('dateNow: '+dateNow); // TEMP - testing incorrect time
+                console.log('dateNowSeconds: '+dateNowSeconds); // TEMP - testing incorrect time
+                console.log('dateNowHours: '+dateNowHours); // TEMP - testing incorrect time
+                console.log('shipDateSeconds: '+shipDateSeconds); // TEMP - testing incorrect time
+                console.log('secondsToShip: '+secondsToShip); // TEMP - testing incorrect time
+                console.log('daysToShip: '+daysToShip); // TEMP - testing incorrect time
+                console.log('dayOfWeek: '+dayOfWeek); // TEMP - testing incorrect time
+                console.log('dayString: '+dayString); // TEMP - testing incorrect time
+                dayString = 'dateNow: '+dateNow+
+                    ', dateNowSeconds: '+dateNowSeconds+
+                    ', dateNowHours: '+dateNowHours+
+                    ', shipDateSeconds: '+shipDateSeconds+
+                    ', secondsToShip: '+secondsToShip+
+                    ', daysToShip: '+daysToShip+
+                    ', dayOfWeek: '+dayOfWeek+
+                    ', dayString: '+dayString; // TEMP - testing incorrect time
 
                 return dayString;
             }
@@ -176,10 +193,20 @@
                 $('.shipping_warning').appendTo($('.step__sections'));
                 $('#shipping_warning_default').show();
                 if(pto_items()) { $('#shipping_warning_pto').show() };
+
+                // *** TEMP - testing incorrect time ***
+                $('input[name="checkout[attributes][ship_day]"]').remove();
+                $('input[name="checkout[attributes][ship_day_test]"]').remove();
+                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day_test]" value="'+shipDay+'">');
+                // *** END TEMP ***
+
+                {% comment %}
+                // *** TEMP DISABLED - testing incorrect time reported for international locations (US, see order CB-37079) ***
                 $('#shipping_warning_ship_day').html("{{ shipping_warning_ship_day_prepend }}<strong>"+shipDay+"</strong>.").show();
                 // add/replace checkout attributes
                 $('input[name="checkout[attributes][ship_day]"]').remove();
                 $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day]" value="'+shipDay+'">');
+                {% endcomment %}
                 $('input[name="checkout[attributes][checkout_zone]"]').remove();
                 $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][checkout_zone]" value="{{ zone }}">');
                 $('input[name="checkout[attributes][pto_items]"]').remove();

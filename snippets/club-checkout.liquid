@@ -162,7 +162,26 @@
             }
             // END GET SHIP DATE
 
+            // Execute on every load/change
             $('#checkout_attributes').appendTo($('.step__sections'));
+            let shipDay = get_ship_day();
+            let ptoItems = pto_items(); 
+            // *** TEMP - testing incorrect time ***
+            $('input[name="checkout[attributes][ship_day]"]').remove();
+            $('input[name="checkout[attributes][ship_day_test]"]').remove();
+            $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day_test]" value="'+shipDay+'">');
+            // *** END TEMP ***
+
+            {% comment %}
+            // *** TEMP DISABLED - testing incorrect time reported for international locations (US, see order CB-37079) ***
+            // add/replace checkout attributes
+            $('input[name="checkout[attributes][ship_day]"]').remove();
+            $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day]" value="'+shipDay+'">');
+            {% endcomment %}
+            $('input[name="checkout[attributes][checkout_zone]"]').remove();
+            $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][checkout_zone]" value="{{ zone }}">');
+            $('input[name="checkout[attributes][pto_items]"]').remove();
+            $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][pto_items]" value="'+ptoItems+'">');
 
             // Contact Information customisation
             if (Shopify.Checkout.step === "contact_information") {
@@ -182,29 +201,14 @@
 
             // Shipping Method customisation
             if (Shopify.Checkout.step === "shipping_method") {
-                let shipDay = get_ship_day();
-                let ptoItems = pto_items(); 
+
                 $('.shipping_warning').appendTo($('.step__sections'));
                 $('#shipping_warning_default').show();
                 if(pto_items()) { $('#shipping_warning_pto').show() };
-
-                // *** TEMP - testing incorrect time ***
-                $('input[name="checkout[attributes][ship_day]"]').remove();
-                $('input[name="checkout[attributes][ship_day_test]"]').remove();
-                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day_test]" value="'+shipDay+'">');
-                // *** END TEMP ***
-
                 {% comment %}
-                // *** TEMP DISABLED - testing incorrect time reported for international locations (US, see order CB-37079) ***
+                // *** TEMP DISABLED - testing ***
                 $('#shipping_warning_ship_day').html("{{ shipping_warning_ship_day_prepend }}<strong>"+shipDay+"</strong>.").show();
-                // add/replace checkout attributes
-                $('input[name="checkout[attributes][ship_day]"]').remove();
-                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][ship_day]" value="'+shipDay+'">');
                 {% endcomment %}
-                $('input[name="checkout[attributes][checkout_zone]"]').remove();
-                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][checkout_zone]" value="{{ zone }}">');
-                $('input[name="checkout[attributes][pto_items]"]').remove();
-                $('#checkout_attributes').append('<input type=hidden name="checkout[attributes][pto_items]" value="'+ptoItems+'">');
 
                 {% comment %}
                 // If FedEx & company address, show FedEx no-text warning (TBD - Order Desk override)

@@ -96,9 +96,9 @@
                 {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_bundles %}
                 {% render 'club-shipping-discount-banner' %}
                 {%- if total_production_time == 0 -%}
-                  <small class="tax-note caption-large rte">✅ All your items are in-stock &amp; ready to ship</small>
+                  <small class="tax-note caption-large rte">✅ All items are in-stock &amp; ready to ship.</small>
                 {%- else -%}
-                  <small class="tax-note caption-large rte">🕛 Your order contains print-to-order items which will take +{{ total_production_time }} working day{% if total_production_time > 1 %}s{% endif %} to print</small>
+                  <small class="tax-note caption-large rte">🕛 Your order contains print-to-order items which will add +{{ total_production_time }} working day{% if total_production_time > 1 %}s{% endif %} to print.</small>
                 {%- endif -%}
                 
               </div>

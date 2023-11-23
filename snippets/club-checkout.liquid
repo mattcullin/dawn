@@ -47,7 +47,7 @@
             var shipping_address_company = $('#checkout_shipping_address_company').val();
 
             function eu_check() {
-                let eu_countries = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'];
+                let eu_countries = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'];
                 shipping_address_country = $("#checkout_shipping_address_country").find(":selected").attr("data-code");
                 var in_eu = false;
                 if(eu_countries.includes(shipping_address_country)) { in_eu = true };

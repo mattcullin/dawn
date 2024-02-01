@@ -27,12 +27,13 @@
           }
         },
         "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 16,
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -88,7 +89,7 @@
           "settings": {
             "heading": "Features",
             "icon": "lightning_bolt",
-            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>📷 Original, realistic, true-scale textures.<\/strong> All found, crafted and captured by us, our 100+ megapixel artwork is never enlarged or pixelated. Suitable for close-crops (though not for macro photography). <\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tubing.<\/p>",
+            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>📷 Original, realistic, true-scale textures.<\/strong> All found, crafted and captured by us, our 100+ megapixel artwork is never enlarged or pixelated. Suitable for close-crops (though not for macro photography). <\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tri-tubing.<\/p>",
             "page": ""
           }
         },
@@ -290,7 +291,7 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,

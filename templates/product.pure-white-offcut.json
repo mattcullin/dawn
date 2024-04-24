@@ -47,23 +47,10 @@
             "picker_type": "button"
           }
         },
-        "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d": {
-          "type": "text",
-          "settings": {
-            "text": "❗ Custom backdrops are non-refundable",
-            "text_style": "uppercase"
-          }
-        },
-        "742cb015-437b-4712-b3d4-c1af456e2067": {
+        "5dd267c0-30b2-455b-a3e8-4ebfebe95527": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% assign production_time = product.selected_or_first_available_variant.metafields.custom.production_time %}\n\n<p class=\"product__text caption-with-letter-spacing\" id=\"production-time\">\n{% if production_time == 1 %}\n⚡ +{{ production_time }}  working day to print\n{% elsif production_time > 1 %}\n⚡ +{{ production_time }}  working days to print\n{% else %}\n✅ In-stock &amp; ready to ship{% endif %}\n<\/p>"
-          }
-        },
-        "2c54dd1a-dede-4a65-a5be-acb4a0148422": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Please read the <a href=\"#beacon-modal-proofing-guide\">Custom Proofing Guide<\/a> for critical tips on colour &amp; artwork preparation<\/p>\n<p>⏲ Have patience whilst the editor loads, if you need help <a href=\"#beacon-modal-editor\">see our guide here<\/a><\/p>\n<\/div>"
           }
         },
         "buy_buttons": {
@@ -78,10 +65,11 @@
             "custom_liquid": "{% if product.tags contains 'Tone: Dark' %}\n<div class=\"dashed-banner accent-border multi-line\">\n<p>👉 Darker backdrops reflect more light so require <a href=\"#beacon-modal-optimal-colour\">extra skill to work with &rarr;<\/a><\/p>\n<\/div>\n{% endif %}"
           }
         },
-        "custom_liquid_whb6Hn": {
-          "type": "custom_liquid",
+        "09c3347b-6024-45ae-865f-3e2cc5a59ccd": {
+          "type": "text",
           "settings": {
-            "custom_liquid": "<p class=\"product__text caption-with-letter-spacing\">🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\" target=\"_blank\">10p donated to Edinburgh Dog &amp; Cat Home →<\/a><\/p>"
+            "text": "🐶 <a href=\"\/pages\/charity-edinburgh-dog-cat-home\" target=\"_blank\">10p donated to Edinburgh Dog & Cat Home →<\/a>",
+            "text_style": "uppercase"
           }
         },
         "description": {
@@ -94,7 +82,7 @@
           "settings": {
             "heading": "Features",
             "icon": "lightning_bolt",
-            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times or on different materials may vary up to 5%. Certain colours can display a slight grain when viewed very close-up - for this reason solid colours are not recommended for extreme close-up or macro photography.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tri-tubing.<\/p>",
+            "content": "<p><strong>✅ Professional vinyl backdrop <\/strong>for product photography, food photography & social content. Create evocative scenes using multiple designs.<\/p><p><strong>💪 Superior durability & finish<\/strong>. 415gsm \/ 300 micron, water-proof media with a matte-finish that wipes clean & minimises glare. Perfect for food shoots.<\/p><p><strong>🌈 True colour.<\/strong> Printed on X-Rite® calibrated UV printers with Greenguard Gold certified inks for industry-leading colour accuracy. <em>Even with strict colour control, prints purchased at different times may vary up to 5%. Certain colours can display a slight grain when viewed very close-up - for this reason solid colours are not recommended for extreme close-up or macro photography.<\/em><\/p><p><strong>⚡ Lays flat for instant use. <\/strong>Delivered crease-free, rolled and ready-to-shoot in sturdy cardboard tri-tubing.<\/p>",
             "page": ""
           }
         },
@@ -112,7 +100,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "<p>🛑 Custom backdrops are non-refundable (unlike our usual stock textures).<\/p><p><a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">Full return policy →<\/a><\/p>",
+            "content": "<p>🛑 Pure White Offcuts are non-refundable (unlike our usual stock textures).<\/p><p><a href=\"https:\/\/smnezlltgthi7s6b-1653702750.shopifypreview.com\/products_preview?preview_key=381684ce953d3658f13b93a09a2e8db3#beacon-modal-returns\" title=\"#beacon-modal-returns\">Full return policy →<\/a><\/p>",
             "page": ""
           }
         },
@@ -134,7 +122,7 @@
             "page": ""
           }
         },
-        "e9acce6b-10b2-4d49-8992-a67565b3d94a": {
+        "ee39b7bd-e686-4549-9733-0f31dd38382d": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.collaborator_credits.value }}",
@@ -155,19 +143,17 @@
         "price",
         "loox-rating",
         "variant_picker",
-        "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
-        "742cb015-437b-4712-b3d4-c1af456e2067",
-        "2c54dd1a-dede-4a65-a5be-acb4a0148422",
+        "5dd267c0-30b2-455b-a3e8-4ebfebe95527",
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
-        "custom_liquid_whb6Hn",
+        "09c3347b-6024-45ae-865f-3e2cc5a59ccd",
         "description",
         "a628c748-ad67-4d0f-b2db-d4cb7a4af4d3",
         "collapsible-row-1",
         "collapsible-row-0",
         "collapsible-row-2",
         "collapsible-row-3",
-        "e9acce6b-10b2-4d49-8992-a67565b3d94a",
+        "ee39b7bd-e686-4549-9733-0f31dd38382d",
         "share"
       ],
       "settings": {

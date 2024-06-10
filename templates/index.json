@@ -382,14 +382,44 @@
             "link": "https:\/\/www.buzzfeed.com\/"
           }
         },
-        "40bb9c5f-e0ea-48e2-9d99-c7988228cd2b": {
+        "column_QnLjJ4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-bross.jpg",
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-holland-and-barrett.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/brossbagels.com\/"
+            "link": "https:\/\/www.hollandandbarrett.com\/"
+          }
+        },
+        "column_XVXF8e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-revolution-beauty-london.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/www.revolutionbeauty.com\/"
+          }
+        },
+        "column_xmjbRr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-vegware.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/www.vegware.com\/"
+          }
+        },
+        "column_CaUnNJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-barry-m.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/barrym.com\/"
           }
         },
         "112ab51d-3b9c-40a6-8f7c-85c71d75bf22": {
@@ -412,29 +442,44 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "40bb9c5f-e0ea-48e2-9d99-c7988228cd2b": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-bross.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/brossbagels.com\/"
+          }
         }
       },
       "block_order": [
         "1658237889a8a2ef12-0",
         "1658237889a8a2ef12-1",
         "1658237889a8a2ef12-2",
-        "40bb9c5f-e0ea-48e2-9d99-c7988228cd2b",
+        "column_QnLjJ4",
+        "column_XVXF8e",
+        "column_xmjbRr",
+        "column_CaUnNJ",
         "112ab51d-3b9c-40a6-8f7c-85c71d75bf22",
-        "a72d37d9-48c1-4c33-b178-3df975b77642"
+        "a72d37d9-48c1-4c33-b178-3df975b77642",
+        "40bb9c5f-e0ea-48e2-9d99-c7988228cd2b"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
+        "image_width": "half",
         "image_ratio": "adapt",
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 32,
         "padding_bottom": 48
       }
@@ -443,11 +488,12 @@
       "type": "apps",
       "blocks": {
         "aed185d5-97ec-4919-9afc-dc58371b3be3": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1600,
             "borderRadius": 0,
             "itemsPerView": 5,
+            "mobileItemsPerView": 1,
             "maxNumberOfCharacters": 100,
             "imageRatio": "1.25",
             "reviewerNameColor": "#000000",
@@ -800,8 +846,9 @@
         "b7011275-7e0f-40f7-9285-6be8a5517252": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
             "html_area": ""
           }
         }

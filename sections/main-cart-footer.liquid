@@ -99,8 +99,8 @@
                   <small class="tax-note caption-large rte">✅ All items are in-stock &amp; ready to ship.</small>
                 {%- else -%}
                   <small class="tax-note caption-large rte">🕛 Your order contains print-to-order items which will add +{{ total_production_time }} working day{% if total_production_time > 1 %}s{% endif %} to print.</small>
-                  <input type="hidden" name="attributes[production_time]" value="{{ total_production_time }}" form="cart" />
                 {%- endif -%}
+                <input type="hidden" name="attributes[production_time]" value="{{ total_production_time }}" form="cart" />
                 
               </div>
             {%- else -%}

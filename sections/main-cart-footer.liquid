@@ -77,16 +77,20 @@
                   <strong>Got a discount code?</strong> Add it in the next step. This includes any extra automatic discounts.
                 </small>
 
-                {% comment %}CLUB - Bulk Discount + Shipping Banner + Est. Production Time{% endcomment %}
+                {% comment %}CLUB - Bulk Discount + Shipping Banner + Est. Production Time + Contains Large{% endcomment %}
                 {% assign mystery_pack_total = 0 %}
                 {% assign bundle_total = 0 %}
                 {% assign total_production_time = 0 %}
+                {% assign large_total = 0 %}
                 {%- for item in cart.items -%}
                   {%- if item.sku contains 'MYST' -%}
                     {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
                   {%- endif -%}
                   {%- if item.sku contains 'BUND' -%}
                     {% assign bundle_total = bundle_total | plus: item.quantity %}          
+                  {%- endif -%}
+                  {%- if item.sku contains '-V2' or item.sku contains '-C1' or item.sku contains '-C2' or item.sku contains '-C3' or item.sku contains '-VC' -%}
+                    {% assign large_total = large_total | plus: item.quantity %}          
                   {%- endif -%}
                   {%- if item.variant.metafields.custom.production_time -%}
                     {% assign total_production_time = total_production_time | at_least: item.variant.metafields.custom.production_time %}
@@ -101,6 +105,7 @@
                   <small class="tax-note caption-large rte">🕛 Your order contains print-to-order items which will add +{{ total_production_time }} working day{% if total_production_time > 1 %}s{% endif %} to print.</small>
                 {%- endif -%}
                 <input type="hidden" name="attributes[production_time]" value="{{ total_production_time }}" form="cart" />
+                <input type="hidden" name="attributes[large_total]" value="{{ large_total }}" form="cart" />
                 
               </div>
             {%- else -%}

@@ -82,6 +82,7 @@
                 {% assign bundle_total = 0 %}
                 {% assign total_production_time = 0 %}
                 {% assign large_total = 0 %}
+                {% assign royal_mail_available = 1 %}
                 {%- for item in cart.items -%}
                   {%- if item.sku contains 'MYST' -%}
                     {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
@@ -104,8 +105,11 @@
                 {%- else -%}
                   <small class="tax-note caption-large rte">🕛 Your order contains print-to-order items which will add +{{ total_production_time }} working day{% if total_production_time > 1 %}s{% endif %} to print.</small>
                 {%- endif -%}
+                {%- if cart.total_weight > 2199 or large_total > 0 -%}
+                  {%- assign royal_mail_available = 0 -%}
+                {%- endif -%}
                 <input type="hidden" name="attributes[production_time]" value="{{ total_production_time }}" form="cart" />
-                <input type="hidden" name="attributes[large_total]" value="{{ large_total }}" form="cart" />
+                <input type="hidden" name="attributes[royal_mail_available]" value="{{ royal_mail_available }}" form="cart" />
                 
               </div>
             {%- else -%}

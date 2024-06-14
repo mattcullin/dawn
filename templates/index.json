@@ -554,7 +554,7 @@
             "available_zones": "GB, EU3",
             "heading": "GB, EU3 Shipping",
             "title": "🚚 Free UK Shipping 🌞",
-            "text": "<p><strong>For orders over £60<br\/><\/strong>Order before 1PM for next-day*<\/p>",
+            "text": "<p><strong>For orders over £100<br\/><\/strong>Order before 1PM for next-day*<\/p>",
             "link_label": "UK Delivery",
             "link": "#beacon-modal-delivery-gb"
           }
@@ -565,7 +565,7 @@
             "available_zones": "US",
             "heading": "US Shipping",
             "title": "🚚 Free US Shipping 🗽",
-            "text": "<p><strong>For orders over $90<br\/><\/strong>2-3 working days, No fees<\/p>",
+            "text": "<p><strong>For orders over $100<br\/><\/strong>2-3 working days, No fees<\/p>",
             "link_label": "US Delivery",
             "link": "#beacon-modal-delivery-us"
           }
@@ -576,7 +576,7 @@
             "available_zones": "EU1",
             "heading": "EU1 Shipping",
             "title": "🚚 Free EU Shipping 🌞",
-            "text": "<p><strong>For orders over €90<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over €150<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
             "link": "#beacon-modal-delivery-eu"
           }
@@ -587,7 +587,7 @@
             "available_zones": "EU2",
             "heading": "EU2 Shipping",
             "title": "🚚 Free EU Shipping 🌞",
-            "text": "<p><strong>For orders over €180<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over €200<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "EU Delivery",
             "link": "#beacon-modal-delivery-eu"
           }
@@ -598,7 +598,7 @@
             "available_zones": "AU",
             "heading": "AU Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over $120<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over $250<br\/><\/strong>No hidden customs fees*<\/p>",
             "link_label": "Australia Delivery",
             "link": "#beacon-modal-delivery-au"
           }
@@ -609,7 +609,7 @@
             "available_zones": "CA",
             "heading": "CA Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over $120<\/strong><\/p>",
+            "text": "<p><strong>For orders over $150<\/strong><\/p>",
             "link_label": "Canada Delivery",
             "link": "#beacon-modal-delivery-ca"
           }
@@ -620,7 +620,7 @@
             "available_zones": "ROW",
             "heading": "ROW Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over £90<\/strong><\/p>",
+            "text": "<p><strong>For orders over £100<\/strong><\/p>",
             "link_label": "Worldwide Delivery",
             "link": "#beacon-modal-delivery-row"
           }

@@ -29,7 +29,6 @@
     },
     "16531349608894d2a5": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "1653134960f8578618-0": {
           "type": "heading",
@@ -50,6 +49,7 @@
         "1653134960f8578618-0",
         "1653134960f8578618-1"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 0,
         "image_height": "small",

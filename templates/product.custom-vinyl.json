@@ -60,6 +60,12 @@
             "custom_liquid": "{% assign production_time = product.selected_or_first_available_variant.metafields.custom.production_time %}\n\n<p class=\"product__text caption-with-letter-spacing\" id=\"production-time\">\n{% if production_time == 1 %}\n⚡ +{{ production_time }}  working day to print\n{% elsif production_time > 1 %}\n⚡ +{{ production_time }}  working days to print\n{% else %}\n✅ In-stock &amp; ready to ship{% endif %}\n<\/p>"
           }
         },
+        "custom_liquid_DUMwRT": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'club-shipping-discount-banner', mini_banner: true %}"
+          }
+        },
         "2c54dd1a-dede-4a65-a5be-acb4a0148422": {
           "type": "custom_liquid",
           "settings": {
@@ -157,6 +163,7 @@
         "variant_picker",
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
         "742cb015-437b-4712-b3d4-c1af456e2067",
+        "custom_liquid_DUMwRT",
         "2c54dd1a-dede-4a65-a5be-acb4a0148422",
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",

@@ -27,12 +27,13 @@
           }
         },
         "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 16,
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -57,6 +58,12 @@
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% assign production_time = product.selected_or_first_available_variant.metafields.custom.production_time %}\n\n<p class=\"product__text caption-with-letter-spacing\" id=\"production-time\">\n{% if production_time == 1 %}\n⚡ +{{ production_time }}  working day to print\n{% elsif production_time > 1 %}\n⚡ +{{ production_time }}  working days to print\n{% else %}\n✅ In-stock &amp; ready to ship{% endif %}\n<\/p>"
+          }
+        },
+        "custom_liquid_UtMC8T": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'club-shipping-discount-banner', mini_banner: true %}"
           }
         },
         "a29f4b45-3fbe-4d72-9977-759b48cb91ba": {
@@ -157,6 +164,7 @@
         "variant_picker",
         "e3512905-c9aa-4ee3-a4be-6b1c96e15b0d",
         "e0e220cf-051c-4a17-b140-925260e2a226",
+        "custom_liquid_UtMC8T",
         "a29f4b45-3fbe-4d72-9977-759b48cb91ba",
         "buy_buttons",
         "4c27c248-3c0c-434a-94c2-0bad314eb6cd",
@@ -297,13 +305,14 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
             "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1920
+            "maxwidth": 1920,
+            "is_sample": true
           }
         }
       },

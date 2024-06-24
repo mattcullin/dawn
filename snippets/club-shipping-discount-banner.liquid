@@ -1,8 +1,9 @@
 {%- comment -%}
-    CLUB - Renders shipping discount banner - threshold is in local currency
+    CLUB - Renders shipping discount banner - threshold is in local currency 
+    - pass optional 'mini_banner' variable to output single line banner specific to product page
 
     Usage:
-    {% render 'club-shipping-discount-banner' %}
+    {% render 'club-shipping-discount-banner' (, mini_banner: true) %}
 {%- endcomment -%}
 
 {%- liquid 
@@ -30,6 +31,9 @@
     assign gross_total = cart.total_price
 -%}
 
+{%- if mini_banner -%}
+  <p class="product__text caption-with-letter-spacing"><strong>🚛 FREE shipping over {{ free_shipping_threshold | money_without_trailing_zeros }}</strong></p>
+{%- else -%}
 <div class="club-shipping-discount-banner">
     {% if gross_total > 0 and gross_total < free_shipping_threshold %}
         <p class="dashed-banner accent-text accent-border">🚚 Spend <strong>another {{ free_shipping_threshold | minus: gross_total | money }}</strong> to get<br><span class="highlight">FREE shipping</span></p>
@@ -37,3 +41,4 @@
         <p class="dashed-banner">🚛 You get <span class="highlight-alt">FREE shipping</span>!</p>
     {% endif %}
 </div>
+{%- endif -%}

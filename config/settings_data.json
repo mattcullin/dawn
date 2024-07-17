@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
@@ -215,6 +224,20 @@
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
+        }
+      },
+      "13851756539466573627": {
+        "type": "shopify:\/\/apps\/gelato-print-on-demand\/blocks\/product-personalizer\/9f8f1130-ec83-4e2f-a417-5e69fb8f6e45",
+        "disabled": false,
+        "settings": {
+          "hidden-selector": "",
+          "in-page-personalization-preview-selector": "",
+          "cart-edit-selector": "",
+          "personalized-cart-preview-selector": "",
+          "dropdown-selectors-desktop": "None",
+          "dropdown-selectors-mobile": "None",
+          "show-personalize-tab": true,
+          "hide-preview-scroll-bar": false
         }
       }
     }

@@ -455,5 +455,10 @@
         "duties_included_label": " "
       }
     }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "duties_and_taxes_included": " "
+    }
   }
 }

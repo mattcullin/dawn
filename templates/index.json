@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1662468258bac8e3eb": {
@@ -6,7 +15,7 @@
         "166246825824a875b4-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-hero-home-zebra-wood.jpg",
+            "image": "shopify://shop_images/club-backdrops-hero-home-zebra-wood.jpg",
             "heading": "Pro Photography Backdrops",
             "heading_size": "h0",
             "subheading": "High-end replica textures & rich brand-matched colours.",
@@ -57,10 +66,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop Vinyl",
-            "button_link_1": "shopify:\/\/collections\/vinyl-backdrops",
+            "button_link_1": "shopify://collections/vinyl-backdrops",
             "button_style_secondary_1": false,
             "button_label_2": "Shop Canvas",
-            "button_link_2": "shopify:\/\/collections\/canvas-studio-backdrops",
+            "button_link_2": "shopify://collections/canvas-studio-backdrops",
             "button_style_secondary_2": false
           }
         }
@@ -71,7 +80,7 @@
         "8f0f98f7-ca68-45ea-bc7f-673812ac4f55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-vinyl-gradients-siroco-exo.jpg",
+        "image": "shopify://shop_images/club-backdrops-vinyl-gradients-siroco-exo.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -144,7 +153,7 @@
       "settings": {
         "title": "Top 'drops",
         "heading_size": "h1",
-        "description": "<p>The latest and greatest from our vinyl photography backdrop range.<\/p>",
+        "description": "<p>The latest and greatest from our vinyl photography backdrop range.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "home",
@@ -200,7 +209,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop all vinyl",
-            "button_link": "shopify:\/\/collections\/vinyl-backdrops",
+            "button_link": "shopify://collections/vinyl-backdrops",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -226,48 +235,48 @@
         "166246119326b1732f-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-shop-texture.jpg",
+            "image": "shopify://shop_images/club-backdrops-shop-texture.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/replica-surfaces-vinyl-backdrops"
+            "link": "shopify://collections/replica-surfaces-vinyl-backdrops"
           }
         },
         "166246119326b1732f-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-shop-custom-v3.jpg",
+            "image": "shopify://shop_images/club-backdrops-shop-custom-v3.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/block-colour-vinyl-backdrops"
+            "link": "shopify://collections/block-colour-vinyl-backdrops"
           }
         },
         "166246119326b1732f-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-shop-custom-v2.jpg",
+            "image": "shopify://shop_images/club-backdrops-shop-custom-v2.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/custom-photography-backdrops"
+            "link": "shopify://collections/custom-photography-backdrops"
           }
         },
         "a3a9edbb-8544-418c-91d9-8e3864d0d01c": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-how-to-blog.jpg",
+            "image": "shopify://shop_images/club-backdrops-how-to-blog.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify:\/\/blogs\/how-to"
+            "link": "shopify://blogs/how-to"
           }
         },
         "6461e096-f56c-4c3a-ade1-e247bc18abae": {
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -304,7 +313,7 @@
       "settings": {
         "title": "Just Arrived",
         "heading_size": "h2",
-        "description": "<p>The latest additions to our vinyl backdrop collection.<\/p>",
+        "description": "<p>The latest additions to our vinyl backdrop collection.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "vinyl-backdrops",
@@ -332,7 +341,7 @@
         "166246226246a2399d-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Proudly used by<\/p>",
+            "heading": "<p>Proudly used by</p>",
             "heading_size": "h2"
           }
         }
@@ -355,88 +364,88 @@
         "1658237889a8a2ef12-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-deliveroo.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-deliveroo.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/deliveroo.co.uk\/"
+            "link": "https://deliveroo.co.uk/"
           }
         },
         "1658237889a8a2ef12-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-john-lewis.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-john-lewis.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/www.johnlewis.com\/"
+            "link": "https://www.johnlewis.com/"
           }
         },
         "1658237889a8a2ef12-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-buzzfeed_6055a305-95dd-4560-83af-dcb55761bdc5.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-buzzfeed_6055a305-95dd-4560-83af-dcb55761bdc5.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/www.buzzfeed.com\/"
+            "link": "https://www.buzzfeed.com/"
           }
         },
         "column_QnLjJ4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-holland-and-barrett.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-holland-and-barrett.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/www.hollandandbarrett.com\/"
+            "link": "https://www.hollandandbarrett.com/"
           }
         },
         "column_XVXF8e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-revolution-beauty-london.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-revolution-beauty-london.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/www.revolutionbeauty.com\/"
+            "link": "https://www.revolutionbeauty.com/"
           }
         },
         "column_xmjbRr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-vegware.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-vegware.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/www.vegware.com\/"
+            "link": "https://www.vegware.com/"
           }
         },
         "column_CaUnNJ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-barry-m.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-barry-m.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/barrym.com\/"
+            "link": "https://barrym.com/"
           }
         },
         "112ab51d-3b9c-40a6-8f7c-85c71d75bf22": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-roja-parfums.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-roja-parfums.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/rojaparfums.com\/"
+            "link": "https://rojaparfums.com/"
           }
         },
         "a72d37d9-48c1-4c33-b178-3df975b77642": {
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-buzzfeed_6055a305-95dd-4560-83af-dcb55761bdc5.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-buzzfeed_6055a305-95dd-4560-83af-dcb55761bdc5.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -447,11 +456,11 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-bross.jpg",
+            "image": "shopify://shop_images/club-backdrops-used-by-bross.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "https:\/\/brossbagels.com\/"
+            "link": "https://brossbagels.com/"
           }
         }
       },
@@ -488,7 +497,7 @@
       "type": "apps",
       "blocks": {
         "aed185d5-97ec-4919-9afc-dc58371b3be3": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1600,
             "borderRadius": 0,
@@ -524,8 +533,8 @@
         "1659627804f80a1f0c-2": {
           "type": "button",
           "settings": {
-            "button_label": "Over 3,000+ 5-Star Reviews",
-            "button_link": "shopify:\/\/pages\/reviews",
+            "button_label": "Over 5,000+ 5-Star Reviews",
+            "button_link": "shopify://pages/reviews",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -554,7 +563,7 @@
             "available_zones": "GB, EU3",
             "heading": "GB, EU3 Shipping",
             "title": "🚚 Free UK Shipping 🌞",
-            "text": "<p><strong>For orders over £100<br\/><\/strong>Order before 1PM for next-day*<\/p>",
+            "text": "<p><strong>For orders over £100<br/></strong>Order before 1PM for next-day*</p>",
             "link_label": "UK Delivery",
             "link": "#beacon-modal-delivery-gb"
           }
@@ -565,7 +574,7 @@
             "available_zones": "US",
             "heading": "US Shipping",
             "title": "🚚 Free US Shipping 🗽",
-            "text": "<p><strong>For orders over $100<br\/><\/strong>2-3 working days, No fees<\/p>",
+            "text": "<p><strong>For orders over $100<br/></strong>2-3 working days, No fees</p>",
             "link_label": "US Delivery",
             "link": "#beacon-modal-delivery-us"
           }
@@ -576,7 +585,7 @@
             "available_zones": "EU1",
             "heading": "EU1 Shipping",
             "title": "🚚 Free EU Shipping 🌞",
-            "text": "<p><strong>For orders over €150<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over €150<br/></strong>No hidden customs fees*</p>",
             "link_label": "EU Delivery",
             "link": "#beacon-modal-delivery-eu"
           }
@@ -587,7 +596,7 @@
             "available_zones": "EU2",
             "heading": "EU2 Shipping",
             "title": "🚚 Free EU Shipping 🌞",
-            "text": "<p><strong>For orders over €200<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over €200<br/></strong>No hidden customs fees*</p>",
             "link_label": "EU Delivery",
             "link": "#beacon-modal-delivery-eu"
           }
@@ -598,7 +607,7 @@
             "available_zones": "AU",
             "heading": "AU Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over $250<br\/><\/strong>No hidden customs fees*<\/p>",
+            "text": "<p><strong>For orders over $250<br/></strong>No hidden customs fees*</p>",
             "link_label": "Australia Delivery",
             "link": "#beacon-modal-delivery-au"
           }
@@ -609,7 +618,7 @@
             "available_zones": "CA",
             "heading": "CA Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over $150<\/strong><\/p>",
+            "text": "<p><strong>For orders over $150</strong></p>",
             "link_label": "Canada Delivery",
             "link": "#beacon-modal-delivery-ca"
           }
@@ -620,7 +629,7 @@
             "available_zones": "ROW",
             "heading": "ROW Shipping",
             "title": "🚚 Free Shipping 🌞",
-            "text": "<p><strong>For orders over £100<\/strong><\/p>",
+            "text": "<p><strong>For orders over £100</strong></p>",
             "link_label": "Worldwide Delivery",
             "link": "#beacon-modal-delivery-row"
           }
@@ -631,7 +640,7 @@
             "available_zones": "GB, EU3",
             "heading": "GB, EU3 Returns",
             "title": "✅ 30-Day Returns 😃",
-            "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>UK returns address<\/p>",
+            "text": "<p><strong>On all non-custom backdrops<br/></strong>UK returns address</p>",
             "link_label": "Returns policy",
             "link": "#beacon-modal-returns"
           }
@@ -642,7 +651,7 @@
             "available_zones": "US",
             "heading": "US Returns",
             "title": "✅ 30-Day Returns 😃",
-            "text": "<p><strong>On all non-custom backdrops<\/strong><br\/>US returns address<\/p>",
+            "text": "<p><strong>On all non-custom backdrops</strong><br/>US returns address</p>",
             "link_label": "Returns policy",
             "link": "#beacon-modal-returns"
           }
@@ -653,7 +662,7 @@
             "available_zones": "EU1, EU2, AU, CA, ROW",
             "heading": "EU1, EU2, AU, CA, ROW Returns",
             "title": "✅ 30-Day Returns 😃",
-            "text": "<p><strong>On all non-custom backdrops<\/strong><\/p>",
+            "text": "<p><strong>On all non-custom backdrops</strong></p>",
             "link_label": "Returns policy",
             "link": "#beacon-modal-returns"
           }
@@ -664,7 +673,7 @@
             "available_zones": "ALL",
             "heading": "ALL Bulk Discounts",
             "title": "💸 Bulk Discounts 👍",
-            "text": "<p><strong>Up to 20% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
+            "text": "<p><strong>Up to 20% Off</strong></p><p>Starting at 2+ items</p>",
             "link_label": "Read more",
             "link": "#beacon-modal-bulk"
           }
@@ -721,10 +730,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "@clubbackdrops",
-            "button_link_1": "https:\/\/www.instagram.com\/clubbackdrops\/",
+            "button_link_1": "https://www.instagram.com/clubbackdrops/",
             "button_style_secondary_1": true,
             "button_label_2": "@clubstyling",
-            "button_link_2": "https:\/\/www.instagram.com\/clubstyling\/",
+            "button_link_2": "https://www.instagram.com/clubstyling/",
             "button_style_secondary_2": true
           }
         }
@@ -735,7 +744,7 @@
         "1662462581510d643f-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
+        "image": "shopify://shop_images/club-backdrops-how-to-hero.jpg",
         "image_overlay_opacity": 50,
         "image_height": "small",
         "adapt_height_first_image": false,
@@ -761,7 +770,7 @@
         "165823454926469c5d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We're here to up your photography game, whether you're a pro or a snap-happy smartphone shooter. Our photography backdrops have been used by big names like John Lewis, BuzzFeed and Deliveroo. We print & hand-finish them all under one roof on only the highest-grade substrates, at an unmatched resolution for ultimate realism. Our collection remains on-trend with ongoing, fresh seasonal releases. And we offer some of the fastest turnaround times to the UK, USA and Europe, including <a href=\"https:\/\/clubbackdrops.com\/collections\/custom-photography-backdrops\" title=\"Custom Backdrops\">custom jobs<\/a>. <\/p><p><\/p><p><em>Follow us behind the scenes at <\/em><a href=\"https:\/\/www.instagram.com\/clubstyling\/\"><em>@clubstyling<\/em><\/a><\/p>",
+            "text": "<p>We're here to up your photography game, whether you're a pro or a snap-happy smartphone shooter. Our photography backdrops have been used by big names like John Lewis, BuzzFeed and Deliveroo. We print & hand-finish them all under one roof on only the highest-grade substrates, at an unmatched resolution for ultimate realism. Our collection remains on-trend with ongoing, fresh seasonal releases. And we offer some of the fastest turnaround times to the UK, USA and Europe, including <a href=\"https://clubbackdrops.com/collections/custom-photography-backdrops\" title=\"Custom Backdrops\">custom jobs</a>. </p><p></p><p><em>Follow us behind the scenes at </em><a href=\"https://www.instagram.com/clubstyling/\"><em>@clubstyling</em></a></p>",
             "text_style": "body"
           }
         },
@@ -769,7 +778,7 @@
           "type": "button",
           "settings": {
             "button_label": "More About Us",
-            "button_link": "shopify:\/\/pages\/about"
+            "button_link": "shopify://pages/about"
           }
         }
       },
@@ -780,7 +789,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
+        "image": "shopify://shop_images/club-backdrops-how-to-hero.jpg",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -816,14 +825,14 @@
         "16624618905446be20-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>The daily feed<\/p>",
+            "heading": "<p>The daily feed</p>",
             "heading_size": "h1"
           }
         },
         "149a7a05-b363-45ba-bd39-7fb6da7aafdf": {
           "type": "text",
           "settings": {
-            "text": "<p>Serving up Insta-inspiration when you're hungry for ideas.<\/p>"
+            "text": "<p>Serving up Insta-inspiration when you're hungry for ideas.</p>"
           }
         }
       },
@@ -844,11 +853,13 @@
       "type": "apps",
       "blocks": {
         "b7011275-7e0f-40f7-9285-6be8a5517252": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
             "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }

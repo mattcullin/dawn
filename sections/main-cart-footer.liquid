@@ -78,13 +78,13 @@
                 </small>
 
                 {% comment %}CLUB - Bulk Discount + Shipping Banner + Est. Production Time + Contains Large{% endcomment %}
-                {% assign mystery_pack_total = 0 %}
+                {% assign mystery_pack_total = 0 %} {% comment %}Includes Mystery Packs and Pure White Offcuts{% endcomment %}
                 {% assign bundle_total = 0 %}
                 {% assign total_production_time = 0 %}
                 {% assign large_total = 0 %}
                 {% assign royal_mail_available = 1 %}
                 {%- for item in cart.items -%}
-                  {%- if item.sku contains 'MYST' -%}
+                  {%- if item.sku contains 'MYST' or item.sku contains 'PURE-WT-VC' -%}
                     {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
                   {%- endif -%}
                   {%- if item.sku contains 'BUND' -%}
@@ -115,13 +115,14 @@
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 {% comment %}CLUB - see if cart is valid, disable Check out button if:
-                  1. Mystery Pack is only item in cart
+                  1. Mystery Pack or Offcut is only item(s) in cart
                   2. Holiday mode setting is on
                 {% endcomment %}
                 {% assign disabled_cart = false %}
                 {% assign disabled_cart_messages = '' %}
-                {%- if mystery_pack_total > 0 and cart.item_count == 1 -%}
-                  {% assign disabled_cart_messages = disabled_cart_messages | append: "Mystery Packs must be purchased alongside another backdrop.;" %}
+                {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
+                {%- if cart_item_count_ex_mystery_packs == 0 -%}
+                  {% assign disabled_cart_messages = disabled_cart_messages | append: "Mystery Packs & Offcuts must be purchased alongside a full-priced backdrop.;" %}
                   {% assign disabled_cart = true %}
                 {%- endif -%} 
                 {%- if settings.holiday_mode_enabled -%}
